@@ -31,12 +31,12 @@ $navList = "<ul id='navul'>";
 if ($action == NULL) {
     $active = "class='active'"; 
 }
-$navList .= "<li $active><a href='$basepath/test.php' title='View the Acme home page'>Home</a></li>";
+$navList .= "<li $active><a href='$basepath/index.php' title='View the Acme home page'>Home</a></li>";
 foreach ($categories as $category) {
     echo $category[categoryName]."<br>";
     if ($action == $category[categoryName]) {
         $active = "class='active'"; } else {$active = NULL;}
-$navList .= "<li $active><a href='$basepath/test.php?action=$category[categoryName]' title='View our $category[categoryName] product line'>$category[categoryName]</a></li>";
+$navList .= "<li $active><a href='$basepath/index.php?action=$category[categoryName]' title='View our $category[categoryName] product line'>$category[categoryName]</a></li>";
 }
 $navList .= '</ul>';
 
