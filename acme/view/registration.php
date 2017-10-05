@@ -6,10 +6,9 @@
     <meta name = "viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Acme</title>
-    <meta http-equiv="Cache-Control" content="max-age=200" />
+
     <!-- CSS files -->
     <link rel="stylesheet" href="../css/normalize.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Architects+Daughter%7cCovered+By+Your+Grace%7cGloria+Hallelujah%7cHandlee%7cIndie+Flower" rel="stylesheet"> -->
     <link rel="stylesheet" href="../css/style.css" media="screen">
 
     <!-- Javascript files that have to load at the top -->
@@ -23,17 +22,17 @@
         <nav id="menu"><?php echo $navList; ?></nav>
         <main>
         <h1>User Registration</h1>
-            <form action="" method="get" id="registrationform">
+            <form action="#S" method="get" id="registrationform">
                 <fieldset>
                     <div>
                         <input class="requiredinvalid" id="firstname" name="firstname"
-                        type="firstname" required placeholder="First Name" tabindex="1"
+                        type="text" required placeholder="First Name" tabindex="1"
                         title="Enter your First Name"/>
                         <label for="firstname">First Name</label>
                     </div>
                     <div>
                         <input class="requiredinvalid" id="lastname" name="lastname"
-                        type="lastname" required placeholder="Last Name" tabindex="2"
+                        type="text" required placeholder="Last Name" tabindex="2"
                         title="Enter your Last Name"/>
                         <label for="lastname">Last Name</label>
                     </div>

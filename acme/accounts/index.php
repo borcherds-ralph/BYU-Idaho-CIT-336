@@ -22,21 +22,29 @@ if (strpos($doc, '500.php') == true || strpos($doc, 'accounts') == true) {
     $path = "../";
 }
 
+$action = filter_input(INPUT_POST, 'action');
+if ($action == NULL){
+ $action = filter_input(INPUT_GET, 'action');
+}
+
 // Get the array of categories
 $categories = getCategories();
 
 // Build a navigation bar using the $categories array
 $navList = "<ul id='navul'>";
-$navList .= "<li class='active'><a href='$basepath/index.php' title='View the Acme home page'>Home</a></li>";
+if ($action == NULL) {
+    $active = "class='active'"; 
+}
+$navList .= "<li $active><a href='$basepath/index.php' title='View the Acme home page'>Home</a></li>";
 foreach ($categories as $category) {
-$navList .= "<li><a href='$basepath/index.php?action=$category[categoryName]' title='View our $category[categoryName] product line'>$category[categoryName]</a></li>";
+    if ($action == $category[categoryName]) {
+        $active = "class='active'"; 
+    } else {
+        $active = NULL;
+    }
+$navList .= "<li $active><a href='$basepath/index.php?action=$category[categoryName]' title='View our $category[categoryName] product line'>$category[categoryName]</a></li>";
 }
 $navList .= '</ul>';
-
- $action = filter_input(INPUT_POST, 'action');
- if ($action == NULL){
-  $action = filter_input(INPUT_GET, 'action');
- }
 
  switch ($action) {
 
