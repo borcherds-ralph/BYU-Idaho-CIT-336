@@ -8,7 +8,7 @@
     <title>Acme</title>
     
     <!-- CSS files -->
-    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="<?php $basepath; ?>/css/normalize.css">
     <link rel="stylesheet" href="../css/style.css" media="screen">
     <script src="../js/scripts.js"></script>
 </head>
@@ -16,7 +16,7 @@
     <div class="content">
 
         <?php require '../common/header.php'; ?>
-        <nav id="menu"><?php echo $navList; ?></nav>
+        <?php require '../common/nav.php'; ?>
         <main>
             <h1>User Login</h1>
             <form action="#" method="get" id="loginform">

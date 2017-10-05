@@ -15,7 +15,7 @@
 <body>
     <div class="content">
         <?php require 'common/header.php'; ?>
-        <nav id="menu"><?php echo $navList; ?></nav>
+        <?php require 'common/nav.php'; ?>
             
         <main>
             <section class="top">

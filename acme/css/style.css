@@ -118,6 +118,12 @@ nav ul li {
     font-size: 1em;
 }
 
+nav ul li:hover,
+nav ul li a:hover {
+    background-color: #808080;
+    color: #000;
+}
+
 .active {
     background-color: #fff;
     margin-right: 5px;
