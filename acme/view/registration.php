@@ -22,34 +22,43 @@
         <nav id="menu"><?php echo $navList; ?></nav>
         <main>
         <h1>User Registration</h1>
-            <form action="#S" method="get" id="registrationform">
+            <?php
+                if (isset($message)) {
+                echo $message;
+                }
+            ?>
+            <form method="post" action="<?php echo $basepath ?>/accounts/index.php" id="registrationform">
                 <fieldset>
                     <div>
-                        <input class="requiredinvalid" id="firstname" name="firstname"
+                        <input class="requiredinvalid" id="clientFirstname" name="clientFirstname"
                         type="text" required placeholder="First Name" tabindex="1"
                         title="Enter your First Name"/>
-                        <label for="firstname">First Name</label>
+                        <label for="clientFirstname">First Name</label>
                     </div>
                     <div>
-                        <input class="requiredinvalid" id="lastname" name="lastname"
+                        <input class="requiredinvalid" id="clientLastname" name="clientLastname"
                         type="text" required placeholder="Last Name" tabindex="2"
                         title="Enter your Last Name"/>
-                        <label for="lastname">Last Name</label>
+                        <label for="clientLastname">Last Name</label>
                     </div>
                     <div>
-                        <input class="requiredinvalid" id="email" name="email"
+                        <input class="requiredinvalid" id="clientEmail" name="clientEmail"
                         type="email" required placeholder="email@address.com" tabindex="3"
                         title="E-mail address must be a valid e-mail address format."/>
-                        <label for="email">e-Mail Address</label>
+                        <label for="clientEmail">e-Mail Address</label>
                     </div>
                     <div>
-                        <input class="requiredinvalid" id="password" name="password"
+                        <input class="requiredinvalid" id="clientPassword" name="clientPassword"
                         type="password" tabindex="4"
                         title="E-mail address must be a valid e-mail address format."/>
-                        <label for="password">Password</label>
+                        <label for="clientPassword">Password</label>
                     </div>
                 </fieldset>
-                <input type="submit" name="login" value="Create Account" />
+
+                <input type="submit" name="submit" value="Register">
+                <!-- Add the action name - value pair -->
+                <input type="hidden" name="action" value="register">
+                
             </form>
         </main>
     <?php require "../common/footer.php" ?>

@@ -19,6 +19,11 @@
         <?php require '../common/nav.php'; ?>
         <main>
             <h1>User Login</h1>
+            <?php
+                if (isset($message)) {
+                echo $message;
+                }
+            ?>
             <form action="#" method="get" id="loginform">
                 <fieldset>
                     <div>
@@ -57,7 +62,7 @@
     <script>
         function registration() {
             var basepath = '<?php echo $basepath ?>';
-            location.href = basepath + '/accounts/index.php?action=register';
+            location.href = basepath + '/accounts/index.php?action=registration';
         }
     </script>
 
