@@ -31,13 +31,13 @@
                 <fieldset> 
                     <div>
                         <input class="requiredinvalid" id="invName" name="invName"
-                        type="text" required placeholder="First Name" tabindex="1"
+                        type="text" required placeholder="Inventory Item Name" tabindex="1"
                         title="Enter Item Name"/>
                         <label for="invName">Item Name</label>
                     </div>
                     <div>
                         <input class="requiredinvalid" id="invDescription" name="invDescription"
-                        type="text" required placeholder="Last Name" tabindex="2"
+                        type="text" required placeholder="Item Description" tabindex="2"
                         title="Enter the description of the item"/>
                         <label for="invDescription">Description</label>
                     </div>
