@@ -43,62 +43,62 @@
                     </div>
                     <div>
                         <input id="invImage" name="invImage"
-                        type="text" placeholder="path to image" tabindex="3"
+                        type="text" required placeholder="path to image" tabindex="3"
                         title="Enter the path to the image item. /acme/images/no-image/no-image.png if none."/>
                         <label for="invImage">Image Path</label>
                     </div>
                     <div>
                         <input id="invThumbnail" name="invThumbnail"
-                        type="text" tabindex="4"
+                        type="text" required tabindex="4"
                         title="Enter the path to the thumbnail image."/>
                         <label for="invThumbnail">Thumbnail Path</label>
                     </div>
                     <div>
                         <input id="invPrice" name="invPrice"
-                        type="number" tabindex="5"
+                        type="number"required  tabindex="5"
                         title="Enter the Price."/>
                         <label for="invPrice">Price</label>
                     </div>
                     <div>
                         <input id="invStock" name="invStock"
-                        type="number" tabindex="6"
+                        type="number" required tabindex="6"
                         title="Enter the number in Stock."/>
                         <label for="invStock">Qty in Stock</label>
                     </div>
                     <div>
                         <input id="invSize" name="invSize"
-                        type="number" tabindex="6"
+                        type="number" required tabindex="6"
                         title="Enter the Size."/>
                         <label for="invSize">Size</label>
                     </div>
                     <div>
                         <input id="invWeight" name="invWeight"
-                        type="number" tabindex="7"
+                        type="number" required tabindex="7"
                         title="Enter the Weight."/>
                         <label for="invWeight">Weight</label>
                     </div>
                     <div>
                         <input id="invLocation" name="invLocation"
-                        type="text" tabindex="8"
+                        type="text" required tabindex="8"
                         title="Enter the location."/>
                         <label for="invLocation">Location</label>
                     </div>
                     <div>
                         <input id="category" name="category"
-                        list="categories" tabindex="9"
+                        list="categories" required tabindex="9"
                         title="Select the category."/>
                         <?php echo $catList; ?>
                         <label for="category">Category</label>
                     </div>
                     <div>
                         <input id="invVendor" name="invVendor"
-                        type="text" tabindex="10"
+                        type="text" required tabindex="10"
                         title="Enter the name of the Vendor."/>
                         <label for="invVendor">Vendor Name</label>
                     </div>
                     <div>
                         <input id="invStyle" name="invStyle"
-                        type="text" tabindex="11"
+                        type="text" required tabindex="11"
                         title="Enter the Style of the item."/>
                         <label for="invStyle">Style</label>
                     </div>
