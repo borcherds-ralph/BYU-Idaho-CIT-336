@@ -29,24 +29,6 @@ if ($action == NULL){
  $action = filter_input(INPUT_GET, 'action');
 }
 
-// Get the array of categories
-$categories = getCategories();
-
-// Build a navigation bar using the $categories array
-$navList = "<ul id='navul'>";
-if ($action == NULL) {
-    $active = "class='active'"; 
-}
-$navList .= "<li $active><a href='$basepath/index.php' title='View the Acme home page'>Home</a></li>";
-foreach ($categories as $category) {
-    if ($action == $category[categoryName]) {
-        $active = "class='active'"; 
-    } else {
-        $active = NULL;
-    }
-$navList .= "<li $active><a href='$basepath/index.php?action=$category[categoryName]' title='View our $category[categoryName] product line'>$category[categoryName]</a></li>";
-}
-$navList .= '</ul>';
 
 $action2 = filter_input(INPUT_POST, 'action');
 if ($action2 != NULL) {

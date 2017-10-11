@@ -275,7 +275,8 @@ footer p {
 */
 
 
-/*input:required:invalid, input:focus:invalid */
+/* input:required:invalid,
+input:focus:invalid { */
 
 .requiredinvalid {
     border: 1px solid #ff0000;
@@ -283,7 +284,8 @@ footer p {
 }
 
 
-/* input:required:valid, textarea:required:valid  */
+/* input:required:valid,
+textarea:required:valid { */
 
 .requiredvalid {
     background: green;

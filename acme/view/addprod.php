@@ -24,7 +24,7 @@
         <h1>User Registration</h1>
             <?php
                 if (isset($message)) {
-                    echo $message . "<br>";
+                    echo "<h3>". $message . "</h3>";
                 }
             ?>
             <form method="post" action="<?php echo $basepath ?>/products/products.php" id="registrationform">

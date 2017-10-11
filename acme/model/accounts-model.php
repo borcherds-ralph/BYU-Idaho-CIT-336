@@ -6,7 +6,8 @@ function regClient($clientFirstname, $clientLastname, $clientEmail, $clientPassw
     // Create a connection object using the acme connection function
     $db = acmeConnect();
     // The SQL statement
-    $sql = 'INSERT INTO clients (clientFirstname, clientLastname, clientEmail, clientPassword) VALUES (:clientFirstname, :clientLastname, :clientEmail, :clientPassword)';
+    $sql = 'INSERT INTO clients (clientFirstname, clientLastname, clientEmail, clientPassword) 
+    VALUES (:clientFirstname, :clientLastname, :clientEmail, :clientPassword)';
     // Create the prepared statement using the acme connection
     $stmt = $db->prepare($sql);
     // The next four lines replace the placeholders in the SQL
