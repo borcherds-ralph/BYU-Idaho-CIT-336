@@ -118,21 +118,26 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- JavaScript files -->
     <!-- This script will fill in all the values that had items in them so the person can add only the missing items. -->
-    <script type="text/javascript">
-        document.getElementById('invName').value = "<?php echo $_POST['invName'];?>";
-        document.getElementById('invDescription').value = "<?php echo $_POST['invDescription'];?>";
-        document.getElementById('invImage').value = "<?php echo $_POST['invImage'];?>";
-        document.getElementById('invThumbnail').value = "<?php echo $_POST['invThumbnail'];?>";
-        document.getElementById('invPrice').value = "<?php echo $_POST['invPrice'];?>";
-        document.getElementById('invSize').value = "<?php echo $_POST['invSize'];?>";
-        document.getElementById('invLocation').value = "<?php echo $_POST['invLocation'];?>";
-        document.getElementById('invLocation').value = "<?php echo $_POST['invLocation'];?>";
-        document.getElementById('category').value = "<?php echo $_POST['category'];?>";
-        document.getElementById('invVendor').value = "<?php echo $_POST['invVendor'];?>";
-        document.getElementById('invStyle').value = "<?php echo $_POST['invStyle'];?>";
-        document.getElementById('invWeight').value = "<?php echo $_POST['invWeight'];?>";
-        document.getElementById('invStock').value = "<?php echo $_POST['invStock'];?>";
-    </script>
+    <?php 
+    $action2 = filter_input(INPUT_POST, 'action');
+    if ($action2 == "addprod") {
+        echo "<script type='text/javascript'>";
+        echo "document.getElementById('invName').value = " . $_POST['invName'];
+        echo "document.getElementById('invDescription').value = " . $_POST['invDescription'];
+        echo "document.getElementById('invImage').value = " . $_POST['invImage'];
+        echo "document.getElementById('invThumbnail').value = " . $_POST['invThumbnail'];
+        echo "document.getElementById('invPrice').value = " . $_POST['invPrice'];
+        echo "document.getElementById('invSize').value = " . $_POST['invSize'];
+        echo "document.getElementById('invLocation').value = " . $_POST['invLocation'];
+        echo "document.getElementById('invLocation').value = " . $_POST['invLocation'];
+        echo "document.getElementById('category').value = " . $_POST['category'];
+        echo "document.getElementById('invVendor').value = " . $_POST['invVendor'];
+        echo "document.getElementById('invStyle').value = " . $_POST['invStyle'];
+        echo "document.getElementById('invWeight').value = " . $_POST['invWeight'];
+        echo "document.getElementById('invStock').value = " . $_POST['invStock'];
+        echo "</script>";
+    }
+    ?>
 
 </body>
 </html>
