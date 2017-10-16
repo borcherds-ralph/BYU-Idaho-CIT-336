@@ -1,0 +1,283 @@
+[16-Oct-2017 10:52:03 America/Los_Angeles] PHP Notice:  Undefined variable: active in /var/www/html/cit336/acme/library/navigation.php on line 12
+[16-Oct-2017 10:52:03 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 10:52:03 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 10:52:03 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:35
+[16-Oct-2017 10:52:03 America/Los_Angeles] PHP Notice:  Undefined variable: action2 in /var/www/html/cit336/acme/products/addcat-mod.php on line 2
+[16-Oct-2017 10:52:03 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 10:52:03 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 10:52:03 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:49
+[16-Oct-2017 10:52:09 America/Los_Angeles] PHP Notice:  Undefined variable: active in /var/www/html/cit336/acme/library/navigation.php on line 12
+[16-Oct-2017 10:52:09 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 10:52:09 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 10:52:09 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:35
+[16-Oct-2017 10:52:09 America/Los_Angeles] PHP Notice:  Undefined variable: action2 in /var/www/html/cit336/acme/products/addcat-mod.php on line 2
+[16-Oct-2017 10:52:09 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 10:52:09 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 10:52:09 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:49
+[16-Oct-2017 11:19:54 America/Los_Angeles] PHP Notice:  Undefined variable: action2 in /var/www/html/cit336/acme/products/products.php on line 32
+[16-Oct-2017 11:19:54 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:19:54 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:20:00 America/Los_Angeles] PHP Notice:  Undefined variable: action2 in /var/www/html/cit336/acme/products/products.php on line 32
+[16-Oct-2017 11:20:00 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:20:00 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:20:53 America/Los_Angeles] PHP Notice:  Undefined variable: action2 in /var/www/html/cit336/acme/products/products.php on line 32
+[16-Oct-2017 11:20:53 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:20:53 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Notice:  Undefined index: invName in /var/www/html/cit336/acme/view/addprod.php on line 122
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Notice:  Undefined index: invDescription in /var/www/html/cit336/acme/view/addprod.php on line 123
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Notice:  Undefined index: invImage in /var/www/html/cit336/acme/view/addprod.php on line 124
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Notice:  Undefined index: invThumbnail in /var/www/html/cit336/acme/view/addprod.php on line 125
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Notice:  Undefined index: invPrice in /var/www/html/cit336/acme/view/addprod.php on line 126
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Notice:  Undefined index: invSize in /var/www/html/cit336/acme/view/addprod.php on line 127
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Notice:  Undefined index: invLocation in /var/www/html/cit336/acme/view/addprod.php on line 128
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Notice:  Undefined index: invLocation in /var/www/html/cit336/acme/view/addprod.php on line 129
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Notice:  Undefined index: category in /var/www/html/cit336/acme/view/addprod.php on line 130
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Notice:  Undefined index: invVendor in /var/www/html/cit336/acme/view/addprod.php on line 131
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Notice:  Undefined index: invStyle in /var/www/html/cit336/acme/view/addprod.php on line 132
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Notice:  Undefined index: invWeight in /var/www/html/cit336/acme/view/addprod.php on line 133
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Notice:  Undefined index: invStock in /var/www/html/cit336/acme/view/addprod.php on line 134
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:07 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Notice:  Undefined index: invName in /var/www/html/cit336/acme/view/addprod.php on line 122
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Notice:  Undefined index: invDescription in /var/www/html/cit336/acme/view/addprod.php on line 123
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Notice:  Undefined index: invImage in /var/www/html/cit336/acme/view/addprod.php on line 124
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Notice:  Undefined index: invThumbnail in /var/www/html/cit336/acme/view/addprod.php on line 125
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Notice:  Undefined index: invPrice in /var/www/html/cit336/acme/view/addprod.php on line 126
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Notice:  Undefined index: invSize in /var/www/html/cit336/acme/view/addprod.php on line 127
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Notice:  Undefined index: invLocation in /var/www/html/cit336/acme/view/addprod.php on line 128
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Notice:  Undefined index: invLocation in /var/www/html/cit336/acme/view/addprod.php on line 129
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Notice:  Undefined index: category in /var/www/html/cit336/acme/view/addprod.php on line 130
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Notice:  Undefined index: invVendor in /var/www/html/cit336/acme/view/addprod.php on line 131
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Notice:  Undefined index: invStyle in /var/www/html/cit336/acme/view/addprod.php on line 132
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Notice:  Undefined index: invWeight in /var/www/html/cit336/acme/view/addprod.php on line 133
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Notice:  Undefined index: invStock in /var/www/html/cit336/acme/view/addprod.php on line 134
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:21:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:22:01 America/Los_Angeles] PHP Notice:  Undefined variable: action2 in /var/www/html/cit336/acme/products/products.php on line 32
+[16-Oct-2017 11:22:01 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:22:01 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Notice:  Undefined index: invName in /var/www/html/cit336/acme/view/addprod.php on line 122
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Notice:  Undefined index: invDescription in /var/www/html/cit336/acme/view/addprod.php on line 123
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Notice:  Undefined index: invImage in /var/www/html/cit336/acme/view/addprod.php on line 124
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Notice:  Undefined index: invThumbnail in /var/www/html/cit336/acme/view/addprod.php on line 125
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Notice:  Undefined index: invPrice in /var/www/html/cit336/acme/view/addprod.php on line 126
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Notice:  Undefined index: invSize in /var/www/html/cit336/acme/view/addprod.php on line 127
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Notice:  Undefined index: invLocation in /var/www/html/cit336/acme/view/addprod.php on line 128
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Notice:  Undefined index: invLocation in /var/www/html/cit336/acme/view/addprod.php on line 129
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Notice:  Undefined index: category in /var/www/html/cit336/acme/view/addprod.php on line 130
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Notice:  Undefined index: invVendor in /var/www/html/cit336/acme/view/addprod.php on line 131
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Notice:  Undefined index: invStyle in /var/www/html/cit336/acme/view/addprod.php on line 132
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Notice:  Undefined index: invWeight in /var/www/html/cit336/acme/view/addprod.php on line 133
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Notice:  Undefined index: invStock in /var/www/html/cit336/acme/view/addprod.php on line 134
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:22:40 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:23:10 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function getCategoryId() in /var/www/html/cit336/acme/products/products.php:61
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/cit336/acme/products/products.php on line 61
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Notice:  Undefined index: invName in /var/www/html/cit336/acme/view/addprod.php on line 122
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Notice:  Undefined index: invDescription in /var/www/html/cit336/acme/view/addprod.php on line 123
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Notice:  Undefined index: invImage in /var/www/html/cit336/acme/view/addprod.php on line 124
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Notice:  Undefined index: invThumbnail in /var/www/html/cit336/acme/view/addprod.php on line 125
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Notice:  Undefined index: invPrice in /var/www/html/cit336/acme/view/addprod.php on line 126
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Notice:  Undefined index: invSize in /var/www/html/cit336/acme/view/addprod.php on line 127
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Notice:  Undefined index: invLocation in /var/www/html/cit336/acme/view/addprod.php on line 128
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Notice:  Undefined index: invLocation in /var/www/html/cit336/acme/view/addprod.php on line 129
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Notice:  Undefined index: category in /var/www/html/cit336/acme/view/addprod.php on line 130
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Notice:  Undefined index: invVendor in /var/www/html/cit336/acme/view/addprod.php on line 131
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Notice:  Undefined index: invStyle in /var/www/html/cit336/acme/view/addprod.php on line 132
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Notice:  Undefined index: invWeight in /var/www/html/cit336/acme/view/addprod.php on line 133
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Notice:  Undefined index: invStock in /var/www/html/cit336/acme/view/addprod.php on line 134
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:26:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:107
+[16-Oct-2017 11:26:54 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function getCategoryId() in /var/www/html/cit336/acme/products/products.php:61
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/cit336/acme/products/products.php on line 61
+[16-Oct-2017 11:32:52 America/Los_Angeles] PHP Notice:  Undefined variable: categories in /var/www/html/cit336/acme/products/products.php on line 64
+[16-Oct-2017 11:32:52 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:32:52 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:32:52 America/Los_Angeles] PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/cit336/acme/products/products.php on line 64
+[16-Oct-2017 11:32:52 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:32:52 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:32:52 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/view/addprod.php on line 22
+[16-Oct-2017 11:32:52 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:32:52 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:32:52 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:74
+[16-Oct-2017 11:32:52 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 90
+[16-Oct-2017 11:32:52 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:32:52 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:32:52 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:74
+[16-Oct-2017 11:34:10 America/Los_Angeles] PHP Notice:  Undefined variable: categories in /var/www/html/cit336/acme/products/products.php on line 64
+[16-Oct-2017 11:34:10 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:34:10 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:34:10 America/Los_Angeles] PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/cit336/acme/products/products.php on line 64
+[16-Oct-2017 11:34:10 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:34:10 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:34:10 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function r_print() in /var/www/html/cit336/acme/products/products.php:70
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/cit336/acme/products/products.php on line 70
+[16-Oct-2017 11:35:36 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function r_print() in /var/www/html/cit336/acme/products/products.php:70
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/cit336/acme/products/products.php on line 70
+[16-Oct-2017 11:36:00 America/Los_Angeles] PHP Notice:  Undefined variable: categories in /var/www/html/cit336/acme/products/products.php on line 70
+[16-Oct-2017 11:36:00 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:36:00 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:36:00 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/view/addprod.php on line 22
+[16-Oct-2017 11:36:00 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:36:00 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:36:00 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:85
+[16-Oct-2017 11:36:00 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 90
+[16-Oct-2017 11:36:00 America/Los_Angeles] PHP Stack trace:
+[16-Oct-2017 11:36:00 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[16-Oct-2017 11:36:00 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:85

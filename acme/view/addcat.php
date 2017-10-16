@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/style.css" media="screen">
 
     <!-- Javascript files that have to load at the top -->
-    <script src="js/scripts.js"></script>
+    <script src="../js/scripts.js"></script>
 
 
 </head>

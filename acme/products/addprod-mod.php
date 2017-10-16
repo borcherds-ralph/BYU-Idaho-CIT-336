@@ -1,7 +1,5 @@
 <?php 
 // Check for POST Data then process that data
-$action2 = filter_input(INPUT_POST, 'action');
-if ($action2 == "addprod") {
     // Filter and store the data
     $invName = filter_input(INPUT_POST, 'invName');
     $invDescription = filter_input(INPUT_POST, 'invDescription');
@@ -37,4 +35,3 @@ if ($action2 == "addprod") {
         include '../view/addprod.php';
         exit;
     }
-}

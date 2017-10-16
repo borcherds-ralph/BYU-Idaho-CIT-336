@@ -26,9 +26,16 @@ if (strpos($doc, '500.php') == true || strpos($doc, 'accounts') == true) {
     $path = "../";
 }
 
+// This section of code checks to see if the input is a POST or GET.
+// If it is a GET then it reads the input for the page to load else
+// it reads the add inventory item or category item and adds it to the database.
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL){
- $action = filter_input(INPUT_GET, 'action');
+    $action = filter_input(INPUT_GET, 'action');
+} elseif ($action == "addcat") {
+    include 'addcat-mod.php';
+} elseif ($action == "addprod") {
+    include 'addprod-mod.php';
 }
 
 // Build the navigation
@@ -38,20 +45,18 @@ include '../library/navigation.php';
 // This must come after the navigation so that the $categories variable has data
 $catList = "<datalist id='categories'>";
 foreach ($categories as $category) {
-    $catList .= "<option value='$category[categoryName]'></option>";
+    $catList .= "<option value='" . $category['categoryName'] . "'></option>";
 }
 $catList .= "</datalist>"; 
 
 // Switch statement to determine what to do.
  switch ($action) {
 
-    case 'addcat':
-        include './addcat-mod.php';
+    case 'addcat':    
       include '../view/addcat.php';
     break;
 
     case 'addprod':
-        include 'addprod-mod.php';
         include '../view/addprod.php';
     break;
 
