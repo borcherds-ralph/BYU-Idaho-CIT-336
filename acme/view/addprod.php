@@ -118,7 +118,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- JavaScript files -->
     <!-- This script will fill in all the values that had items in them so the person can add only the missing items. -->
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         document.getElementById('invName').value = "<?php echo $_POST['invName'];?>";
         document.getElementById('invDescription').value = "<?php echo $_POST['invDescription'];?>";
         document.getElementById('invImage').value = "<?php echo $_POST['invImage'];?>";
@@ -132,7 +132,7 @@
         document.getElementById('invStyle').value = "<?php echo $_POST['invStyle'];?>";
         document.getElementById('invWeight').value = "<?php echo $_POST['invWeight'];?>";
         document.getElementById('invStock').value = "<?php echo $_POST['invStock'];?>";
-    </script> -->
+    </script>
 
 </body>
 </html>
