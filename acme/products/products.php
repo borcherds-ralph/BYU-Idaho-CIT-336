@@ -48,7 +48,7 @@ foreach ($categories as $category) {
     $catList .= "<option value='" . $category['categoryName'] . "'></option>";
 }
 $catList .= "</datalist>"; 
-echo print_r($_POST);
+
 
 // Switch statement to determine what to do.
  switch ($action) {

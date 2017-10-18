@@ -11,7 +11,6 @@
     $invWeight = filter_input(INPUT_POST, 'invWeight');
     $invLocation = filter_input(INPUT_POST, 'invLocation');
     $category1 = filter_input(INPUT_POST, 'category');
-    $categories = getCategories();
     foreach ($categories as $category) {
         if ( $category['categoryName'] == $category1) {
             
@@ -24,11 +23,8 @@
  
     // Check for missing data
     if ((empty($invName) || empty($invDescription) || empty($invImage) || empty($invThumbnail) || empty($invPrice) || empty($invStock) || empty($invSize) || empty($invWeight)) || empty($invLocation) || empty($categoryId) || empty($invVendor) || empty($invStyle)) {
-        
-        echo print_r($_POST);
         $message = '<p>Please provide information for all empty fields.</p>';
         include '../view/addprod.php';
-        echo print_r($category['categoryName']);
         exit; 
     }
 
