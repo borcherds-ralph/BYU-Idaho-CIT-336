@@ -25,7 +25,7 @@ $doc = $_SERVER['REQUEST_URI'];
 if (strpos($doc, '500.php') == true || strpos($doc, 'accounts') == true) {
     $path = "../";
 }
-
+$categories = getCategories();
 // This section of code checks to see if the input is a POST or GET.
 // If it is a GET then it reads the input for the page to load else
 // it reads the add inventory item or category item and adds it to the database.
@@ -48,6 +48,7 @@ foreach ($categories as $category) {
     $catList .= "<option value='" . $category['categoryName'] . "'></option>";
 }
 $catList .= "</datalist>"; 
+echo print_r($_POST);
 
 // Switch statement to determine what to do.
  switch ($action) {

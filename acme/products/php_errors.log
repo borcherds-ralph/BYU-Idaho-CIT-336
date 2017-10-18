@@ -1,1 +1,124 @@
 [16-Oct-2017 12:10:54 America/Los_Angeles] PHP Parse error:  syntax error, unexpected end of file in /var/www/html/cit336/acme/view/addprod.php on line 142
+[17-Oct-2017 17:04:04 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function getCategoryId() in /var/www/html/cit336/acme/products/addprod-mod.php:13
+Stack trace:
+#0 /var/www/html/cit336/acme/products/products.php(38): include()
+#1 {main}
+  thrown in /var/www/html/cit336/acme/products/addprod-mod.php on line 13
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP Notice:  Undefined variable: categories in /var/www/html/cit336/acme/products/addprod-mod.php on line 14
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/cit336/acme/products/addprod-mod.php on line 14
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/view/addprod.php on line 22
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP   3. include() /var/www/html/cit336/acme/products/addprod-mod.php:26
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 90
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:22:25 America/Los_Angeles] PHP   3. include() /var/www/html/cit336/acme/products/addprod-mod.php:26
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP Notice:  Undefined variable: categories in /var/www/html/cit336/acme/products/addprod-mod.php on line 14
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/cit336/acme/products/addprod-mod.php on line 14
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/view/addprod.php on line 22
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP   3. include() /var/www/html/cit336/acme/products/addprod-mod.php:27
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 90
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:23:45 America/Los_Angeles] PHP   3. include() /var/www/html/cit336/acme/products/addprod-mod.php:27
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP Notice:  Undefined variable: categories in /var/www/html/cit336/acme/products/addprod-mod.php on line 14
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/cit336/acme/products/addprod-mod.php on line 14
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/view/addprod.php on line 22
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP   3. include() /var/www/html/cit336/acme/products/addprod-mod.php:28
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 90
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:25:34 America/Los_Angeles] PHP   3. include() /var/www/html/cit336/acme/products/addprod-mod.php:28
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP Notice:  Undefined variable: categories in /var/www/html/cit336/acme/products/addprod-mod.php on line 14
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/cit336/acme/products/addprod-mod.php on line 14
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP Notice:  Undefined variable: category in /var/www/html/cit336/acme/products/addprod-mod.php on line 26
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/view/addprod.php on line 22
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP   3. include() /var/www/html/cit336/acme/products/addprod-mod.php:29
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 90
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:26:04 America/Los_Angeles] PHP   3. include() /var/www/html/cit336/acme/products/addprod-mod.php:29
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP Notice:  Undefined variable: categories in /var/www/html/cit336/acme/products/addprod-mod.php on line 14
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/cit336/acme/products/addprod-mod.php on line 14
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/view/addprod.php on line 22
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP   3. include() /var/www/html/cit336/acme/products/addprod-mod.php:29
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 90
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP   3. include() /var/www/html/cit336/acme/products/addprod-mod.php:29
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP Notice:  Undefined variable: category in /var/www/html/cit336/acme/products/addprod-mod.php on line 30
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:26:30 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:27:47 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/view/addprod.php on line 22
+[17-Oct-2017 17:27:47 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:27:47 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:27:47 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:27:47 America/Los_Angeles] PHP   3. include() /var/www/html/cit336/acme/products/addprod-mod.php:41
+[17-Oct-2017 17:27:47 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 90
+[17-Oct-2017 17:27:47 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:27:47 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:27:47 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:27:47 America/Los_Angeles] PHP   3. include() /var/www/html/cit336/acme/products/addprod-mod.php:41
+[17-Oct-2017 17:28:44 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/view/addprod.php on line 22
+[17-Oct-2017 17:28:44 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:28:44 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:28:44 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:28:44 America/Los_Angeles] PHP   3. include() /var/www/html/cit336/acme/products/addprod-mod.php:41
+[17-Oct-2017 17:28:44 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 90
+[17-Oct-2017 17:28:44 America/Los_Angeles] PHP Stack trace:
+[17-Oct-2017 17:28:44 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/products.php:0
+[17-Oct-2017 17:28:44 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/products.php:38
+[17-Oct-2017 17:28:44 America/Los_Angeles] PHP   3. include() /var/www/html/cit336/acme/products/addprod-mod.php:41

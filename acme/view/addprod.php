@@ -118,7 +118,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- JavaScript files -->
     <!-- This script will fill in all the values that had items in them so the person can add only the missing items. -->
-    <?php 
+    <!-- <?php 
     $action2 = filter_input(INPUT_POST, 'action');
     if ($action2 == "addprod") {
         echo "<script type='text/javascript'>";
@@ -137,7 +137,7 @@
         echo "document.getElementById('invStock').value = " . $_POST['invStock'];
         echo "</script>";
     }
-    ?>
+    ?> -->
 
 </body>
 </html>
