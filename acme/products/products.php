@@ -32,9 +32,12 @@ $categories = getCategories();
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL){
     $action = filter_input(INPUT_GET, 'action');
-} elseif ($action == "addcat") {
+} elseif ($action == "addcat") {// Build the navigation
+    include '../library/navigation.php';
     include 'addcat-mod.php';
 } elseif ($action == "addprod") {
+    // Build the navigation
+    include '../library/navigation.php';
     include 'addprod-mod.php';
 }
 

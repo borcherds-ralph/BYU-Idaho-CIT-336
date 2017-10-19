@@ -23,7 +23,7 @@
  
     // Check for missing data
     if ((empty($invName) || empty($invDescription) || empty($invImage) || empty($invThumbnail) || empty($invPrice) || empty($invStock) || empty($invSize) || empty($invWeight)) || empty($invLocation) || empty($categoryId) || empty($invVendor) || empty($invStyle)) {
-        $message = '<p>Please provide information for all empty fields.</p>';
+            $message = '<p>Please provide information for all empty fields.</p>';
         include '../view/addprod.php';
         exit; 
     }
@@ -33,8 +33,7 @@
 
     // Check and report the result
     if($regOutcome === 1){
-        $message = "<p>Thanks for adding $invName.</p>";
-        include '../view/addprod.php';
+            $message = "<p>Thanks for adding $invName.</p>";
         exit;
     } else {
         $message = "<p>Sorry $clientFirstname, but the registration failed. Please try again.</p>";
