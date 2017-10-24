@@ -1,0 +1,299 @@
+[23-Oct-2017 17:26:16 America/Los_Angeles] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /var/www/html/cit336/acme/accounts/index.php on line 22
+[23-Oct-2017 17:26:16 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:26:16 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:26:16 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/common/nav.php on line 2
+[23-Oct-2017 17:26:16 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:26:16 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:26:16 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:66
+[23-Oct-2017 17:26:16 America/Los_Angeles] PHP   3. require() /var/www/html/cit336/acme/view/login.php:19
+[23-Oct-2017 17:26:56 America/Los_Angeles] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /var/www/html/cit336/acme/accounts/index.php on line 22
+[23-Oct-2017 17:26:56 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:26:56 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:26:56 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/common/nav.php on line 2
+[23-Oct-2017 17:26:56 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:26:56 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:26:56 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:66
+[23-Oct-2017 17:26:56 America/Los_Angeles] PHP   3. require() /var/www/html/cit336/acme/view/login.php:19
+[23-Oct-2017 17:26:59 America/Los_Angeles] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /var/www/html/cit336/acme/accounts/index.php on line 22
+[23-Oct-2017 17:26:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:26:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:26:59 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/view/registration.php on line 22
+[23-Oct-2017 17:26:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:26:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:26:59 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:70
+[23-Oct-2017 17:27:15 America/Los_Angeles] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /var/www/html/cit336/acme/accounts/index.php on line 22
+[23-Oct-2017 17:27:15 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:27:15 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:27:15 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/view/registration.php on line 22
+[23-Oct-2017 17:27:15 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:27:15 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:27:15 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:70
+[23-Oct-2017 17:27:34 America/Los_Angeles] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /var/www/html/cit336/acme/accounts/index.php on line 22
+[23-Oct-2017 17:27:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:27:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:27:34 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/view/registration.php on line 22
+[23-Oct-2017 17:27:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:27:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:27:34 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:70
+[23-Oct-2017 17:29:00 America/Los_Angeles] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /var/www/html/cit336/acme/accounts/index.php on line 22
+[23-Oct-2017 17:29:00 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:29:00 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:29:00 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/view/registration.php on line 22
+[23-Oct-2017 17:29:00 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:29:00 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:29:00 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:70
+[23-Oct-2017 17:31:11 America/Los_Angeles] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /var/www/html/cit336/acme/accounts/index.php on line 22
+[23-Oct-2017 17:31:11 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:31:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:31:11 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/view/registration.php on line 22
+[23-Oct-2017 17:31:11 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:31:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:31:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:70
+[23-Oct-2017 17:31:32 America/Los_Angeles] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /var/www/html/cit336/acme/accounts/index.php on line 22
+[23-Oct-2017 17:31:32 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:31:32 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:31:32 America/Los_Angeles] PHP Notice:  Undefined variable: navList in /var/www/html/cit336/acme/common/nav.php on line 2
+[23-Oct-2017 17:31:32 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:31:32 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 17:31:32 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:66
+[23-Oct-2017 17:31:32 America/Los_Angeles] PHP   3. require() /var/www/html/cit336/acme/view/login.php:19
+[23-Oct-2017 17:32:11 America/Los_Angeles] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /var/www/html/cit336/acme/accounts/index.php on line 22
+[23-Oct-2017 17:32:11 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 17:32:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /var/www/html/cit336/acme/accounts/index.php on line 25
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: categories in /var/www/html/cit336/acme/library/functions.php on line 20
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 28
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 31
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:17 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /var/www/html/cit336/acme/accounts/index.php on line 25
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: categories in /var/www/html/cit336/acme/library/functions.php on line 20
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 28
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 31
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:34 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /var/www/html/cit336/acme/accounts/index.php on line 25
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: categories in /var/www/html/cit336/acme/library/functions.php on line 20
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 28
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 31
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: action in /var/www/html/cit336/acme/library/functions.php on line 33
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Notice:  Undefined variable: basepath in /var/www/html/cit336/acme/library/functions.php on line 38
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP Stack trace:
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[23-Oct-2017 21:29:59 America/Los_Angeles] PHP   2. navList() /var/www/html/cit336/acme/accounts/index.php:35

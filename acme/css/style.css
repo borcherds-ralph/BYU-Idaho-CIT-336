@@ -274,21 +274,16 @@ footer p {
  *      These are the required field formatting 
 */
 
-
-/* input:required:invalid,
-input:focus:invalid { */
-
-.requiredinvalid {
+input:required:invalid,
+input:focus:invalid,
+textarea:required:invalid {
     border: 1px solid #ff0000;
     background-color: #ffcece;
 }
 
-
-/* input:required:valid,
-textarea:required:valid { */
-
-.requiredvalid {
-    background: green;
+input:required:valid,
+textarea:required:valid {
+    background: #ddf8dd;
     box-shadow: 0 0 5px #5cd053;
     border-color: #28921f
 }
@@ -332,6 +327,15 @@ input[type="submit"] {
     font-weight: 700;
     padding: 15px 30px;
     width: calc(55%);
+}
+
+.linkbutton {
+    background-color: #ee3333;
+    color: #fff;
+    font-weight: 700;
+    padding: 15px 30px;
+    width: calc(55%);
+    text-align: center;
 }
 
 input[type="button"] {

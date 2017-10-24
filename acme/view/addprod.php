@@ -5,7 +5,7 @@
     <meta http-equiv = "X-UA-Compatible" content="IE=edge">
     <meta name = "viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Acme</title>
+    <title>Acme Add Product</title>
 
     <!-- CSS files -->
     <link rel="stylesheet" href="../css/normalize.css">
@@ -21,85 +21,61 @@
         <?php require '../common/header.php'; ?>
         <nav id="menu"><?php echo $navList; ?></nav>
         <main>
-        <h1>User Registration</h1>
+        <h1>New Inventory Item</h1>
             <?php
                 if (isset($message)) {
                     echo "<h3>". $message . "</h3>";
                 }
             ?>
-            <form method="post" action="<?php echo $basepath ?>/products/products.php" id="registrationform">
+            <form method="post" action="<?php echo $basepath ?>/products/index.php" id="registrationform">
                 <fieldset> 
                     <div>
-                        <input class="requiredinvalid" id="invName" name="invName"
-                        type="text" required placeholder="Inventory Item Name" tabindex="1"
-                        title="Enter Item Name"/>
+                        <input id="invName" name="invName" type="text" required placeholder="Inventory Item Name" tabindex="1" title="Enter Item Name" <?php if(isset($invName)){echo "value='$invName'";} ?> />
                         <label for="invName">Item Name</label>
                     </div>
                     <div>
-                        <input class="requiredinvalid" id="invDescription" name="invDescription"
-                        type="text" required placeholder="Item Description" tabindex="2"
-                        title="Enter the description of the item"/>
+                        <textarea id="invDescription" name="invDescription" rows="5" cols="40" required placeholder="Item Description" tabindex="2" title="Enter the description of the item" <?php if(isset($invDescription)){echo "value='$invDescription'";} ?> ></textarea>
                         <label for="invDescription">Description</label>
                     </div>
                     <div>
-                        <input id="invImage" name="invImage"
-                        type="text" required placeholder="path to image" tabindex="3"
-                        title="Enter the path to the image item. /acme/images/no-image/no-image.png if none."/>
+                        <input id="invImage" name="invImage" type="text" required placeholder="path to image" tabindex="3" title="Enter the path to the image item. /acme/images/no-image/no-image.png if none." <?php if(isset($invImage)){echo "value='$invImage'";} ?> />
                         <label for="invImage">Image Path</label>
                     </div>
                     <div>
-                        <input id="invThumbnail" name="invThumbnail"
-                        type="text" required tabindex="4"
-                        title="Enter the path to the thumbnail image."/>
+                        <input id="invThumbnail" name="invThumbnail" type="text" required tabindex="4" title="Enter the path to the thumbnail image." <?php if(isset($invThumbnail)){echo "value='$invThumbnail'";} ?> />
                         <label for="invThumbnail">Thumbnail Path</label>
                     </div>
                     <div>
-                        <input id="invPrice" name="invPrice"
-                        type="number"required  tabindex="5"
-                        title="Enter the Price."/>
+                        <input id="invPrice" name="invPrice" type="number" required  tabindex="5" step="0.01" min="0" title="Enter the Price." pattern="\d+(\.\d{2})?" <?php if(isset($invPrice)){echo "value='$invPrice'";} ?> />
                         <label for="invPrice">Price</label>
                     </div>
                     <div>
-                        <input id="invStock" name="invStock"
-                        type="number" required tabindex="6"
-                        title="Enter the number in Stock."/>
+                        <input id="invStock" name="invStock"type="number" required tabindex="6" title="Enter the number in Stock." <?php if(isset($invStock)){echo "value='$invStock'";} ?> />
                         <label for="invStock">Qty in Stock</label>
                     </div>
                     <div>
-                        <input id="invSize" name="invSize"
-                        type="number" required tabindex="6"
-                        title="Enter the Size."/>
+                        <input id="invSize" name="invSize" type="number" required tabindex="6" title="Enter the Size." <?php if(isset($invSize)){echo "value='$invSize'";} ?> />
                         <label for="invSize">Size</label>
                     </div>
                     <div>
-                        <input id="invWeight" name="invWeight"
-                        type="number" required tabindex="7"
-                        title="Enter the Weight."/>
+                        <input id="invWeight" name="invWeight" type="number" step="0.01" min="0" required tabindex="7" title="Enter the Weight." <?php if(isset($invWeight)){echo "value='$invWeight'";} ?> />
                         <label for="invWeight">Weight</label>
                     </div>
                     <div>
-                        <input id="invLocation" name="invLocation"
-                        type="text" required tabindex="8"
-                        title="Enter the location."/>
+                        <input id="invLocation" name="invLocation" type="text" required tabindex="8" title="Enter the location."  <?php if(isset($invLocation)){echo "value='$invLocation'";} ?> />
                         <label for="invLocation">Location</label>
                     </div>
                     <div>
-                        <input id="category" name="category"
-                        list="categories" required tabindex="9"
-                        title="Select the category."/>
-                        <?php echo $catList; ?>
+                        <input id="category" name="category" autocomplete="off" list="categories" required tabindex="9" title="Select the category." >
+                        <?php echo $catList; ?> 
                         <label for="category">Category</label>
                     </div>
                     <div>
-                        <input id="invVendor" name="invVendor"
-                        type="text" required tabindex="10"
-                        title="Enter the name of the Vendor."/>
+                        <input id="invVendor" name="invVendor" type="text" required tabindex="10" title="Enter the name of the Vendor." <?php if(isset($invVendor)){echo "value='$invVendor'";} ?> />
                         <label for="invVendor">Vendor Name</label>
                     </div>
                     <div>
-                        <input id="invStyle" name="invStyle"
-                        type="text" required tabindex="11"
-                        title="Enter the Style of the item."/>
+                        <input id="invStyle" name="invStyle" type="text" required tabindex="11" title="Enter the Style of the item." <?php if(isset($invStyle)){echo "value='$invStyle'";} ?> />
                         <label for="invStyle">Style</label>
                     </div>
                     
@@ -118,26 +94,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- JavaScript files -->
     <!-- This script will fill in all the values that had items in them so the person can add only the missing items. -->
-    <!-- <?php 
-    $action2 = filter_input(INPUT_POST, 'action');
-    if ($action2 == "addprod") {
-        echo "<script type='text/javascript'>";
-        echo "document.getElementById('invName').value = " . $_POST['invName'];
-        echo "document.getElementById('invDescription').value = " . $_POST['invDescription'];
-        echo "document.getElementById('invImage').value = " . $_POST['invImage'];
-        echo "document.getElementById('invThumbnail').value = " . $_POST['invThumbnail'];
-        echo "document.getElementById('invPrice').value = " . $_POST['invPrice'];
-        echo "document.getElementById('invSize').value = " . $_POST['invSize'];
-        echo "document.getElementById('invLocation').value = " . $_POST['invLocation'];
-        echo "document.getElementById('invLocation').value = " . $_POST['invLocation'];
-        echo "document.getElementById('category').value = " . $_POST['category'];
-        echo "document.getElementById('invVendor').value = " . $_POST['invVendor'];
-        echo "document.getElementById('invStyle').value = " . $_POST['invStyle'];
-        echo "document.getElementById('invWeight').value = " . $_POST['invWeight'];
-        echo "document.getElementById('invStock').value = " . $_POST['invStock'];
-        echo "</script>";
-    }
-    ?> -->
+    
+<?php echo print_r($_POST); ?>
 
 </body>
 </html>

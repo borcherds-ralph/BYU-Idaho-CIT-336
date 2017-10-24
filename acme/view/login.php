@@ -29,7 +29,7 @@
                     <div>
                         <input class="requiredinvalid" id="email" name="email"
                         type="email" required placeholder="email@address.com" tabindex="1"
-                        title="E-mail address must be a valid e-mail address format." readonly
+                        title="E-mail address must be a valid e-mail address format." readonly <?php if(isset($clientEmail)){echo "value='$clientEmail'";} ?>
                         onfocus="if (this.hasAttribute('readonly')) {
                             this.removeAttribute('readonly');
                             // fix for mobile safari to show virtual keyboard
@@ -38,7 +38,7 @@
                     </div>
                     <div>
                         <input class="requiredinvalid" id="password" name="password"
-                        type="password" tabindex="2" title="Passwords are case sensitive."
+                        type="password" required tabindex="2" title="Passwords are case sensitive. Passwords must be at least 8 characters and contain at least 1 number, 1 capital letter and 1 special character." pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
                         readonly onfocus="if (this.hasAttribute('readonly')) {
                             this.removeAttribute('readonly');
                             // fix for mobile safari to show virtual keyboard
@@ -46,6 +46,7 @@
                         <label for="password">Password</label>
                     </div>
                     <input type="submit" name="login" value="Login" />
+                    <input type="hidden" name="action" value="Login">
                     <p>forgot password? <a href="#">send reset email</a></p>
                     <input type="button" name="register" value="Create an Account" onclick="registration();" />
                 </fieldset>

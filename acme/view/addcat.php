@@ -27,12 +27,12 @@
                 echo $message;
                 }
             ?>
-            <form method="post" action="<?php echo $basepath ?>/products/products.php" id="registrationform">
+            <form method="post" action="<?php echo $basepath ?>/products/index.php" id="registrationform">
                 <fieldset>
                     <div>
                         <input class="requiredinvalid" id="categoryName" name="categoryName"
                         type="text" required placeholder="Category Name" tabindex="1"
-                        title="Enter Name of the Category"/>
+                        title="Enter Name of the Category" <?php if(isset($categoryName)){echo "value='$categoryName'";} ?>/>
                         <label for="categoryName">Category Name</label>
                     </div>
                     

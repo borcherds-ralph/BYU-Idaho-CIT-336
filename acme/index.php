@@ -5,6 +5,8 @@
  */
 // Get the database connection file
 require_once 'library/connections.php';
+require_once 'library/functions.php';
+
 // Get the acme model for use as needed
 require_once 'model/acme-model.php';
 
@@ -25,10 +27,9 @@ if ($action == NULL){
 
 
 
-// Build a navigation bar using the $categories array
-include 'library/navigation.php';
-
- 
+// Build the navigation
+$categories = getCategories();
+$navList = navList($categories);
 
  switch ($action){
     
