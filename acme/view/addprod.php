@@ -30,39 +30,39 @@
             <form method="post" action="<?php echo $basepath ?>/products/index.php" id="registrationform">
                 <fieldset> 
                     <div>
-                        <input id="invName" name="invName" type="text" required placeholder="Inventory Item Name" tabindex="1" title="Enter Item Name" <?php if(isset($invName)){echo "value='$invName'";} ?> />
+                        <input id="invName" name="invName" type="text" required placeholder="Inventory Item Name" tabindex="1" title="Enter Item Name" <?php if(isset($invName) && (!isset($message))){echo "value='$invName'";} ?> />
                         <label for="invName">Item Name</label>
                     </div>
                     <div>
-                        <textarea id="invDescription" name="invDescription" rows="5" cols="40" required placeholder="Item Description" tabindex="2" title="Enter the description of the item" <?php if(isset($invDescription)){echo "value='$invDescription'";} ?> ></textarea>
+                        <textarea id="invDescription" name="invDescription" rows="5" cols="40" required placeholder="Item Description" tabindex="2" title="Enter the description of the item" <?php if(isset($invDescription) && (!isset($message))){echo "value='$invDescription'";} ?> ></textarea>
                         <label for="invDescription">Description</label>
                     </div>
                     <div>
-                        <input id="invImage" name="invImage" type="text" required placeholder="path to image" tabindex="3" title="Enter the path to the image item. /acme/images/no-image/no-image.png if none." <?php if(isset($invImage)){echo "value='$invImage'";} ?> />
+                        <input id="invImage" name="invImage" type="text" required placeholder="path to image" tabindex="3" title="Enter the path to the image item. /acme/images/no-image/no-image.png if none." <?php if(isset($invImage) && (!isset($message))) {echo "value='$invImage'";} ?> />
                         <label for="invImage">Image Path</label>
                     </div>
                     <div>
-                        <input id="invThumbnail" name="invThumbnail" type="text" required tabindex="4" title="Enter the path to the thumbnail image." <?php if(isset($invThumbnail)){echo "value='$invThumbnail'";} ?> />
+                        <input id="invThumbnail" name="invThumbnail" type="text" required tabindex="4" title="Enter the path to the thumbnail image." <?php if(isset($invThumbnail) && (!isset($message))){echo "value='$invThumbnail'";} ?> />
                         <label for="invThumbnail">Thumbnail Path</label>
                     </div>
                     <div>
-                        <input id="invPrice" name="invPrice" type="number" required  tabindex="5" step="0.01" min="0" title="Enter the Price." pattern="\d+(\.\d{2})?" <?php if(isset($invPrice)){echo "value='$invPrice'";} ?> />
+                        <input id="invPrice" name="invPrice" type="number" required  tabindex="5" step="0.01" min="0" title="Enter the Price." pattern="\d+(\.\d{2})?" <?php if(isset($invPrice) && (!isset($message))){echo "value='$invPrice'";} ?> />
                         <label for="invPrice">Price</label>
                     </div>
                     <div>
-                        <input id="invStock" name="invStock"type="number" required tabindex="6" title="Enter the number in Stock." <?php if(isset($invStock)){echo "value='$invStock'";} ?> />
+                        <input id="invStock" name="invStock"type="number" required tabindex="6" title="Enter the number in Stock." <?php if(isset($invStock) && (!isset($message))){echo "value='$invStock'";} ?> />
                         <label for="invStock">Qty in Stock</label>
                     </div>
                     <div>
-                        <input id="invSize" name="invSize" type="number" required tabindex="6" title="Enter the Size." <?php if(isset($invSize)){echo "value='$invSize'";} ?> />
+                        <input id="invSize" name="invSize" type="number" required tabindex="6" title="Enter the Size." <?php if(isset($invSize) && (!isset($message))){echo "value='$invSize'";} ?> />
                         <label for="invSize">Size</label>
                     </div>
                     <div>
-                        <input id="invWeight" name="invWeight" type="number" step="0.01" min="0" required tabindex="7" title="Enter the Weight." <?php if(isset($invWeight)){echo "value='$invWeight'";} ?> />
+                        <input id="invWeight" name="invWeight" type="number" step="0.01" min="0" required tabindex="7" title="Enter the Weight." <?php if(isset($invWeight) && (!isset($message))){echo "value='$invWeight'";} ?> />
                         <label for="invWeight">Weight</label>
                     </div>
                     <div>
-                        <input id="invLocation" name="invLocation" type="text" required tabindex="8" title="Enter the location."  <?php if(isset($invLocation)){echo "value='$invLocation'";} ?> />
+                        <input id="invLocation" name="invLocation" type="text" required tabindex="8" title="Enter the location."  <?php if(isset($invLocation) && (!isset($message))){echo "value='$invLocation'";} ?> />
                         <label for="invLocation">Location</label>
                     </div>
                     <div>
@@ -71,11 +71,11 @@
                         <label for="category">Category</label>
                     </div>
                     <div>
-                        <input id="invVendor" name="invVendor" type="text" required tabindex="10" title="Enter the name of the Vendor." <?php if(isset($invVendor)){echo "value='$invVendor'";} ?> />
+                        <input id="invVendor" name="invVendor" type="text" required tabindex="10" title="Enter the name of the Vendor." <?php if(isset($invVendor) && (!isset($message))){echo "value='$invVendor'";} ?> />
                         <label for="invVendor">Vendor Name</label>
                     </div>
                     <div>
-                        <input id="invStyle" name="invStyle" type="text" required tabindex="11" title="Enter the Style of the item." <?php if(isset($invStyle)){echo "value='$invStyle'";} ?> />
+                        <input id="invStyle" name="invStyle" type="text" required tabindex="11" title="Enter the Style of the item." <?php if(isset($invStyle) && (!isset($message))){echo "value='$invStyle'";} ?> />
                         <label for="invStyle">Style</label>
                     </div>
                     
@@ -95,7 +95,6 @@
     <!-- JavaScript files -->
     <!-- This script will fill in all the values that had items in them so the person can add only the missing items. -->
     
-<?php echo print_r($_POST); ?>
 
 </body>
 </html>
