@@ -26,20 +26,20 @@ $doc = $_SERVER['REQUEST_URI'];
 if (strpos($doc, '500.php') == true || strpos($doc, 'accounts') == true) {
     $path = "../";
 }
-$categories = getCategories();
-$catList = makeCategories($categories);
 
 // This section of code checks to see if the input is a POST or GET.
 // If it is a GET then it reads the input for the page to load else
 // it reads the add inventory item or category item and adds it to the database.
 $action = filter_input(INPUT_POST, 'action');
+
+$categories = getCategories();
+
+
 if ($action == NULL){
     $action = filter_input(INPUT_GET, 'action');
-}
-$navList = navList($categories);
-
-if ($action == "addprod") {
+} elseif ($action == "addprod") {
     include '../library/product-add.php';
+    $navList = navList($categories, $action);
     if ((empty($invName) || empty($invDescription) || empty($invImage) || empty($invThumbnail) || empty($invPrice) || empty($invStock) || empty($invSize) || empty($invWeight)) || empty($invLocation) || empty($categoryId) || empty($invVendor) || empty($invStyle)) {
             $message = '<p>Please provide information for all empty fields.</p>';
         include '../view/addprod.php';
@@ -51,7 +51,8 @@ if ($action == "addprod") {
 
     // Check and report the result
     if($regOutcome === 1){
-            $message = "<p>Thanks for adding $invName.</p>";  
+            $message = "<p>Thanks for adding $invName.</p>"; 
+            $sucess = '1'; 
     } else {
         $message = "<p>Sorry $clientFirstname, but the registration failed. Please try again.</p>";
         include '../library/navigation.php';
@@ -61,10 +62,10 @@ if ($action == "addprod") {
 
 } elseif ($action == 'addcat') {
     $categoryName = filter_input(INPUT_POST, 'categoryName');
-    
+
     if (empty($categoryName)){
         $message = '<p>Please provide information for all empty fields.</p>';
-        include '../library/navigation.php';
+        $navList = navList($categories, $action);
         include '../view/addcat.php';
         exit; 
     }
@@ -75,7 +76,7 @@ if ($action == "addprod") {
     // Check and report the result
     if($catOutcome === 0){
         $message = "<p>Sorry adding $categoryName failed. Please try again.</p>";
-        include '../library/navigation.php';
+        $navList = navList($categories, $action);
         include '../view/addcat.php';
         exit;
     }  
@@ -84,10 +85,7 @@ if ($action == "addprod") {
 }
 
 // Build the navigation
-$navList = navList($categories);
-
-// Get all the categories
-//
+$navList = navList($categories, $action);
 
 // build category list for drop down list.
 // This must come after the navigation so that the $categories variable has data

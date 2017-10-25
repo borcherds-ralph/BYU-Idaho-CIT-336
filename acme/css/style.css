@@ -274,19 +274,28 @@ footer p {
  *      These are the required field formatting 
 */
 
-input:required:invalid,
+.inputinvalid, .textareainvalid {
+    border: 1px solid #ff0000;
+    background-color: #ffcece;
+}
+/* input:required:invalid,
 input:focus:invalid,
 textarea:required:invalid {
     border: 1px solid #ff0000;
     background-color: #ffcece;
-}
+} */
 
-input:required:valid,
-textarea:required:valid {
+.inputvalid, .textareavalid {
     background: #ddf8dd;
     box-shadow: 0 0 5px #5cd053;
     border-color: #28921f
 }
+/* input:required:valid,
+textarea:required:valid {
+    background: #ddf8dd;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f
+} */
 
 
 /* Form Formatting */

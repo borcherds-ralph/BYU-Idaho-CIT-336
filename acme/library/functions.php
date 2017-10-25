@@ -14,6 +14,11 @@ function checkPassword($clientPassword){
     return preg_match($pattern, $clientPassword);
 }
 
+function checkPrice($price){
+    $pattern = '/^[0-9]+(\.[0-9]{1,2})?$/';
+    return preg_match($pattern, $price);
+}
+
 function makeCategories($categories){
     // build category list for drop down list.
     // This must come after the navigation so that the $categories variable has data
@@ -26,7 +31,7 @@ function makeCategories($categories){
 }
 
 // Create Navigation
-function navList($categories) {
+function navList($categories, $action) {
     if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
     {
          $basepath = '/cit336/acme';
@@ -56,4 +61,3 @@ function navList($categories) {
 
 
 
-?>
