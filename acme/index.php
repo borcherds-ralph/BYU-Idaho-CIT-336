@@ -29,7 +29,7 @@ if ($action == NULL){
 
 // Build the navigation
 $categories = getCategories();
-$navList = navList($categories);
+$navList = navList($categories, $action);
 
  switch ($action){
     

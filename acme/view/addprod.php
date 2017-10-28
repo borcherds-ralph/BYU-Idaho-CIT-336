@@ -35,7 +35,7 @@
                         <label for="invName">Item Name</label>
                     </div>
                     <div>
-                        <textarea class="textareainvalid" id="invDescription" name="invDescription" rows="5" cols="40" required placeholder="Item Description" tabindex="2" title="Enter the description of the item" <?php if(isset($invDescription) && (!isset($sucess))){echo "value='$invDescription'";} ?> ></textarea>
+                        <textarea class="textareainvalid" id="invDescription" name="invDescription" rows="5" cols="40" required placeholder="Item Description" tabindex="2" title="Enter the description of the item"><?php if(isset($invDescription) && (!isset($sucess))){echo $invDescription;} ?></textarea>
                         <label for="invDescription">Description</label>
                     </div>
                     <div>
@@ -47,11 +47,11 @@
                         <label for="invThumbnail">Thumbnail Path</label>
                     </div>
                     <div>
-                        <input class="inputinvalid" id="invPrice" name="invPrice" type="number" required  tabindex="5" step="0.01" min="0" title="Enter the Price." pattern="\d+(\.\d{2})?" <?php if(isset($invPrice) && (!isset($sucess))){echo "value='$invPrice'";} ?> />
+                        <input class="inputinvalid" id="invPrice" name="invPrice" type="number" required  tabindex="5" step="0.01" min="0" title="Enter the Price." <?php if(isset($invPrice) && (!isset($sucess))){echo "value='$invPrice'";} ?> />
                         <label for="invPrice">Price</label>
                     </div>
                     <div>
-                        <input class="inputinvalid" id="invStock" name="invStock"type="number" required tabindex="6" title="Enter the number in Stock." <?php if(isset($invStock) && (!isset($sucess))){echo "value='$invStock'";} ?> />
+                        <input class="inputinvalid" id="invStock" name="invStock" type="number" required tabindex="6" title="Enter the number in Stock." <?php if(isset($invStock) && (!isset($sucess))){echo "value='$invStock'";} ?> />
                         <label for="invStock">Qty in Stock</label>
                     </div>
                     <div>
@@ -67,7 +67,7 @@
                         <label for="invLocation">Location</label>
                     </div>
                     <div>
-                        <input class="inputinvalid" id="category" name="category" autocomplete="off" list="categories" required tabindex="9" title="Select the category." >
+                        <input class="inputinvalid" id="category" name="category" autocomplete="off" list="categories" required tabindex="9" title="Select the category." <?php if(isset($category1) && (!isset($sucess))){echo "value='$category1'";} ?> >
                         <?php echo $catList; ?> 
                         <label for="category">Category</label>
                     </div>

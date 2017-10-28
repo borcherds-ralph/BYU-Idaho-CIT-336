@@ -40,21 +40,23 @@ if ($action == NULL){
 } elseif ($action == "addprod") {
     include '../library/product-add.php';
     $navList = navList($categories, $action);
+    $message = "<p>Sorry $clientFirstname, but the registration failed. Please try again.</p>";
+    $catList = categoryList($categories);
     if ((empty($invName) || empty($invDescription) || empty($invImage) || empty($invThumbnail) || empty($invPrice) || empty($invStock) || empty($invSize) || empty($invWeight)) || empty($invLocation) || empty($categoryId) || empty($invVendor) || empty($invStyle)) {
-            $message = '<p>Please provide information for all empty fields.</p>';
+            $message = 'Please provide information for all empty fields.';
         include '../view/addprod.php';
         exit; 
     }
-
+    $price = checkPrice($invPrice);
+    
         // Send the data to the model
-    $regOutcome = addProduct($invName, $invDescription, $invImage, $invThumbnail, $invPrice, $invStock, $invSize, $invWeight, $invLocation, $categoryId, $invVendor, $invStyle);
+    $regOutcome = addProduct($invName, $invDescription, $invImage, $invThumbnail, $price, $invStock, $invSize, $invWeight, $invLocation, $categoryId, $invVendor, $invStyle);
 
     // Check and report the result
     if($regOutcome === 1){
-            $message = "<p>Thanks for adding $invName.</p>"; 
+            $message = "Thanks for adding $invName."; 
             $sucess = '1'; 
     } else {
-        $message = "<p>Sorry $clientFirstname, but the registration failed. Please try again.</p>";
         include '../library/navigation.php';
         include '../view/addprod.php';
         exit;
@@ -75,7 +77,7 @@ if ($action == NULL){
 
     // Check and report the result
     if($catOutcome === 0){
-        $message = "<p>Sorry adding $categoryName failed. Please try again.</p>";
+        $message = "Sorry adding $categoryName failed. Please try again.";
         $navList = navList($categories, $action);
         include '../view/addcat.php';
         exit;

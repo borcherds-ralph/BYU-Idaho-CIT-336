@@ -59,5 +59,15 @@ function navList($categories, $action) {
     return $navList;
 }
 
+function categoryList($categories) {
+    $catList = "<datalist id='categories'>";
+    foreach ($categories as $category) {
+        $catList .= "<option value='" . $category['categoryName'] . "'></option>";
+    }
+    $catList .= "</datalist>"; 
+    $category = '';
+    return $catList;
+}
+
 
 

@@ -426,3 +426,83 @@ Stack trace:
 [24-Oct-2017 21:08:56 America/Los_Angeles] PHP Stack trace:
 [24-Oct-2017 21:08:56 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
 [24-Oct-2017 21:08:56 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:45
+[28-Oct-2017 13:39:01 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 71
+[28-Oct-2017 13:39:01 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 13:39:01 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 13:39:01 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:45
+[28-Oct-2017 13:39:29 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 71
+[28-Oct-2017 13:39:29 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 13:39:29 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 13:39:29 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:45
+[28-Oct-2017 13:41:49 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 71
+[28-Oct-2017 13:41:49 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 13:41:49 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 13:41:49 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:45
+[28-Oct-2017 13:42:24 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 71
+[28-Oct-2017 13:42:24 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 13:42:24 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 13:42:24 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:45
+[28-Oct-2017 13:49:48 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 71
+[28-Oct-2017 13:49:48 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 13:49:48 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 13:49:48 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:45
+[28-Oct-2017 13:50:11 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 71
+[28-Oct-2017 13:50:11 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 13:50:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 13:50:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:45
+[28-Oct-2017 13:50:27 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 71
+[28-Oct-2017 13:50:27 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 13:50:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 13:50:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:45
+[28-Oct-2017 13:51:35 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 71
+[28-Oct-2017 13:51:35 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 13:51:35 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 13:51:35 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:45
+[28-Oct-2017 13:52:02 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 71
+[28-Oct-2017 13:52:02 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 13:52:02 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 13:52:02 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:45
+[28-Oct-2017 13:53:25 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 71
+[28-Oct-2017 13:53:25 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 13:53:25 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 13:53:25 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:45
+[28-Oct-2017 13:54:43 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 71
+[28-Oct-2017 13:54:43 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 13:54:43 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 13:54:43 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:45
+[28-Oct-2017 13:55:20 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/addprod.php on line 71
+[28-Oct-2017 13:55:20 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 13:55:20 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 13:55:20 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:45
+[28-Oct-2017 13:58:39 America/Los_Angeles] PHP Notice:  Undefined variable: clientFirstname in /var/www/html/cit336/acme/products/index.php on line 43
+[28-Oct-2017 13:58:39 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 13:58:39 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 13:58:39 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function categoryList() in /var/www/html/cit336/acme/products/index.php:44
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/cit336/acme/products/index.php on line 44
+[28-Oct-2017 13:59:12 America/Los_Angeles] PHP Notice:  Undefined variable: clientFirstname in /var/www/html/cit336/acme/products/index.php on line 43
+[28-Oct-2017 13:59:12 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 13:59:12 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 14:00:58 America/Los_Angeles] PHP Notice:  Undefined variable: clientFirstname in /var/www/html/cit336/acme/products/index.php on line 43
+[28-Oct-2017 14:00:58 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 14:00:58 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 14:00:58 America/Los_Angeles] PHP Notice:  Array to string conversion in /var/www/html/cit336/acme/view/addprod.php on line 70
+[28-Oct-2017 14:00:58 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 14:00:58 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 14:00:58 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:47
+[28-Oct-2017 14:02:07 America/Los_Angeles] PHP Notice:  Undefined variable: clientFirstname in /var/www/html/cit336/acme/products/index.php on line 43
+[28-Oct-2017 14:02:07 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 14:02:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 14:03:21 America/Los_Angeles] PHP Notice:  Undefined variable: clientFirstname in /var/www/html/cit336/acme/products/index.php on line 43
+[28-Oct-2017 14:03:21 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 14:03:21 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 14:03:32 America/Los_Angeles] PHP Notice:  Undefined variable: clientFirstname in /var/www/html/cit336/acme/products/index.php on line 43
+[28-Oct-2017 14:03:32 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 14:03:32 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 14:08:29 America/Los_Angeles] PHP Notice:  Undefined variable: clientFirstname in /var/www/html/cit336/acme/products/index.php on line 43
+[28-Oct-2017 14:08:29 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 14:08:29 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[28-Oct-2017 14:09:04 America/Los_Angeles] PHP Notice:  Undefined variable: clientFirstname in /var/www/html/cit336/acme/products/index.php on line 43
+[28-Oct-2017 14:09:04 America/Los_Angeles] PHP Stack trace:
+[28-Oct-2017 14:09:04 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
