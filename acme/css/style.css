@@ -81,6 +81,10 @@ header {
     font-size: 1.25em;
 }
 
+#welcome {
+    padding-right: 10px;
+}
+
 .textright {
     display: flex;
     align-content: flex-end;
@@ -274,10 +278,13 @@ footer p {
  *      These are the required field formatting 
 */
 
-.inputinvalid, .textareainvalid {
+.inputinvalid,
+.textareainvalid {
     border: 1px solid #ff0000;
     background-color: #ffcece;
 }
+
+
 /* input:required:invalid,
 input:focus:invalid,
 textarea:required:invalid {
@@ -285,11 +292,14 @@ textarea:required:invalid {
     background-color: #ffcece;
 } */
 
-.inputvalid, .textareavalid {
+.inputvalid,
+.textareavalid {
     background: #ddf8dd;
     box-shadow: 0 0 5px #5cd053;
     border-color: #28921f
 }
+
+
 /* input:required:valid,
 textarea:required:valid {
     background: #ddf8dd;

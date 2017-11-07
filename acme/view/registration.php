@@ -59,7 +59,7 @@
 
                 <input type="submit" name="submit" value="Register">
                 <!-- Add the action name - value pair -->
-                <input type="hidden" name="action" value="register">
+                <input type="hidden" name="action" value="Register">
                 
             </form>
         </main>

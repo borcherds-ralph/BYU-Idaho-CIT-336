@@ -506,3 +506,9 @@ Stack trace:
 [28-Oct-2017 14:09:04 America/Los_Angeles] PHP Notice:  Undefined variable: clientFirstname in /var/www/html/cit336/acme/products/index.php on line 43
 [28-Oct-2017 14:09:04 America/Los_Angeles] PHP Stack trace:
 [28-Oct-2017 14:09:04 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[06-Nov-2017 20:32:30 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'case' (T_CASE), expecting end of file in /var/www/html/cit336/acme/products/index.php on line 77
+[06-Nov-2017 20:35:40 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'case' (T_CASE), expecting end of file in /var/www/html/cit336/acme/products/index.php on line 77
+[06-Nov-2017 20:39:29 America/Los_Angeles] PHP Notice:  Undefined index: clientData in /var/www/html/cit336/acme/view/product.php on line 2
+[06-Nov-2017 20:39:29 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 20:39:29 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[06-Nov-2017 20:39:29 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:111
