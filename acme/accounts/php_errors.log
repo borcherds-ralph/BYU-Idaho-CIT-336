@@ -1987,3 +1987,95 @@ Stack trace:
 [06-Nov-2017 21:01:54 America/Los_Angeles] PHP Stack trace:
 [06-Nov-2017 21:01:54 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
 [06-Nov-2017 21:01:54 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:143
+[06-Nov-2017 21:18:44 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 30
+[06-Nov-2017 21:18:44 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:18:44 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:18:44 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:143
+[06-Nov-2017 21:36:11 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 30
+[06-Nov-2017 21:36:11 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:36:11 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:36:11 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:143
+[06-Nov-2017 21:37:22 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 30
+[06-Nov-2017 21:37:22 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:37:22 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:37:22 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:143
+[06-Nov-2017 21:40:00 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 30
+[06-Nov-2017 21:40:00 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:40:00 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:40:00 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:143
+[06-Nov-2017 21:40:14 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 30
+[06-Nov-2017 21:40:14 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:40:14 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:40:14 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:154
+[06-Nov-2017 21:40:36 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 30
+[06-Nov-2017 21:40:36 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:40:36 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:40:36 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:143
+[06-Nov-2017 21:41:00 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 30
+[06-Nov-2017 21:41:00 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:41:00 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:41:00 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:154
+[06-Nov-2017 21:41:03 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 30
+[06-Nov-2017 21:41:03 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:41:03 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:41:03 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:154
+[06-Nov-2017 21:42:13 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 21:42:13 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:42:13 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:42:13 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:154
+[06-Nov-2017 21:42:59 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 21:42:59 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:42:59 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:42:59 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:143
+[06-Nov-2017 21:43:27 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 21:43:27 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:43:27 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:43:27 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:143
+[06-Nov-2017 21:43:48 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 21:43:48 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:43:48 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:43:48 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:154
+[06-Nov-2017 21:43:53 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 21:43:53 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:43:53 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:43:53 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:154
+[06-Nov-2017 21:49:54 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 21:49:54 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:49:54 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:49:54 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:143
+[06-Nov-2017 21:50:47 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 21:50:47 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:50:47 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:50:47 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:143
+[06-Nov-2017 21:51:07 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 21:51:07 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:51:07 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:51:07 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:154
+[06-Nov-2017 21:51:10 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 21:51:10 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:51:10 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:51:10 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:154
+[06-Nov-2017 21:53:34 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 21:53:34 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:53:34 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:53:34 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:143
+[06-Nov-2017 21:53:48 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 21:53:48 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:53:48 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:53:48 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:154
+[06-Nov-2017 21:53:51 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 21:53:51 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:53:51 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:53:51 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:154
+[06-Nov-2017 21:54:31 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 21:54:31 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 21:54:31 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 21:54:31 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:143
+[06-Nov-2017 22:05:48 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 22:05:48 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 22:05:48 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 22:05:48 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:143
+[06-Nov-2017 22:07:04 America/Los_Angeles] PHP Notice:  Undefined index: clientPassword in /var/www/html/cit336/acme/view/admin.php on line 29
+[06-Nov-2017 22:07:04 America/Los_Angeles] PHP Stack trace:
+[06-Nov-2017 22:07:04 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/accounts/index.php:0
+[06-Nov-2017 22:07:04 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/accounts/index.php:143

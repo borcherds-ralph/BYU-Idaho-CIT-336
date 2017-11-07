@@ -107,6 +107,12 @@ if(isset($_COOKIE['firstname'])){
         include '../view/addprod.php';
     break;
 
+    case 'Logout':
+        session_destroy();
+        setcookie('firstname', $_SESSION['clientData']['clientFirstname'], time() - 3600, $basepath);
+        header('location:' . $basepath);
+    exit;
+    
     default:
        include '../view/product.php';
   }

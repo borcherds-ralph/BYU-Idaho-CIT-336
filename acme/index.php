@@ -42,7 +42,13 @@ if(isset($_COOKIE['firstname'])){
     
     case 'anything':
     break;
-    
+
+    case 'Logout':
+        session_destroy();
+        setcookie('firstname', $_SESSION['clientData']['clientFirstname'], time() - 3600, $basepath);
+        header('location:' . $basepath);
+    exit;
+
     default:
         include './view/home.php';
     }
