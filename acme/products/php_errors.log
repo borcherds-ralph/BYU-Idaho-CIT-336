@@ -518,3 +518,99 @@ Stack trace:
 [06-Nov-2017 22:07:18 America/Los_Angeles] PHP Notice:  Undefined variable: clientFirstname in /var/www/html/cit336/acme/products/index.php on line 78
 [06-Nov-2017 22:07:18 America/Los_Angeles] PHP Stack trace:
 [06-Nov-2017 22:07:18 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 10:18:02 America/Los_Angeles] PHP Notice:  Undefined index: clientData in /var/www/html/cit336/acme/view/prod-mgt.php on line 2
+[07-Nov-2017 10:18:02 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 10:18:02 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 10:18:02 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:131
+[07-Nov-2017 12:21:26 America/Los_Angeles] PHP Notice:  Undefined variable: catList in /var/www/html/cit336/acme/view/prod-update.php on line 76
+[07-Nov-2017 12:21:26 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:21:26 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:21:26 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:140
+[07-Nov-2017 12:27:22 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function updateProduct() in /var/www/html/cit336/acme/products/index.php:150
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/cit336/acme/products/index.php on line 150
+[07-Nov-2017 12:34:20 America/Los_Angeles] PHP Notice:  Undefined variable: catType in /var/www/html/cit336/acme/products/index.php on line 150
+[07-Nov-2017 12:34:20 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:34:20 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:34:20 America/Los_Angeles] PHP Notice:  Undefined variable: invImg in /var/www/html/cit336/acme/products/index.php on line 150
+[07-Nov-2017 12:34:20 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:34:20 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:34:20 America/Los_Angeles] PHP Notice:  Undefined variable: invThumb in /var/www/html/cit336/acme/products/index.php on line 150
+[07-Nov-2017 12:34:20 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:34:20 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:34:20 America/Los_Angeles] PHP Notice:  Undefined variable: invId in /var/www/html/cit336/acme/model/products-model.php on line 127
+[07-Nov-2017 12:34:20 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:34:20 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:34:20 America/Los_Angeles] PHP   2. updateProduct() /var/www/html/cit336/acme/products/index.php:150
+[07-Nov-2017 12:34:20 America/Los_Angeles] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /var/www/html/cit336/acme/model/products-model.php:130
+Stack trace:
+#0 /var/www/html/cit336/acme/model/products-model.php(130): PDOStatement->execute()
+#1 /var/www/html/cit336/acme/products/index.php(150): updateProduct(NULL, 'Acme Rocket', 'value=&#39;The ...', NULL, NULL, '132000.00', '5', '60', '90', 'Albuquerque, Ne...', 'Goddard', 'metal', '1')
+#2 {main}
+  thrown in /var/www/html/cit336/acme/model/products-model.php on line 130
+[07-Nov-2017 12:42:09 America/Los_Angeles] PHP Notice:  Undefined variable: catType in /var/www/html/cit336/acme/products/index.php on line 150
+[07-Nov-2017 12:42:09 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:42:09 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:42:09 America/Los_Angeles] PHP Notice:  Undefined variable: invImg in /var/www/html/cit336/acme/products/index.php on line 150
+[07-Nov-2017 12:42:09 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:42:09 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:42:09 America/Los_Angeles] PHP Notice:  Undefined variable: invThumb in /var/www/html/cit336/acme/products/index.php on line 150
+[07-Nov-2017 12:42:09 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:42:09 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:42:09 America/Los_Angeles] PHP Notice:  Undefined variable: invId in /var/www/html/cit336/acme/model/products-model.php on line 127
+[07-Nov-2017 12:42:09 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:42:09 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:42:09 America/Los_Angeles] PHP   2. updateProduct() /var/www/html/cit336/acme/products/index.php:150
+[07-Nov-2017 12:42:09 America/Los_Angeles] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /var/www/html/cit336/acme/model/products-model.php:130
+Stack trace:
+#0 /var/www/html/cit336/acme/model/products-model.php(130): PDOStatement->execute()
+#1 /var/www/html/cit336/acme/products/index.php(150): updateProduct(NULL, 'Acme Rocket', 'value=&#39;The ...', NULL, NULL, '132000.00', '5', '60', '90', 'Albuquerque, Ne...', 'Goddard', 'metal', '1')
+#2 {main}
+  thrown in /var/www/html/cit336/acme/model/products-model.php on line 130
+[07-Nov-2017 12:43:01 America/Los_Angeles] PHP Notice:  Undefined variable: catType in /var/www/html/cit336/acme/products/index.php on line 150
+[07-Nov-2017 12:43:01 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:43:01 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:43:01 America/Los_Angeles] PHP Notice:  Undefined variable: invImg in /var/www/html/cit336/acme/products/index.php on line 150
+[07-Nov-2017 12:43:01 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:43:01 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:43:01 America/Los_Angeles] PHP Notice:  Undefined variable: invThumb in /var/www/html/cit336/acme/products/index.php on line 150
+[07-Nov-2017 12:43:01 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:43:01 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:43:01 America/Los_Angeles] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'invName' cannot be null in /var/www/html/cit336/acme/model/products-model.php:130
+Stack trace:
+#0 /var/www/html/cit336/acme/model/products-model.php(130): PDOStatement->execute()
+#1 /var/www/html/cit336/acme/products/index.php(150): updateProduct(NULL, 'Acme Rocket', 'value=&#39;The ...', NULL, NULL, '132000.00', '5', '60', '90', 'Albuquerque, Ne...', 'Goddard', 'metal', '1')
+#2 {main}
+  thrown in /var/www/html/cit336/acme/model/products-model.php on line 130
+[07-Nov-2017 12:45:20 America/Los_Angeles] PHP Notice:  Undefined variable: price in /var/www/html/cit336/acme/products/index.php on line 150
+[07-Nov-2017 12:45:20 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:45:20 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:45:20 America/Los_Angeles] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'invPrice' cannot be null in /var/www/html/cit336/acme/model/products-model.php:130
+Stack trace:
+#0 /var/www/html/cit336/acme/model/products-model.php(130): PDOStatement->execute()
+#1 /var/www/html/cit336/acme/products/index.php(150): updateProduct('Acme Rocket', 'value=&#39;The ...', '/acme/images/pr...', '/acme/images/pr...', NULL, '5', '60', '90', 'Albuquerque, Ne...', '4', 'Goddard', 'metal', '1')
+#2 {main}
+  thrown in /var/www/html/cit336/acme/model/products-model.php on line 130
+[07-Nov-2017 12:45:44 America/Los_Angeles] PHP Notice:  Undefined variable: price in /var/www/html/cit336/acme/products/index.php on line 150
+[07-Nov-2017 12:45:44 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:45:44 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:45:44 America/Los_Angeles] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'invPrice' cannot be null in /var/www/html/cit336/acme/model/products-model.php:130
+Stack trace:
+#0 /var/www/html/cit336/acme/model/products-model.php(130): PDOStatement->execute()
+#1 /var/www/html/cit336/acme/products/index.php(150): updateProduct('Anvil', 'value=&#39;50 l...', '/acme/images/pr...', '/acme/images/pr...', NULL, '15', '80', '50', 'San Jose', '3', 'Steel Made', 'Metal', '8')
+#2 {main}
+  thrown in /var/www/html/cit336/acme/model/products-model.php on line 130
+[07-Nov-2017 12:47:04 America/Los_Angeles] PHP Notice:  Undefined variable: price in /var/www/html/cit336/acme/products/index.php on line 150
+[07-Nov-2017 12:47:04 America/Los_Angeles] PHP Stack trace:
+[07-Nov-2017 12:47:04 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[07-Nov-2017 12:47:04 America/Los_Angeles] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'invPrice' cannot be null in /var/www/html/cit336/acme/model/products-model.php:130
+Stack trace:
+#0 /var/www/html/cit336/acme/model/products-model.php(130): PDOStatement->execute()
+#1 /var/www/html/cit336/acme/products/index.php(150): updateProduct('Anvil', 'value=&#39;50 l...', '/acme/images/pr...', '/acme/images/pr...', NULL, '15', '80', '50', 'San Jose', '3', 'Steel Made', 'Metal', '8')
+#2 {main}
+  thrown in /var/www/html/cit336/acme/model/products-model.php on line 130
+[08-Nov-2017 07:02:16 America/Los_Angeles] PHP Notice:  Undefined index: clientData in /var/www/html/cit336/acme/view/prod-mgt.php on line 2
+[08-Nov-2017 07:02:16 America/Los_Angeles] PHP Stack trace:
+[08-Nov-2017 07:02:16 America/Los_Angeles] PHP   1. {main}() /var/www/html/cit336/acme/products/index.php:0
+[08-Nov-2017 07:02:16 America/Los_Angeles] PHP   2. include() /var/www/html/cit336/acme/products/index.php:209

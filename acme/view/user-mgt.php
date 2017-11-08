@@ -1,7 +1,6 @@
 <?php
-if ($_SESSION['clientData']['clientLevel'] < 2) {
- header("location: " . $basepath . "/index.php");
- exit;
+if (isset($_SESSION['message'])) {
+ $message = $_SESSION['message'];
 }?>
 <!DOCTYPE html>
 <html lang = "en">
@@ -23,9 +22,17 @@ if ($_SESSION['clientData']['clientLevel'] < 2) {
         <?php require '../common/header.php'; ?>
         <nav id="menu"><?php echo $navList; ?></nav>
         <main>
-            <h1>Products Management</h1>
-            <a href="index.php?action=addcat" class="linkbutton">Add Category</a><br>
-            <a href="index.php?action=addprod" class="linkbutton">Add Product</a>
+            <h1>Account Management</h1>
+            <a href="index.php?action=updatePWD" class="linkbutton">Update Password</a><br>
+            <a href="index.php?action=updateUSR" class="linkbutton">Update User Information</a>
+
+            <?php
+                if (isset($message)) {
+                echo $message;
+                } if (isset($prodList)) {
+                echo $prodList;
+                }
+            ?>
         </main>
         <?php require "../common/footer.php" ?>
     </div>
@@ -38,3 +45,4 @@ if ($_SESSION['clientData']['clientLevel'] < 2) {
 
 </body>
 </html>
+<?php unset($_SESSION['message']); ?>

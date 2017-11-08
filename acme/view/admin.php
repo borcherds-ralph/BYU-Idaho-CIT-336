@@ -1,3 +1,6 @@
+<?php 
+    $clientInfo = getClient($_SESSION['clientData']['clientEmail']); 
+?>
 <!DOCTYPE html>
 <html lang = "en">
 <head>
@@ -22,6 +25,11 @@
         <nav id="menu"><?php echo $navList; ?></nav>
         <main>
             <h1><?php echo $_SESSION['clientData']['clientFirstname'] . " " . $_SESSION['clientData']['clientLastname']; ?></h1>
+            <?php
+                if (isset($message)) {
+                echo $message;
+                }
+            ?>
             <ul>
                 <li>FirstName: <strong><?php echo $_SESSION['clientData']['clientFirstname']; ?></strong></li>
                 <li>LastName: <strong><?php echo $_SESSION['clientData']['clientLastname']; ?></strong></li>

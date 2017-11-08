@@ -46,11 +46,11 @@ if(isset($_COOKIE['firstname'])){
     switch ($action) {
 
         case 'home':
-        include '../view/home.php';
+            include '../view/home.php';
         break;
 
         case 'registration':
-        include '../view/registration.php';
+            include '../view/registration.php';
         break;
 
         case 'Register':
@@ -148,7 +148,102 @@ if(isset($_COOKIE['firstname'])){
             session_destroy();
             setcookie('firstname', $_SESSION['clientData']['clientFirstname'], time() - 3600, $basepath);
             header('location:' . $basepath);
-        exit;
+            exit;
+        break;
+        
+        case 'updateUSR':
+            $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
+            include '../view/user-update-account.php';
+            exit;
+        break;
+
+        case 'user-mgt':
+            include '../view/user-mgt.php';
+            exit;
+        break;
+
+        case 'updateClient':
+            // Filter and store the data
+            $clientFirstname = filter_input(INPUT_POST, 'clientFirstname', FILTER_SANITIZE_STRING);
+            $clientLastname = filter_input(INPUT_POST, 'clientLastname', FILTER_SANITIZE_STRING);
+            $clientEmail = filter_input(INPUT_POST, 'clientEmail', FILTER_SANITIZE_EMAIL);
+            $clientId = filter_input(INPUT_POST, 'clientId', FILTER_SANITIZE_NUMBER_INT);
+
+            $clientEmail = checkEmail($clientEmail);
+
+            if($_SESSION['clientData']['clientEmail'] <> $clientEmail) {
+                $existingEmail = checkExistingEmail($clientEmail);
+            } else { $existingEmail = FALSE; }
+
+            // Check for existing email address in the table
+            if($existingEmail){
+            $message = '<p class="notice">That email address you are changing to already exists.</p>';
+            include '../view/user-update-account.php';
+            exit;
+            }
+
+            // Check for missing data
+            if(empty($clientFirstname) || empty($clientLastname) || empty($clientEmail)){
+                $message = '<p>Please provide information for all empty form fields.</p>';
+                include '../view/user-update-account.php';
+                exit; 
+            }
+
+            $regOutcome = updateClient($clientFirstname, $clientLastname, $clientEmail, $clientId);
+
+            // Check and report the result
+            if($regOutcome === 1){
+                setcookie('firstname', $clientFirstname, strtotime('+1 year'), '/');
+                $message = "<p>Thanks for updating your info $clientFirstname.</p>";
+                include '../view/admin.php';
+                exit;
+            } else {
+                $message = "<p>Sorry $clientFirstname, but the update failed. Please try again.</p>";
+                $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
+                include '../view/user-update-account.php';
+                exit;
+            }
+            include '../view/user-update-account.php';
+            exit;
+        break;
+
+        case 'updatePWD':
+            $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
+            include '../view/user-update-password.php';
+            exit;
+        break;
+
+        case 'updatePassword':
+            // Filter and store the data
+            $clientPassword = filter_input(INPUT_POST, 'clientPassword', FILTER_SANITIZE_STRING);
+            $clientId = filter_input(INPUT_POST, 'clientId', FILTER_SANITIZE_NUMBER_INT);
+
+            $checkPassword = checkPassword($clientPassword);
+
+            $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
+
+            // Check for missing data
+            if(empty($checkPassword)) {
+                $message = '<p>Please provide information for all empty form fields.</p>';
+                include '../view/user-update-password.php';
+                exit; 
+            }
+
+            $regOutcome = updatePassword($checkPassword, $clientId);
+
+            // Check and report the result
+            if($regOutcome === 1){
+                $message = "<p>Thanks for updating your password $clientInfo[clientFirstname].</p>";
+                include '../view/admin.php';
+                exit;
+            } else {
+                $message = "<p>Sorry $clientInfo[clientFirstname], but the password update failed. Please try again.</p>";
+                include '../view/user-update-password.php';
+                exit;
+            }
+            include '../view/user-update-password.php';
+            exit;
+        break;
 
         default:
             include '../view/admin.php';

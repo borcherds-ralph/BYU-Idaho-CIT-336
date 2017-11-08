@@ -73,19 +73,20 @@ if(isset($_COOKIE['firstname'])){
     break;
 
     case 'addprod':
+        // This include is all the fields on the Add/Modify Inventory Form
         include '../library/product-add.php';
         $navList = navList($categories, $action);
         $message = "<p>Sorry $clientFirstname, but the registration failed. Please try again.</p>";
         $catList = categoryList($categories);
         if ((empty($invName) || empty($invDescription) || empty($invImage) || empty($invThumbnail) || empty($invPrice) || empty($invStock) || empty($invSize) || empty($invWeight)) || empty($invLocation) || empty($categoryId) || empty($invVendor) || empty($invStyle)) {
                 $message = 'Please provide information for all empty fields.';
-            include '../view/addprod.php';
+            include '../view/prod-add.php';
             exit; 
         }
         $price = checkPrice($invPrice);
         
             // Send the data to the model
-        $regOutcome = addProduct($invName, $invDescription, $invImage, $invThumbnail, $price, $invStock, $invSize, $invWeight, $invLocation, $categoryId, $invVendor, $invStyle);
+        $regOutcome = addProduct($invName, $invDescription, $invImage, $invThumbnail, $invPrice, $invStock, $invSize, $invWeight, $invLocation, $categoryId, $invVendor, $invStyle);
 
         // Check and report the result
         if($regOutcome === 1){
@@ -93,7 +94,7 @@ if(isset($_COOKIE['firstname'])){
                 $sucess = '1'; 
         } else {
             include '../library/navigation.php';
-            include '../view/addprod.php';
+            include '../view/prod-add.php';
             exit;
         }
         // build category list for drop down list.
@@ -104,7 +105,7 @@ if(isset($_COOKIE['firstname'])){
         }
         $catList .= "</datalist>"; 
         $category = '';
-        include '../view/addprod.php';
+        include '../view/prod-add.php';
     break;
 
     case 'Logout':
@@ -113,6 +114,98 @@ if(isset($_COOKIE['firstname'])){
         header('location:' . $basepath);
     exit;
     
+    case 'mod':
+        $invId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+        $prodInfo = getProductInfo($invId);
+        if(count($prodInfo)<1){
+            $message = 'Sorry, no product information could be found.';
+        }
+        // build category list for drop down list.
+        // This must come after the navigation so that the $categories variable has data
+        $catList = "<datalist id='categories'>";
+        foreach ($categories as $category) {
+            $catList .= "<option value='" . $category['categoryName'] . "'></option>";
+        }
+        $catList .= "</datalist>"; 
+        include '../view/prod-update.php';
+        exit;
+    break;
+
+    case 'updateProd':
+        // This include is all the fields on the Add/Modify Inventory Form
+        include '../library/product-add.php';
+        $invId = filter_input(INPUT_POST, 'invId', FILTER_SANITIZE_NUMBER_INT);
+
+        $catList = "<datalist id='categories'>";
+        foreach ($categories as $category) {
+            $catList .= "<option value='" . $category['categoryName'] . "'></option>";
+        }
+        $catList .= "</datalist>"; 
+
+        if ((empty($invName) || empty($invDescription) || empty($invImage) || empty($invThumbnail) || empty($invPrice) || empty($invStock) || empty($invSize) || empty($invWeight)) || empty($invLocation) || empty($categoryId) || empty($invVendor) || empty($invStyle)) {
+            $message = '<p>Please complete all information for the updated item! Double check the category of the item.</p>';
+            include '../view/prod-update.php';
+            exit;
+        }   
+        $updateResult = updateProduct($invName, $invDescription, $invImage, $invThumbnail, $invPrice, $invStock, $invSize, $invWeight, $invLocation, $categoryId, $invVendor, $invStyle, $invId);
+        if ($updateResult) {
+            $message = "<p>Congratulations, $invName was successfully updated.</p>";
+            $_SESSION['message'] = $message;
+            header("location: $basepath/products/");
+            exit;
+        } else {
+            $message = "<p>Error. The $invName product was not updated.</p>";
+            include '../view/prod-update.php';
+            exit;
+        }
+    break;
+
+    case 'del':
+        $invId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+        $prodInfo = getProductInfo($invId);
+        if (count($prodInfo) < 1) {
+        $message = 'Sorry, no product information could be found.';
+        }
+        include '../view/prod-delete.php';
+        exit;
+    break;
+
+    case 'deleteProd':
+        $invName = filter_input(INPUT_POST, 'invName', FILTER_SANITIZE_STRING);
+        $invId = filter_input(INPUT_POST, 'invId', FILTER_SANITIZE_NUMBER_INT);
+    
+        $deleteResult = deleteProduct($invId);
+        if ($deleteResult) {
+            $message = "<p class='notice'>Congratulations, $invName was successfully deleted.</p>";
+            $_SESSION['message'] = $message;
+            header("location: $basepath/products/");
+            exit;
+        } else {
+            $message = "<p class='notice'>Error: $invName was not deleted.</p>";
+            $_SESSION['message'] = $message;
+            header("location: $basepath/products/");
+            exit;
+        }
+    break;
     default:
-       include '../view/product.php';
+        $products = getProductBasics();
+        if(count($products) > 0){
+            $prodList = "<div class='inv-items'>";
+            $prodList .= "<div class='inv-line prodname' id='title'>Product Name</div>";
+            $prodList .= "<div class='inv-line prodmodify col2'></div>";
+            $prodList .= "<div class='inv-line proddelete col3'></div>";
+            foreach ($products as $key=>$product) {
+                if($key % 2 == 0) {
+                    $rowoddeven = 'even';
+                } else {$rowoddeven = 'odd';}
+                $prodList .= "<div class='inv-line prodname col1 $rowoddeven'>$product[invName]</div>";
+                $prodList .= "<div class='inv-line prodmodify col2 $rowoddeven'><a href='$basepath/products?action=mod&id=$product[invId]' title='Click to modify'>Modify</a></div>";
+                $prodList .= "<div class='inv-line proddelete col3 $rowoddeven'><a href='$basepath/products?action=del&id=$product[invId]' title='Click to delete'>Delete</a></div>";
+            }
+             $prodList .= '</div>';
+            } else {
+             $message = '<p class="notify">Sorry, no products were returned.</p>';
+          }
+        include '../view/prod-mgt.php';
+    break;
   }

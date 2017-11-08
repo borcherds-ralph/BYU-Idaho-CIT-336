@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Architects+Daughter%7cCovered+By+Your+Grace%7cGloria+Hallelujah%7cHandlee%7cIndie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Handlee%7cIndie+Flower');
 html {
     /* color: #0000ee;
     color: #808080;
@@ -83,6 +83,20 @@ header {
 
 #welcome {
     padding-right: 10px;
+}
+#logout, #update {
+    background-color: #ee3333;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 20px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+#logout a, #update a,
+#logout a:hover, #update a:hover,
+#logout a:visited, #update a:visited {
+    color: #fff;
 }
 
 .textright {
@@ -405,6 +419,54 @@ input:checked~label {
     font-weight: bold;
 }
 
+.inv-items {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+}
+
+.inv-line {
+    width: calc(61%);
+    display: flex;
+    flex-flow: row;
+    line-height: 2em;
+}
+
+#title {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    line-height: 3em;
+}
+
+.prodname {
+    width: calc(41%);
+    display: flex;
+    padding-left: 15px;
+}
+
+.prodmodify,
+.proddelete {
+    width: calc(10%);
+    display: flex;
+}
+
+.col1,
+.col2,
+.col3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.even {
+    background-color: #e4f2ff;
+}
+
+.odd {
+    background-color: #c4ccf3;
+}
+
 @media only screen and (min-width: 641px) and (max-width: 959px) {
     h1 {
         font-size: 2.25em;
@@ -460,6 +522,7 @@ input:checked~label {
         margin-right: 30px;
         font-size: 1.25em;
     }
+    
     #folder {
         max-width: 20px;
         max-height: 20px;
@@ -506,6 +569,7 @@ input:checked~label {
         background-color: #fff;
         flex-wrap: wrap;
         width: 100vw;
+        padding-left: 10px;
     }
     .top {
         display: flex;
@@ -693,6 +757,7 @@ input:checked~label {
         padding-bottom: 2.5em;
         background-color: #fff;
         flex-wrap: wrap;
+        padding-left: 10px;
     }
     .top {
         display: flex;
