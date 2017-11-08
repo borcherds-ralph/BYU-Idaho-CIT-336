@@ -37,7 +37,7 @@
             </ul>
             <?php if($_SESSION['clientData']['clientLevel'] > 1) { ?>
                 <h3>Please click on this link if you wish to go to the Products Page.</h3> 
-                <a href="<?php echo $basepath; ?>/products">Procuts Page</a>
+                <a href="<?php echo $basepath; ?>/products">Products Page</a>
            <?php  }   ?>
         </main>
     <?php require "../common/footer.php" ?>
