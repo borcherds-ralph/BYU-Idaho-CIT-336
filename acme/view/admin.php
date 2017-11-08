@@ -34,7 +34,6 @@
                 <li>FirstName: <strong><?php echo $_SESSION['clientData']['clientFirstname']; ?></strong></li>
                 <li>LastName: <strong><?php echo $_SESSION['clientData']['clientLastname']; ?></strong></li>
                 <li>Email: <strong><?php echo $_SESSION['clientData']['clientEmail']; ?></strong></li>
-                <li>Password: <strong><?php echo $_SESSION['clientData']['clientPassword']; ?></strong></li>
             </ul>
             <?php if($_SESSION['clientData']['clientLevel'] > 1) { ?>
                 <h3>Please click on this link if you wish to go to the Products Page.</h3> 
