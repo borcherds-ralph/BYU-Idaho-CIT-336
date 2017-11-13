@@ -84,7 +84,9 @@ header {
 #welcome {
     padding-right: 10px;
 }
-#logout, #update {
+
+#logout,
+#update {
     background-color: #ee3333;
     color: #fff;
     font-weight: 700;
@@ -93,9 +95,12 @@ header {
     margin-right: 5px;
 }
 
-#logout a, #update a,
-#logout a:hover, #update a:hover,
-#logout a:visited, #update a:visited {
+#logout a,
+#update a,
+#logout a:hover,
+#update a:hover,
+#logout a:visited,
+#update a:visited {
     color: #fff;
 }
 
@@ -433,11 +438,13 @@ input:checked~label {
     line-height: 2em;
 }
 
-#title {
+#prodtitle {
     font-weight: 700;
     display: flex;
     justify-content: center;
-    line-height: 3em;
+    line-height: 4em;
+    background-color: #c4ccf3;
+    font-size: 2.5em
 }
 
 .prodname {
@@ -522,7 +529,6 @@ input:checked~label {
         margin-right: 30px;
         font-size: 1.25em;
     }
-    
     #folder {
         max-width: 20px;
         max-height: 20px;

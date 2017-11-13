@@ -191,7 +191,7 @@ if(isset($_COOKIE['firstname'])){
         $products = getProductBasics();
         if(count($products) > 0){
             $prodList = "<div class='inv-items'>";
-            $prodList .= "<div class='inv-line prodname' id='title'>Product Name</div>";
+            $prodList .= "<div class='inv-line prodname col1' id='prodtitle'>Product Name</div>";
             $prodList .= "<div class='inv-line prodmodify col2'></div>";
             $prodList .= "<div class='inv-line proddelete col3'></div>";
             foreach ($products as $key=>$product) {

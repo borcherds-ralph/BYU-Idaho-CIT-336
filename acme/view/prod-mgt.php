@@ -29,6 +29,7 @@ if (isset($_SESSION['message'])) {
             <h1>Products Management</h1>
             <a href="index.php?action=addcat" class="linkbutton">Add Category</a><br>
             <a href="index.php?action=addprod" class="linkbutton">Add Product</a>
+            <br><br>
 
             <?php
                 if (isset($message)) {
