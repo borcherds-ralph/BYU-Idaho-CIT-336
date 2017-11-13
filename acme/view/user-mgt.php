@@ -23,16 +23,56 @@ if (isset($_SESSION['message'])) {
         <nav id="menu"><?php echo $navList; ?></nav>
         <main>
             <h1>Account Management</h1>
-            <a href="index.php?action=updatePWD" class="linkbutton">Update Password</a><br>
-            <a href="index.php?action=updateUSR" class="linkbutton">Update User Information</a>
+            <h3>Please use this section to update your account details</h3>
+            <form method="post" action="<?php echo $basepath ?>/accounts/index.php" id="registrationform">
+                <fieldset>
+                    <div>
+                        <input class="requiredinvalid" id="clientFirstname" name="clientFirstname"
+                        type="text" required <?php if(isset($clientInfo['clientFirstname'])) {echo "value='$clientInfo[clientFirstname]'"; } ?> >
+                        <label for="clientFirstname">First Name</label>
+                    </div>
+                    <div>
+                        <input class="requiredinvalid" id="clientLastname" name="clientLastname"
+                        type="text" required <?php if(isset($clientInfo['clientLastname'])) {echo "value='$clientInfo[clientLastname]'"; } ?> >
+                        <label for="clientLastname">Last Name</label>
+                    </div>
+                    <div>
+                        <input class="requiredinvalid" id="clientEmail" name="clientEmail"
+                        type="email" required 
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" tabindex="3" 
+                        <?php if(isset($clientInfo['clientEmail'])) {echo "value='$clientInfo[clientEmail]'";  } ?>>
+                        <label for="clientEmail">e-Mail Address</label>
+                    </div>
+                    
+                </fieldset>
 
-            <?php
-                if (isset($message)) {
-                echo $message;
-                } if (isset($prodList)) {
-                echo $prodList;
-                }
-            ?>
+                <input type="submit" name="submit" value="Update Info">
+                <!-- Add the action name - value pair -->
+                <input type="hidden" name="action" value="updateClient">
+                <input type="hidden" name="clientId" value="<?php if(isset($clientInfo['clientId'])){ echo $clientInfo['clientId'];} elseif(isset($clientId)){ echo $clientId; } ?>">
+                
+                
+            </form>
+            <h3>Please use this section to update your Password</h3>
+            <form method="post" action="<?php echo $basepath ?>/accounts/index.php" id="passwordform">
+                <fieldset>
+                    <div>
+                        <input class="requiredinvalid" id="clientPassword" name="clientPassword"
+                        type="password" required <?php if(isset($clientInfo['clientPassword'])) {echo "value='$clientInfo[clientPassword]'"; } ?>
+                        pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                        title="Passwords must be at least 8 characters and contain at least 1 number, 1 capital letter and 1 special character."/>
+                        <label for="clientPassword">Password</label>
+                    </div>
+                </fieldset>
+
+                <input type="submit" name="submit" value="Update Password">
+                <!-- Add the action name - value pair -->
+                <input type="hidden" name="action" value="updatePassword">
+                <input type="hidden" name="clientId" value="<?php if(isset($clientInfo['clientId'])){ echo $clientInfo['clientId'];} elseif(isset($clientId)){ echo $clientId; } ?>">
+                
+            </form>
+
+
         </main>
         <?php require "../common/footer.php" ?>
     </div>

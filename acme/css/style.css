@@ -329,11 +329,8 @@ textarea:required:valid {
 
 /* Form Formatting */
 
-#registrationform {
-    width: calc(75%);
-    margin: 0 auto;
-}
-
+#registrationform,
+#passwordform,
 #loginform {
     width: calc(75%);
     margin: 0 auto;

@@ -1,7 +1,7 @@
      <header>
             <div class="logoarea">
             
-                <div class="logo"><img src="<?php echo $basepath; ?>/images/site/logo.gif" id="logo" alt="ACME Logo"></div>
+                <div class="logo"><a href="<?php echo $basepath; ?>"><img src="<?php echo $basepath; ?>/images/site/logo.gif" id="logo" alt="ACME Logo"></a></div>
                 <div class="right">
                 <?php if(isset($cookieFirstname)){
                     echo "<span id='welcome'>Welcome $cookieFirstname</span>";
