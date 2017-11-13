@@ -442,9 +442,9 @@ input:checked~label {
     font-weight: 700;
     display: flex;
     justify-content: center;
-    line-height: 4em;
+    line-height: 2em;
     background-color: #c4ccf3;
-    font-size: 2.5em
+    font-size: 1.75em;
 }
 
 .prodname {
