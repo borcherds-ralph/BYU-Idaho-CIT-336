@@ -2,3 +2,6 @@
 /metadata/
 php_erros.log
 intellij.css
+acme/accounts/php_errors.log
+acme/products/php_errors.log
+acme/view/php_errors.log
