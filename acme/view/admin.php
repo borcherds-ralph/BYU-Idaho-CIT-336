@@ -24,18 +24,18 @@
         <?php require '../common/header.php'; ?>
         <nav id="menu"><?php echo $navList; ?></nav>
         <main>
-            <h1><?php echo $_SESSION['clientData']['clientFirstname'] . " " . $_SESSION['clientData']['clientLastname']; ?></h1>
+            <h1><?php echo  $clientInfo['clientFirstname'] . " " .  $clientInfo['clientLastname']; ?></h1>
             <?php
                 if (isset($message)) {
                 echo $message;
                 }
             ?>
             <ul>
-                <li>FirstName: <strong><?php echo $_SESSION['clientData']['clientFirstname']; ?></strong></li>
-                <li>LastName: <strong><?php echo $_SESSION['clientData']['clientLastname']; ?></strong></li>
-                <li>Email: <strong><?php echo $_SESSION['clientData']['clientEmail']; ?></strong></li>
+                <li>FirstName: <strong><?php echo $clientInfo['clientFirstname']; ?></strong></li>
+                <li>LastName: <strong><?php echo $clientInfo['clientLastname']; ?></strong></li>
+                <li>Email: <strong><?php echo  $clientInfo['clientEmail']; ?></strong></li>
             </ul>
-            <?php if($_SESSION['clientData']['clientLevel'] > 1) { ?>
+            <?php if( $clientInfo['clientLevel'] > 1) { ?>
                 <h3>Please click on this link if you wish to go to the Products Page.</h3> 
                 <a href="<?php echo $basepath; ?>/products">Products Page</a>
            <?php  }   ?>

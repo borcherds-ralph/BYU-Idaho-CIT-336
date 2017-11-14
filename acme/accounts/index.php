@@ -42,6 +42,7 @@ if(isset($_COOKIE['firstname'])){
     $cookieFirstname = filter_input(INPUT_COOKIE, 'firstname', FILTER_SANITIZE_STRING);
 }
 
+$clientInfo = getClient($_SESSION['clientData']['clientEmail']);
 
     switch ($action) {
 
@@ -153,7 +154,7 @@ if(isset($_COOKIE['firstname'])){
         
         case 'updateUSR':
             $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
-            include '../view/user-update-account.php';
+            include '../view/user-mgt.php';
             exit;
         break;
 
@@ -178,14 +179,14 @@ if(isset($_COOKIE['firstname'])){
             // Check for existing email address in the table
             if($existingEmail){
             $message = '<p class="notice">That email address you are changing to already exists.</p>';
-            include '../view/user-update-account.php';
+            include '../view/user-mgt.php';
             exit;
             }
 
             // Check for missing data
             if(empty($clientFirstname) || empty($clientLastname) || empty($clientEmail)){
                 $message = '<p>Please provide information for all empty form fields.</p>';
-                include '../view/user-update-account.php';
+                include '../view/user-mgt.php';
                 exit; 
             }
 
@@ -200,16 +201,16 @@ if(isset($_COOKIE['firstname'])){
             } else {
                 $message = "<p>Sorry $clientFirstname, but the update failed. Please try again.</p>";
                 $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
-                include '../view/user-update-account.php';
+                include '../view/user-mgt.php';
                 exit;
             }
-            include '../view/user-update-account.php';
+            include '../view/user-mgt.php';
             exit;
         break;
 
         case 'updatePWD':
             $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
-            include '../view/user-update-password.php';
+            include '../view/user-mgt.php';
             exit;
         break;
 
@@ -218,18 +219,18 @@ if(isset($_COOKIE['firstname'])){
             $clientPassword = filter_input(INPUT_POST, 'clientPassword', FILTER_SANITIZE_STRING);
             $clientId = filter_input(INPUT_POST, 'clientId', FILTER_SANITIZE_NUMBER_INT);
 
-            $checkPassword = checkPassword($clientPassword);
-
-            $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
+            $checkedPassword = checkPassword($clientPassword);
+            $hashedPassword = password_hash($clientPassword, PASSWORD_DEFAULT);
+            // $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
 
             // Check for missing data
-            if(empty($checkPassword)) {
+            if(empty($checkedPassword)) {
                 $message = '<p>Please provide information for all empty form fields.</p>';
-                include '../view/user-update-password.php';
+                include '../view/user-mgt.php';
                 exit; 
             }
 
-            $regOutcome = updatePassword($checkPassword, $clientId);
+            $regOutcome = updatePassword($hashedPassword, $clientId);
 
             // Check and report the result
             if($regOutcome === 1){
@@ -238,10 +239,10 @@ if(isset($_COOKIE['firstname'])){
                 exit;
             } else {
                 $message = "<p>Sorry $clientInfo[clientFirstname], but the password update failed. Please try again.</p>";
-                include '../view/user-update-password.php';
+                include '../view/user-mgt.php';
                 exit;
             }
-            include '../view/user-update-password.php';
+            include '../view/user-mgt.php';
             exit;
         break;
 
