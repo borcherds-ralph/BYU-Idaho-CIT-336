@@ -500,6 +500,28 @@ input:checked~label {
     height: 200px;
 }
 
+.prodInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.prodImage {
+    display: flex;
+    flex-direction: row;
+}
+
+#prodImage {
+    width: calc(90%);
+    height: calc(90%);
+}
+
+.prodDetails {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 @media only screen and (min-width: 641px) and (max-width: 959px) {
     h1 {
         font-size: 2.25em;
