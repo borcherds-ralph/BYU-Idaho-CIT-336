@@ -48,6 +48,28 @@ if(isset($_COOKIE['firstname'])){
 // Switch statement to determine what to do.
  switch ($action) {
 
+    case 'category':
+        $type = filter_input(INPUT_GET, 'type', FILTER_SANITIZE_STRING);
+        $products = getProductsByCategory($type);
+        if(!count($products)){
+            $message = "<p class='notice'>Sorry, no $type products could be found.</p>";
+        } else {
+            $prodDisplay = buildProductsDisplay($products);
+        }
+        include '../view/category.php';
+    break;
+
+    case 'proddetail':
+        $type = filter_input(INPUT_GET, 'invId', FILTER_SANITIZE_STRING);
+        $product = getProductInfo($type);
+        if(!count($product)) {
+            $message = "<p class='notice'>Sorry, no $prodname products could be found.</p>";
+        } else {
+            $prodDisplay = buildProduct($product);
+        }
+        include '../view/productdetails.php';
+    break;
+
     case 'addcat':  
         $categoryName = filter_input(INPUT_POST, 'categoryName');
     
@@ -93,7 +115,7 @@ if(isset($_COOKIE['firstname'])){
                 $message = "Thanks for adding $invName."; 
                 $sucess = '1'; 
         } else {
-            include '../library/navigation.php';
+            
             include '../view/prod-add.php';
             exit;
         }

@@ -16,6 +16,6 @@ foreach ($categories as $category) {
     } else {
         $active = NULL;
     }
-$navList .= "<li $active><a href='" . $basepath . "/index.php?action=" . $category['categoryName'] . "' title='View our " . $category['categoryName'] . " product line'>" . $category['categoryName'] . "</a></li>";
+$navList .= "<li $active><a href='$basepath/products/?action=$category[categoryName]' title='View our $category[categoryName] product line'>" . $category['categoryName'] . "</a></li>";
 }
 $navList .= '</ul>';

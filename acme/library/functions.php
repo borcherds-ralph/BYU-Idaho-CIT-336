@@ -1,5 +1,6 @@
 <?php
 
+
 function checkEmail($clientEmail){
     $valEmail = filter_var($clientEmail, FILTER_VALIDATE_EMAIL);
     return $valEmail;
@@ -53,7 +54,7 @@ function navList($categories, $action) {
         } else {
             $active = NULL;
         }
-    $navList .= "<li $active><a href='" . $basepath . "/index.php?action=" . $category['categoryName'] . "' title='View our " . $category['categoryName'] . " product line'>" . $category['categoryName'] . "</a></li>";
+        $navList .= "<li $active><a href='$basepath/products/?action=category&type=$category[categoryName]' title='View our $category[categoryName] product line'>$category[categoryName]</a></li>";
     }
     $navList .= '</ul>';
     return $navList;
@@ -69,5 +70,39 @@ function categoryList($categories) {
     return $catList;
 }
 
+// Build the list of products to display.
+function buildProductsDisplay($products){
+    if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
+    {
+         $basepath = '/cit336/acme/';
+         $imgpath = '/cit336';
+    } else {
+        $basepath = '/acme';
+        $imgpath = '';
+    }
+    $pd = '<ul id="prod-display">';
+    foreach ($products as $product) {
+     $pd .= '<li>';
+     $pd .= "<a href='$basepath/products/?action=proddetail&invId=$product[invId]'><img src='" . $imgpath . "$product[invThumbnail]' alt='Image of $product[invName] on Acme.com'>";
+     $pd .= '<hr>';
+     $pd .= "<h2>$product[invName]</h2>";
+     $pd .= "<span>$$product[invPrice]</span></a>";
+     $pd .= '</li>';
+    }
+    $pd .= '</ul>';
+    return $pd;
+}
 
-
+function buildProduct($products){
+    if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
+    {
+         $basepath = '/cit336/acme/';
+         $imgpath = '/cit336';
+    } else {
+        $basepath = '/acme';
+        $imgpath = '';
+    }
+    $pd = "<h2>$products[invName]</h2>";
+    $pd .= "";
+    return $pd;
+}
