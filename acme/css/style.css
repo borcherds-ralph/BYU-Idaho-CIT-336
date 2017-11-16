@@ -126,8 +126,6 @@ header {
     padding-right: 10px;
 }
 
-.link {}
-
 .navigation {
     display: none;
 }
@@ -859,12 +857,18 @@ input:checked~label {
         margin-right: 30px;
         font-size: 1.5em;
     }
+    .account {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
     #welcome {
         padding-right: 10px;
         display: flex;
     }
     #folder {
-        display: flex;
+        display: inline-flex;
         max-width: 30px;
         max-height: 30px;
         padding-right: 10px;
