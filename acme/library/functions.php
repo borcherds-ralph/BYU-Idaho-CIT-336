@@ -43,7 +43,7 @@ function navList($categories, $action) {
     $active = '';
 
     // Build a navigation bar using the $categories array
-    $navList = "<ul id='navul'>";
+    $navList = "<ul class='navigation'>";
     if ($action == NULL) {
         $active = "class='active'"; 
     }

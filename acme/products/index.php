@@ -37,9 +37,11 @@ if ($action == NULL){
     $action = filter_input(INPUT_GET, 'action');
 }
 
+$type = filter_input(INPUT_GET, 'type', FILTER_SANITIZE_STRING);
+
 // Build the navigation
 $categories = getCategories();
-$navList = navList($categories, $action);
+$navList = navList($categories, $type);
 
 
 if(isset($_COOKIE['firstname'])){

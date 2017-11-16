@@ -10,17 +10,13 @@ if (isset($_SESSION['message'])) {
     <meta name = "viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Acme Products Management</title>
-    <!-- CSS files -->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css" media="screen">
-
-    <!-- JavaScript files that have to load first -->
-    <script src="../js/scripts.js"></script>
+    
+    <?php include '../common/head.php'; ?>
 </head>
 <body>
     <div class="content">
         <?php require '../common/header.php'; ?>
-        <nav id="menu"><?php echo $navList; ?></nav>
+
         <main>
             <h1>Account Management</h1>
             <h3>Please use this section to update your account details</h3>

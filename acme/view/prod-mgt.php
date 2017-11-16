@@ -18,13 +18,12 @@ if (isset($_SESSION['message'])) {
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css" media="screen">
 
-    <!-- JavaScript files that have to load first -->
-    <script src="../js/scripts.js"></script>
+    <?php include '../common/head.php'; ?>
 </head>
 <body>
     <div class="content">
         <?php require '../common/header.php'; ?>
-        <nav id="menu"><?php echo $navList; ?></nav>
+
         <main>
             <h1>Products Management</h1>
             <a href="index.php?action=addcat" class="linkbutton">Add Category</a><br>

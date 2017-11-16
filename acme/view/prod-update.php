@@ -12,20 +12,14 @@ if ($_SESSION['clientData']['clientLevel'] < 2) {
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title><?php if(isset($prodInfo['invName'])){ echo "Modify $prodInfo[invName] ";} elseif(isset($invName)) { echo $invName; }?> | Acme update products</title>
 
-    <!-- CSS files -->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css" media="screen">
-
-    <!-- Javascript files that have to load at the top -->
-    <script src="../js/scripts.js"></script>
-
+    <?php include '../common/head.php'; ?>
 
 </head>
 <body>
 
     <div class="content">
         <?php require '../common/header.php'; ?>
-        <nav id="menu"><?php echo $navList; ?></nav>
+
         <main>
         <h1><?php if(isset($prodInfo['invName'])){ echo "Modify $prodInfo[invName] ";} elseif(isset($invName)) { echo $invName; }?></h1>
             <?php

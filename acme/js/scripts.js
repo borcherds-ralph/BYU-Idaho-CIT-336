@@ -1,3 +1,7 @@
+function toggleHam() {
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
+
 function footerDate() {
     /***********************************
      *    Defining Table                *

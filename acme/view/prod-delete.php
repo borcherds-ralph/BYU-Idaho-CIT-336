@@ -12,12 +12,7 @@ if ($_SESSION['clientData']['clientLevel'] < 2) {
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title><title><?php if(isset($prodInfo['invName'])){ echo "Delete $prodInfo[invName]";} ?> | Acme, Inc.</title>
 
-    <!-- CSS files -->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css" media="screen">
-
-    <!-- Javascript files that have to load at the top -->
-    <script src="../js/scripts.js"></script>
+    <?php include '../common/head.php'; ?>
 
 
 </head>
@@ -25,7 +20,7 @@ if ($_SESSION['clientData']['clientLevel'] < 2) {
 
     <div class="content">
         <?php require '../common/header.php'; ?>
-        <nav id="menu"><?php echo $navList; ?></nav>
+
         <main>
         <h1><?php if(isset($prodInfo['invName'])){ echo "Delete $prodInfo[invName]";} ?></h1>
             <?php

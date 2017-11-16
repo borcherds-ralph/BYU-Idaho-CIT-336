@@ -7,16 +7,13 @@
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Acme</title>
     
-    <!-- CSS files -->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css" media="screen">
-    <script src="../js/scripts.js"></script>
+    <?php include '../common/head.php'; ?>
 </head>
 <body>
     <div class="content">
 
         <?php require '../common/header.php'; ?>
-        <?php require '../common/nav.php'; ?>
+
         <main>
             <h1>User Login</h1>
             <?php
