@@ -16,7 +16,7 @@
         <main>
             <h1>Content Title Here</h1>
         </main>
-    <?php require ../"common/footer.php" ?>
+    <?php require '../common/footer.php' ?>
     </div>
     <!-- Latest jQuery Library un-comment if needed-->
     <!-- <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
