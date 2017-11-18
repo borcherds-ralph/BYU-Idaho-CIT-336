@@ -28,14 +28,13 @@
         <main>
             <h1><?php echo $product['invName']; ?></h1>
             <?php if(isset($message)){ echo $message; } ?>
-            <h2><?php echo $imgPath; ?></h2>
             <div  class="prodInfo">
                 <div class="prodImage">
-                    <img src='<?php echo $imgpath . $product['invImage']; ?>' id='prodImage'>
+                    <img src='<?php echo $imgpath . $product['invImage']; ?>' id='prodImage' alt='Image of <?php echo $product['invName']; ?> on Acme.com'>
                 </div>
                 
                 <div class="prodDetails">
-                <h3 id="prodDescription">Description: <?php echo $product['invDescription']; ?></h3>
+                <h4 id="prodDescription">Description: <?php echo $product['invDescription']; ?></h4>
 
                     <p id="prodPrice">Price: <?php echo $product['invPrice']; ?></p>
 
