@@ -36,7 +36,7 @@ if ($action == NULL){
 }
 // Build the navigation
 $categories = getCategories();
-$navList = navList($categories, $action);
+$navList = navList($categories, $action, $prodcat);
 
 if(isset($_COOKIE['firstname'])){
     $cookieFirstname = filter_input(INPUT_COOKIE, 'firstname', FILTER_SANITIZE_STRING);

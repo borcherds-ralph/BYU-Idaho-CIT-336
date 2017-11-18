@@ -32,7 +32,7 @@ function makeCategories($categories){
 }
 
 // Create Navigation
-function navList($categories, $action) {
+function navList($categories, $action, $prodcat) {
     if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
     {
          $basepath = '/cit336/acme';
@@ -44,12 +44,12 @@ function navList($categories, $action) {
 
     // Build a navigation bar using the $categories array
     $navList = "<ul class='navigation'>";
-    if ($action == NULL) {
+    if ($action == NULL && $prodcat == NULL) {
         $active = "class='active'"; 
     }
     $navList .= "<li $active><a href='$basepath/index.php' title='View the Acme home page'>Home</a></li>";
     foreach ($categories as $category) {
-        if ($action == $category['categoryName']) {
+        if ($action == $category['categoryName'] || $prodcat == $category['categoryId']) {
             $active = "class='active'"; 
         } else {
             $active = NULL;
@@ -80,10 +80,11 @@ function buildProductsDisplay($products){
         $basepath = '/acme';
         $imgpath = '';
     }
+
     $pd = '<ul id="prod-display">';
     foreach ($products as $product) {
      $pd .= '<li>';
-     $pd .= "<a href='$basepath/products/?action=proddetail&invId=$product[invId]'><img src='" . $imgpath . "$product[invThumbnail]' alt='Image of $product[invName] on Acme.com'>";
+     $pd .= "<a href='$basepath/products/?action=proddetail&invId=$product[invId]&prodcat=$product[categoryId]'><img src='" . $imgpath . "$product[invThumbnail]' alt='Image of $product[invName] on Acme.com'>";
      $pd .= '<hr>';
      $pd .= "<h2>$product[invName]</h2>";
      $pd .= "<span>$$product[invPrice]</span></a>";

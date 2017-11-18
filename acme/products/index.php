@@ -38,10 +38,11 @@ if ($action == NULL){
 }
 
 $type = filter_input(INPUT_GET, 'type', FILTER_SANITIZE_STRING);
+$prodcat = urldecode(filter_input(INPUT_GET, 'prodcat', FILTER_SANITIZE_STRING));
 
 // Build the navigation
 $categories = getCategories();
-$navList = navList($categories, $type);
+$navList = navList($categories, $type, $prodcat);
 
 
 if(isset($_COOKIE['firstname'])){

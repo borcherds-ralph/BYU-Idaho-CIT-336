@@ -32,7 +32,7 @@ if ($action == NULL){
 
 // Build the navigation
 $categories = getCategories();
-$navList = navList($categories, $action);
+$navList = navList($categories, $action, $prodcat);
 
 // Check if the firstname cookie exists, get its value
 if(isset($_COOKIE['firstname'])){

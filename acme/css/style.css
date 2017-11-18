@@ -552,14 +552,37 @@ input:checked~label {
 }
 
 #prodImage {
-    width: calc(90%);
-    height: calc(90%);
+    max-height: 150px;
 }
 
 .prodDetails {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+#prodDescription {
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+}
+
+#prodPrice,
+#prodStock,
+#prodWeight,
+#prodLocation,
+#prodStyle {
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5px 0 5px 0;
+}
+
+#prodPrice {
+    color: #ee3333;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 2.5em;
+    margin: 0;
 }
 
 @media only screen and (min-width: 641px) and (max-width: 959px) {
@@ -791,8 +814,7 @@ input:checked~label {
         flex-direction: row;
     }
     #prodImage {
-        width: calc(90%);
-        height: calc(90%);
+        max-height: 300px;
     }
     .prodDetails {
         display: flex;
@@ -1030,8 +1052,7 @@ input:checked~label {
         flex-direction: row;
     }
     #prodImage {
-        width: calc(90%);
-        height: calc(90%);
+        max-height: 300px;
     }
     .prodDetails {
         display: flex;
