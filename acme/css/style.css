@@ -1061,4 +1061,12 @@ input:checked~label {
         flex-wrap: wrap;
         width: calc(49%);
     }
+    .review-items {
+        display: flex;
+        flex-direction: column;
+    }
+    .review {
+        display: flex;
+        flex-wrap: nowrap;
+    }
 }

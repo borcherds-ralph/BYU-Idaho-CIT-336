@@ -4,8 +4,8 @@
                 <div class="logo"><a href="<?php echo $basepath; ?>"><img src="<?php echo $basepath; ?>/images/site/logo.gif" id="logo" alt="ACME Logo"></a></div>
                 <div class="right">
                     <div class="account">
-                        <?php if(isset($cookieFirstname)){
-                            echo "<span id='welcome'>Welcome $cookieFirstname</span>";
+                        <?php if (isset($_SESSION['loggedin'])) {
+                            echo "<span id='welcome'><a href='$basepath/accounts'>Welcome $cookieFirstname</a></span>";
                         } ?>
                         <?php
                             if (isset($_SESSION['loggedin'])) {

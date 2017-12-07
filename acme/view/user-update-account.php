@@ -21,7 +21,7 @@
         <?php require '../common/header.php'; ?>
         <nav id="menu"><?php echo $navList; ?></nav>
         <main>
-        <h1><?php if(isset($clientInfo['clientFirstname'])){ echo "Modify $clientInfo[clientFirstname] $clientInfo[clientLastname] ";} elseif(isset($clientFirstname)) { echo $cleintFirstname; }?></h1>
+        <h1><?php if(isset($clientData['clientFirstname'])){ echo "Modify $clientData[clientFirstname] $clientData[clientLastname] ";} elseif(isset($clientFirstname)) { echo $cleintFirstname; }?></h1>
             <?php
                 if (isset($message)) {
                 echo $message;
@@ -31,19 +31,19 @@
                 <fieldset>
                     <div>
                         <input class="requiredinvalid" id="clientFirstname" name="clientFirstname"
-                        type="text" required <?php if(isset($clientInfo['clientFirstname'])) {echo "value='$clientInfo[clientFirstname]'"; } ?> >
+                        type="text" required <?php if(isset($clientData['clientFirstname'])) {echo "value='$clientData[clientFirstname]'"; } ?> >
                         <label for="clientFirstname">First Name</label>
                     </div>
                     <div>
                         <input class="requiredinvalid" id="clientLastname" name="clientLastname"
-                        type="text" required <?php if(isset($clientInfo['clientLastname'])) {echo "value='$clientInfo[clientLastname]'"; } ?> >
+                        type="text" required <?php if(isset($clientData['clientLastname'])) {echo "value='$clientData[clientLastname]'"; } ?> >
                         <label for="clientLastname">Last Name</label>
                     </div>
                     <div>
                         <input class="requiredinvalid" id="clientEmail" name="clientEmail"
                         type="email" required 
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" tabindex="3" 
-                        <?php if(isset($clientInfo['clientEmail'])) {echo "value='$clientInfo[clientEmail]'";  } ?>>
+                        <?php if(isset($clientData['clientEmail'])) {echo "value='$clientData[clientEmail]'";  } ?>>
                         <label for="clientEmail">e-Mail Address</label>
                     </div>
                     
@@ -52,7 +52,7 @@
                 <input type="submit" name="submit" value="Update Info">
                 <!-- Add the action name - value pair -->
                 <input type="hidden" name="action" value="updateClient">
-                <input type="hidden" name="clientId" value="<?php if(isset($clientInfo['clientId'])){ echo $clientInfo['clientId'];} elseif(isset($clientId)){ echo $clientId; } ?>">
+                <input type="hidden" name="clientId" value="<?php if(isset($clientData['clientId'])){ echo $clientData['clientId'];} elseif(isset($clientId)){ echo $clientId; } ?>">
                 
                 
             </form>

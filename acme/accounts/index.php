@@ -1,18 +1,22 @@
 <?php
-// Create or access a Session
-session_start();
-
 /*
  * ACME Accounts Controller
  */
-// Get the database connection file
+// Create or access a Session
+session_start();
+
+ // Get the database connection file
 require_once '../library/connections.php';
-// Get the functions library
+// Get the functions.php file
 require_once '../library/functions.php';
 // Get the acme model for use as needed
 require_once '../model/acme-model.php';
 // Get the accounts model
 require_once '../model/accounts-model.php';
+// Get the products model
+require_once '../model/products-model.php';
+// Get the reviews model
+require_once '../model/reviews-model.php';
 
 
 
@@ -38,11 +42,23 @@ if ($action == NULL){
 $categories = getCategories();
 $navList = navList($categories, $action, $prodcat);
 
-if(isset($_COOKIE['firstname'])){
+// Check if the firstname cookie exists, get its value
+if (isset($_SESSION['loggedin'])) {
+    if (isset($_COOKIE['firstname'])){
     $cookieFirstname = filter_input(INPUT_COOKIE, 'firstname', FILTER_SANITIZE_STRING);
+    setcookie('firstname', $_SESSION['clientData']['clientFirstname'], strtotime("+1 year"), $basepath);
+    } elseif (!isset($_COOKIE['firstname'])){
+        setcookie('firstname', $_SESSION['clientData']['clientFirstname'], strtotime("+1 year"), $basepath);
+        $cookieFirstname = filter_input(INPUT_COOKIE, 'firstname', FILTER_SANITIZE_STRING);
+        
+    }
+}  else {
+    setcookie('firstname', $_SESSION['clientData']['clientFirstname'], time() - 3600, $basepath);
 }
 
-$clientInfo = getClient($_SESSION['clientData']['clientEmail']);
+$clientData = getClient($_SESSION['clientData']['clientEmail']);
+array_pop($clientData);
+$clientId = $_SESSION['clientData']['clientId'];
 
     switch ($action) {
 
@@ -140,7 +156,10 @@ $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
             $_SESSION['clientData'] = $clientData;
             setcookie('firstname', $_SESSION['clientData']['clientFirstname'], strtotime('+1 year'), $basepath);
             $cookieFirstname = $_SESSION['clientData']['clientFirstname'];
+            
             // Send them to the admin view
+            $reviews = reviewGetAllClient($clientData['clientId']);
+            $reviewList = buildClientReviews($reviews);
             include '../view/admin.php';
             exit;
         break;
@@ -148,12 +167,12 @@ $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
         case 'Logout':
             session_destroy();
             setcookie('firstname', $_SESSION['clientData']['clientFirstname'], time() - 3600, $basepath);
-            header('location:' . $basepath);
+            header('location: https://google.com');
             exit;
         break;
         
         case 'updateUSR':
-            $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
+            $clientData = getClient($_SESSION['clientData']['clientEmail']);
             include '../view/user-mgt.php';
             exit;
         break;
@@ -200,7 +219,7 @@ $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
                 exit;
             } else {
                 $message = "<p>Sorry $clientFirstname, but the update failed. Please try again.</p>";
-                $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
+                $clientData = getClient($_SESSION['clientData']['clientEmail']);
                 include '../view/user-mgt.php';
                 exit;
             }
@@ -209,7 +228,7 @@ $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
         break;
 
         case 'updatePWD':
-            $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
+            $clientData = getClient($_SESSION['clientData']['clientEmail']);
             include '../view/user-mgt.php';
             exit;
         break;
@@ -221,7 +240,7 @@ $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
 
             $checkedPassword = checkPassword($clientPassword);
             $hashedPassword = password_hash($clientPassword, PASSWORD_DEFAULT);
-            // $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
+            // $clientData = getClient($_SESSION['clientData']['clientEmail']);
 
             // Check for missing data
             if(empty($checkedPassword)) {
@@ -234,11 +253,11 @@ $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
 
             // Check and report the result
             if($regOutcome === 1){
-                $message = "<p>Thanks for updating your password $clientInfo[clientFirstname].</p>";
+                $message = "<p>Thanks for updating your password $clientData[clientFirstname].</p>";
                 include '../view/admin.php';
                 exit;
             } else {
-                $message = "<p>Sorry $clientInfo[clientFirstname], but the password update failed. Please try again.</p>";
+                $message = "<p>Sorry $clientData[clientFirstname], but the password update failed. Please try again.</p>";
                 include '../view/user-mgt.php';
                 exit;
             }
@@ -247,6 +266,8 @@ $clientInfo = getClient($_SESSION['clientData']['clientEmail']);
         break;
 
         default:
+            $reviews = reviewGetAllClient($_SESSION['clientData']['clientId']);
+            $reviewList = buildClientReviews($reviews);
             include '../view/admin.php';
 
     }

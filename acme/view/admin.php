@@ -1,5 +1,5 @@
 <?php 
-    $clientInfo = getClient($_SESSION['clientData']['clientEmail']); 
+    $clientData = getClient($_SESSION['clientData']['clientEmail']); 
 ?>
 <!DOCTYPE html>
 <html lang = "en">
@@ -19,21 +19,27 @@
         <?php require '../common/header.php'; ?>
 
         <main>
-            <h1><?php echo  $clientInfo['clientFirstname'] . " " .  $clientInfo['clientLastname']; ?></h1>
+            <h1><?php echo  $clientData['clientFirstname'] . " " .  $clientData['clientLastname']; ?></h1>
             <?php
                 if (isset($message)) {
                 echo $message;
                 }
             ?>
             <ul>
-                <li>FirstName: <strong><?php echo $clientInfo['clientFirstname']; ?></strong></li>
-                <li>LastName: <strong><?php echo $clientInfo['clientLastname']; ?></strong></li>
-                <li>Email: <strong><?php echo  $clientInfo['clientEmail']; ?></strong></li>
+                <li>FirstName: <strong><?php echo $_SESSION['clientData']['clientFirstname']; ?></strong></li>
+                <li>LastName: <strong><?php echo $_SESSION['clientData']['clientLastname']; ?></strong></li>
+                <li>Email: <strong><?php echo  $_SESSION['clientData']['clientEmail']; ?></strong></li>
+                
             </ul>
-            <?php if( $clientInfo['clientLevel'] > 1) { ?>
+            <?php if( $_SESSION['clientData']['clientLevel'] > 1) { ?>
                 <h3>Please click on this link if you wish to go to the Products Page.</h3> 
                 <a href="<?php echo $basepath; ?>/products">Products Page</a>
-           <?php  }   ?>
+            <?php  }   ?>
+            <h3>You may edit your reviews below.</h3> 
+            <?php echo $reviewList; 
+            ?>
+            
+          
         </main>
     <?php require "../common/footer.php" ?>
     </div>

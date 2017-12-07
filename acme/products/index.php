@@ -10,9 +10,11 @@ require_once '../library/functions.php';
 // Get the acme model for use as needed
 require_once '../model/acme-model.php';
 // Get the accounts model
-// require_once '../model/accounts-model.php';
+require_once '../model/accounts-model.php';
 // Get the products model
 require_once '../model/products-model.php';
+// Get the Reviews
+require_once '../model/reviews-model.php';
 
 
 // Set base path depending on localhost vs server
@@ -45,9 +47,16 @@ $categories = getCategories();
 $navList = navList($categories, $type, $prodcat);
 
 
-if(isset($_COOKIE['firstname'])){
+// Check if the firstname cookie exists, get its value
+if (isset($_SESSION['loggedin'])) {
+    if(isset($_COOKIE['firstname'])){
     $cookieFirstname = filter_input(INPUT_COOKIE, 'firstname', FILTER_SANITIZE_STRING);
-}
+    $clientId = $_SESSION['clientData']['clientId'];
+    }
+ } else {
+     setcookie('firstname', $_SESSION['clientData']['clientFirstname'], time() - 3600, $basepath);
+ }
+ 
 // Switch statement to determine what to do.
  switch ($action) {
 
@@ -70,6 +79,18 @@ if(isset($_COOKIE['firstname'])){
         } else {
             $prodDisplay = buildProduct($product);
         }
+
+
+        // Reviews display code
+        $reviewDisplay = reviewsGet($type);
+        if(count($reviewDisplay) > 0){
+            $reviewList = buildProductReviews($reviewDisplay);
+        } else {
+            $message = "<p>There are no reviews for this product.</p>";
+        }
+            
+        // End Reviews code
+
         include '../view/productdetails.php';
     break;
 
@@ -100,8 +121,8 @@ if(isset($_COOKIE['firstname'])){
     case 'addprod':
         // This include is all the fields on the Add/Modify Inventory Form
         include '../library/product-add.php';
-        $navList = navList($categories, $action);
-        $message = "<p>Sorry $clientFirstname, but the registration failed. Please try again.</p>";
+        $navList = navList($categories, $action, $prodcat);
+        $message = "<p>Sorry $cookieFirstname, but the registration failed. Please try again.</p>";
         $catList = categoryList($categories);
         if ((empty($invName) || empty($invDescription) || empty($invImage) || empty($invThumbnail) || empty($invPrice) || empty($invStock) || empty($invSize) || empty($invWeight)) || empty($invLocation) || empty($categoryId) || empty($invVendor) || empty($invStyle)) {
                 $message = 'Please provide information for all empty fields.';
@@ -133,12 +154,6 @@ if(isset($_COOKIE['firstname'])){
         include '../view/prod-add.php';
     break;
 
-    case 'Logout':
-        session_destroy();
-        setcookie('firstname', $_SESSION['clientData']['clientFirstname'], time() - 3600, $basepath);
-        header('location:' . $basepath);
-    exit;
-    
     case 'mod':
         $invId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
         $prodInfo = getProductInfo($invId);
@@ -213,24 +228,7 @@ if(isset($_COOKIE['firstname'])){
         }
     break;
     default:
-        $products = getProductBasics();
-        if(count($products) > 0){
-            $prodList = "<div class='inv-items'>";
-            $prodList .= "<div class='inv-line prodname col1' id='prodtitle'>Product Name</div>";
-            $prodList .= "<div class='inv-line prodmodify col2'></div>";
-            $prodList .= "<div class='inv-line proddelete col3'></div>";
-            foreach ($products as $key=>$product) {
-                if($key % 2 == 0) {
-                    $rowoddeven = 'even';
-                } else {$rowoddeven = 'odd';}
-                $prodList .= "<div class='inv-line prodname col1 $rowoddeven'>$product[invName]</div>";
-                $prodList .= "<div class='inv-line prodmodify col2 $rowoddeven'><a href='$basepath/products?action=mod&id=$product[invId]' title='Click to modify'>Modify</a></div>";
-                $prodList .= "<div class='inv-line proddelete col3 $rowoddeven'><a href='$basepath/products?action=del&id=$product[invId]' title='Click to delete'>Delete</a></div>";
-            }
-             $prodList .= '</div>';
-            } else {
-             $message = '<p class="notify">Sorry, no products were returned.</p>';
-          }
+        
         include '../view/prod-mgt.php';
     break;
   }

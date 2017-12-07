@@ -141,6 +141,7 @@ function deleteProduct($invId) {
 function getProductsByCategory($type){
     $db = acmeConnect();
     $sql = 'SELECT * FROM inventory WHERE categoryId IN (SELECT categoryId FROM categories WHERE categoryName = :catType)';
+    // $SQL = SELECT inv.*, cat.categoryId from INVENTORY as inv  join categories as cat ON cat.categoryId = inv.categoryId WHERE cat.categoryName = :catType
     $stmt = $db->prepare($sql);
     $stmt->bindValue(':catType', $type, PDO::PARAM_STR);
     $stmt->execute();

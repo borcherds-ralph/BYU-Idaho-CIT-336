@@ -74,7 +74,7 @@ function categoryList($categories) {
 function buildProductsDisplay($products){
     if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
     {
-         $basepath = '/cit336/acme/';
+         $basepath = '/cit336/acme';
          $imgpath = '/cit336';
     } else {
         $basepath = '/acme';
@@ -84,7 +84,7 @@ function buildProductsDisplay($products){
     $pd = '<ul id="prod-display">';
     foreach ($products as $product) {
      $pd .= '<li>';
-     $pd .= "<a href='$basepath/products/?action=proddetail&invId=$product[invId]&prodcat=$product[categoryId]'><img src='" . $imgpath . "$product[invThumbnail]' alt='Image of $product[invName] on Acme.com'>";
+     $pd .= "<a href=" . $basepath . "/products/?action=proddetail&invId=$product[invId]&prodcat=$product[categoryId]><img src='" . $imgpath . "$product[invThumbnail]' alt='Image of $product[invName] on Acme.com'>";
      $pd .= '<hr>';
      $pd .= "<h2>$product[invName]</h2>";
      $pd .= "<span>$$product[invPrice]</span></a>";
@@ -97,7 +97,7 @@ function buildProductsDisplay($products){
 function buildProduct($products){
     if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
     {
-         $basepath = '/cit336/acme/';
+         $basepath = '/cit336/acme';
          $imgpath = '/cit336';
     } else {
         $basepath = '/acme';
@@ -125,7 +125,7 @@ function makeThumbnailName($image) {
 function buildImageDisplay($imageArray) {
     if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
     {
-         $basepath = '/cit336/acme/';
+         $basepath = '/cit336/acme';
          $imgpath = '/cit336';
     } else {
         $basepath = '/acme';
@@ -276,3 +276,54 @@ function resizeImage($old_image_path, $new_image_path, $max_width, $max_height) 
     // Free any memory associated with the old image
     imagedestroy($old_image);
 }  
+
+
+// Build the list of products to display.
+function buildProductReviews($reviews) {
+    if(count($reviews) >0) {
+        $reviewList = "<div class='review-items'>";
+        foreach ($reviews as $key => $review) {
+            if($key & 1) {
+                $rowoddeven = 'odd';
+            } else {$rowoddeven = 'even';}
+            $reviewList .= "<div class='review col1 $rowoddeven'>" . $review['reviewText'] . "</div>";
+            $reviewList .= "<div class='review col2 $rowoddeven'>Reviewed by: " . substr($review['clientFirstName'],0, 1) . $review['clientLastName'] . "</div>";
+            $reviewList .= "<div class='review col3 $rowoddeven'>Reviewed on: " .$review['reviewDate'] ."</div>";
+        }
+            $reviewList .= '</div>';
+        } else {
+            $reviewList = '<p class="notify">Sorry, no reviews were found.</p>';
+        }
+    return $reviewList;
+}
+
+
+// Build the list of reviews for a user.
+function buildClientReviews($reviews) {
+    if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
+    {
+         $basepath = '/cit336/acme';
+         $imgpath = '/cit336';
+    } else {
+        $basepath = '/acme';
+        $imgpath = '';
+    }
+    if(count($reviews) > 0) {
+        $reviewList = "<div class='review-items'>";
+        $reviewList .= "<div class='review col1' id='reviewtitle'>Review Text</div>";
+        $reviewList .= "<div class='review col2'></div>";
+        $reviewList .= "<div class='review col3'></div>";
+        foreach ($reviews as $key => $review) {
+            if($key & 1) {
+                $rowoddeven = 'odd';
+            } else {$rowoddeven = 'even';}
+            $reviewList .= "<div class='review col1 $rowoddeven'>" . $review['reviewText'] . "</div>";
+            $reviewList .= "<div class='review col2 $rowoddeven'><a href=". $basepath . "/reviews?action=mod&id=" . $review['reviewId'] . " title='Click to modify'>Edit</a></div>";
+            $reviewList .= "<div class='review col3 $rowoddeven'><a href=". $basepath . "/reviews?action=reviewdeleteconfirm&id=" . $review['reviewId'] . " title='Click to delete'>Delete</a></div>";
+        }
+            $reviewList .= '</div>';
+        } else {
+            $reviewList = '<p class="notify">Sorry, no reviews were found.</p>';
+        }
+    return $reviewList;
+}

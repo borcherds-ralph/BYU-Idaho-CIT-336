@@ -1,6 +1,6 @@
 <?php
 if ($_SESSION['clientData']['clientLevel'] < 2) {
- header("location: " . $basepath . "/index.php");
+ header("location: " . $basepath);
  exit;
 }?>
 <!DOCTYPE html>

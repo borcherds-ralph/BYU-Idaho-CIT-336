@@ -21,7 +21,7 @@
         <?php require '../common/header.php'; ?>
         <nav id="menu"><?php echo $navList; ?></nav>
         <main>
-        <h1><?php if(isset($clientInfo['clientFirstname'])){ echo "Modify $clientInfo[clientFirstname] $clientInfo[clientLastname] Password ";} elseif(isset($clientFirstname)) { echo $cleintFirstname; }?></h1>
+        <h1><?php if(isset($clientData['clientFirstname'])){ echo "Modify $clientData[clientFirstname] $clientData[clientLastname] Password ";} elseif(isset($clientFirstname)) { echo $cleintFirstname; }?></h1>
             <?php
                 if (isset($message)) {
                 echo $message;
@@ -31,7 +31,7 @@
                 <fieldset>
                     <div>
                         <input class="requiredinvalid" id="clientPassword" name="clientPassword"
-                        type="password" required <?php if(isset($clientInfo['clientPassword'])) {echo "value='$clientInfo[clientPassword]'"; } ?>
+                        type="password" required <?php if(isset($clientData['clientPassword'])) {echo "value='$clientData[clientPassword]'"; } ?>
                         pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
                         title="Passwords must be at least 8 characters and contain at least 1 number, 1 capital letter and 1 special character."/>
                         <label for="clientPassword">Password</label>
@@ -41,7 +41,7 @@
                 <input type="submit" name="submit" value="Update Password">
                 <!-- Add the action name - value pair -->
                 <input type="hidden" name="action" value="updatePassword">
-                <input type="hidden" name="clientId" value="<?php if(isset($clientInfo['clientId'])){ echo $clientInfo['clientId'];} elseif(isset($clientId)){ echo $clientId; } ?>">
+                <input type="hidden" name="clientId" value="<?php if(isset($clientData['clientId'])){ echo $clientData['clientId'];} elseif(isset($clientId)){ echo $clientId; } ?>">
                 
             </form>
         </main>

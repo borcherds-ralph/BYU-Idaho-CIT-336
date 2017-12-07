@@ -7,6 +7,12 @@
      $basepath = '/acme';
      $imgpath = '';
  }
+ $result = filter_input(INPUT_GET, 'result', FILTER_SANITIZE_NUMBER_INT);
+ if ($result > 0) {
+    $reviewMessage = "<h3 class='success'>Thank you for submitting a review.</h3>";
+} else {
+    $reviewMessage = "<h3 class='failure'>There was an issue submitting your review.  Please try again</h3>";
+}
  ?>
 <!DOCTYPE html>
 <html lang = "en">
@@ -34,6 +40,7 @@
                 </div>
                 
                 <div class="prodDetails">
+                <h5>Reviews can be found below</h5>
                 <h4 id="prodDescription">Description: <?php echo $product['invDescription']; ?></h4>
 
                     <p id="prodPrice">Price: <?php echo $product['invPrice']; ?></p>
@@ -47,7 +54,28 @@
                     <p id="prodStyle">Style: <?php echo $product['invStyle']; ?></p>
                 </div>
             </div>
+            <section class="reviews">
+            
+            <h2>Customer Reviews</h2>
+            <?php
+                if (isset ($reviewMessage)) {
+                    echo $reviewMessage;
+                }
+                if (isset($_SESSION['loggedin'])) {
+                    echo "<p>Please leave a review so others can see what you think about this product.</p>";
+                    include '../common/review-new.php';
+                } else {
+                    echo "<p>You can leave a review if you Log in first.</p>";  
+                }
+                echo $result;
+
+                echo $reviewList;
+                
+                
+            ?>
+        </section>
         </main>
+        
     <?php require "../common/footer.php" ?>
     </div>
     <!-- Latest jQuery Library un-comment if needed-->

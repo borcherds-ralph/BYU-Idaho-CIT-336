@@ -35,9 +35,15 @@ $categories = getCategories();
 $navList = navList($categories, $action, $prodcat);
 
 // Check if the firstname cookie exists, get its value
-if(isset($_COOKIE['firstname'])){
+if (isset($_SESSION['loggedin'])) {
+    if(isset($_COOKIE['firstname'])){
     $cookieFirstname = filter_input(INPUT_COOKIE, 'firstname', FILTER_SANITIZE_STRING);
+    $clientId = $_SESSION['clientData']['clientId'];
+    }
+} else {
+    setcookie('firstname', $_SESSION['clientData']['clientFirstname'], time() - 3600, $basepath);
 }
+
  switch ($action){
     
     case 'anything':
