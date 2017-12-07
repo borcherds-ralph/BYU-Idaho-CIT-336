@@ -278,7 +278,7 @@ function resizeImage($old_image_path, $new_image_path, $max_width, $max_height) 
 }  
 
 
-// Build the list of products to display.
+// Build the list of products reviews to display.
 function buildProductReviews($reviews) {
     if(count($reviews) >0) {
         $reviewList = "<div class='review-items'>";
@@ -300,7 +300,7 @@ function buildProductReviews($reviews) {
 }
 
 
-// Build the list of reviews for a user.
+// Build the list of reviews for a user to manage.
 function buildClientReviews($reviews) {
     if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
     {
@@ -312,16 +312,22 @@ function buildClientReviews($reviews) {
     }
     if(count($reviews) > 0) {
         $reviewList = "<div class='review-items'>";
-        $reviewList .= "<div class='review col1' id='reviewtitle'>Review Text</div>";
-        $reviewList .= "<div class='review col2'></div>";
+        $reviewList .= "<div class='odd'>";
+        $reviewList .= "<div class='review col1' id='reviewproduct'>Product</div>";
+        $reviewList .= "<div class='review col2' id='reviewtext'>Review</div>";
         $reviewList .= "<div class='review col3'></div>";
+        $reviewList .= "<div class='review col4'></div>";
+        $reviewList .= "</div>";
         foreach ($reviews as $key => $review) {
             if($key & 1) {
                 $rowoddeven = 'odd';
             } else {$rowoddeven = 'even';}
-            $reviewList .= "<div class='review col1 $rowoddeven'>" . $review['reviewText'] . "</div>";
-            $reviewList .= "<div class='review col2 $rowoddeven'><a href=". $basepath . "/reviews?action=mod&id=" . $review['reviewId'] . " title='Click to modify'>Edit</a></div>";
-            $reviewList .= "<div class='review col3 $rowoddeven'><a href=". $basepath . "/reviews?action=reviewdeleteconfirm&id=" . $review['reviewId'] . " title='Click to delete'>Delete</a></div>";
+            $reviewList .= "<div class=$rowoddeven>";
+            $reviewList .= "<div class='review col1'>" . $review['invName'] . "</div>";
+            $reviewList .= "<div class='review col2'>" . $review['reviewText'] . "</div>";
+            $reviewList .= "<div class='review col3'><a href=". $basepath . "/reviews?action=mod&id=" . $review['reviewId'] . " title='Click to modify'>Edit</a></div>";
+            $reviewList .= "<div class='review col4'><a href=". $basepath . "/reviews?action=reviewdeleteconfirm&id=" . $review['reviewId'] . " title='Click to delete'>Delete</a></div>";
+            $reviewList .= "</div>";
         }
             $reviewList .= '</div>';
         } else {

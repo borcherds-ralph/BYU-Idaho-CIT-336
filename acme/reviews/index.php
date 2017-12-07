@@ -67,8 +67,13 @@ switch ($action) {
         $reviewText = filter_input(INPUT_POST, 'reviewText', FILTER_SANITIZE_STRING);
         $result = reviewCreate($reviewText, $invId, $clientId);
 
-        
+        if ($result > 0) {
+            $reviewMessage = "<h3 class='success'>Thank you for submitting a review.</h3>";
+        } else {
+            $reviewMessage = "<h3 class='failure'>There was an issue submitting your review.  Please try again</h3>";
+        }
 
+        $product = getProductInfo($invId);
 
         // Reviews display code
         $reviewDisplay = reviewsGet($invId);
@@ -78,7 +83,8 @@ switch ($action) {
             $message = "<p>There are no reviews for this product.</p>";
         }
         // call the product detail display when done.
-        header("Location: $referer&result=$result");
+        // header("Location: $referer&result=$result");
+        include '../view/productdetails.php';
         break;
 
 

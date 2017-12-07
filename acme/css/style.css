@@ -607,6 +607,19 @@ input:checked~label {
     font-size: .75em;
 }
 
+.review.col4 {
+    order: 4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: .75em;
+}
+
+#reviewtext,
+#reviewproduct {
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 
 /*
 *
@@ -885,21 +898,33 @@ input:checked~label {
     }
     .review.col1 {
         order: 1;
-        width: calc(40%);
+        width: calc(25%);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1em;
     }
     .review.col2 {
         order: 2;
-        width: calc(25%);
+        width: calc(35%);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1em;
     }
     .review.col3 {
         order: 3;
-        width: calc(25%);
+        width: calc(19%);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1em;
+    }
+    .review.col4 {
+        order: 4;
+        width: calc(19%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: .75em;
+    }
+    #reviewtext,
+    #reviewproduct {
+        font-weight: 700;
+        font-size: 1.5em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     }
     /*  
     *      These are for login and registration forms for all screen sites 
@@ -1274,26 +1299,38 @@ input:checked~label {
     }
     .review.col1 {
         order: 1;
-        width: calc(40%);
+        width: calc(25%);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .review.col2 {
         order: 2;
-        width: calc(25%);
+        width: calc(35%);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .review.col3 {
         order: 3;
-        width: calc(25%);
+        width: calc(19%);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 1.2em;
+        font-size: 1em;
+    }
+    .review.col4 {
+        order: 4;
+        width: calc(19%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: .75em;
+    }
+    #reviewtext,
+    #reviewproduct {
+        font-weight: 700;
+        font-size: 1.5em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     }
     /*  
- *      These are for login and registration forms for all screen sites 
- *      These are the required field formatting 
-*/
+    *      These are for login and registration forms for all screen sites 
+    *      These are the required field formatting 
+    */
     .inputinvalid,
     .textareainvalid {
         border: 1px solid #ff0000;

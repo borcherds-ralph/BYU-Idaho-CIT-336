@@ -43,7 +43,7 @@ function reviewGetClient($reviewId) {
 // Get all reviews for a client
 function reviewGetAllClient($clientId) {
     $db = acmeConnect();
-    $sql = 'SELECT * FROM reviews WHERE clientId = :clientId ORDER BY reviewDate DESC';
+    $sql = 'SELECT rv.*, inv.invName FROM reviews as rv JOIN inventory AS inv ON rv.invId = inv.invId WHERE clientId = :clientId ORDER BY reviewDate DESC';
     $stmt = $db->prepare($sql);
     $stmt->bindValue(':clientId', $clientId, PDO::PARAM_INT);
     $stmt->execute();
