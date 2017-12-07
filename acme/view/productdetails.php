@@ -67,8 +67,6 @@
                 } else {
                     echo "<p>You can leave a review if you Log in first.</p>";  
                 }
-                echo $result;
-
                 echo $reviewList;
                 
                 
