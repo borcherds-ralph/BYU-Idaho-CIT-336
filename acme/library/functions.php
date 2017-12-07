@@ -286,9 +286,11 @@ function buildProductReviews($reviews) {
             if($key & 1) {
                 $rowoddeven = 'odd';
             } else {$rowoddeven = 'even';}
-            $reviewList .= "<div class='review col1 $rowoddeven'>" . $review['reviewText'] . "</div>";
-            $reviewList .= "<div class='review col2 $rowoddeven'>Reviewed by: " . substr($review['clientFirstName'],0, 1) . $review['clientLastName'] . "</div>";
-            $reviewList .= "<div class='review col3 $rowoddeven'>Reviewed on: " .$review['reviewDate'] ."</div>";
+            $reviewList .= "<div class=$rowoddeven>";
+            $reviewList .= "<div class='review col1'>" . $review['reviewText'] . "</div>";
+            $reviewList .= "<div class='review col2'>Reviewed by: " . substr($review['clientFirstName'],0, 1) . $review['clientLastName'] . "</div>";
+            $reviewList .= "<div class='review col3'>Reviewed on: " .$review['reviewDate'] ."</div>";
+            $reviewList .= "</div>";
         }
             $reviewList .= '</div>';
         } else {

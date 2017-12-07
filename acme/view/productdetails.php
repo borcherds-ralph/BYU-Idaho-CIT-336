@@ -8,11 +8,15 @@
      $imgpath = '';
  }
  $result = filter_input(INPUT_GET, 'result', FILTER_SANITIZE_NUMBER_INT);
+ if (is_null($result)) {
+
+ } else {
  if ($result > 0) {
     $reviewMessage = "<h3 class='success'>Thank you for submitting a review.</h3>";
 } else {
     $reviewMessage = "<h3 class='failure'>There was an issue submitting your review.  Please try again</h3>";
 }
+ }
  ?>
 <!DOCTYPE html>
 <html lang = "en">

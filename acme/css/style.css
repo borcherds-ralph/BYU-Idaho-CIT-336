@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Handlee%7cIndie+Flower');
 html {
-    /* color: #0000ee;
-    color: #808080;
-    color: #990033;
-    color: #de2226;
-    color: #fff; */
     color: #000;
     font-family: 'Indie Flower', cursive;
     box-sizing: border-box;
@@ -348,14 +343,6 @@ footer p {
     background-color: #ffcece;
 }
 
-
-/* input:required:invalid,
-input:focus:invalid,
-textarea:required:invalid {
-    border: 1px solid #ff0000;
-    background-color: #ffcece;
-} */
-
 .inputvalid,
 .textareavalid {
     background: #ddf8dd;
@@ -364,26 +351,15 @@ textarea:required:invalid {
 }
 
 
-/* input:required:valid,
-textarea:required:valid {
-    background: #ddf8dd;
-    box-shadow: 0 0 5px #5cd053;
-    border-color: #28921f
-} */
-
-
 /* Form Formatting */
 
 #registrationform,
 #passwordform,
 #loginform {
-    width: calc(75%);
     margin: 0 auto;
 }
 
 fieldset {
-    width: 25em;
-    margin: 10px 10px 30px 10px;
     border: 0 none;
 }
 
@@ -423,7 +399,6 @@ input[type="button"] {
     color: #000;
     font-weight: 700;
     padding: 15px 30px;
-    width: calc(55%);
 }
 
 
@@ -436,7 +411,7 @@ fieldset div {
 
 label {
     order: 1;
-    width: 12em;
+    width: 7em;
     text-align: right;
     padding-right: 0.5em;
     white-space: nowrap;
@@ -465,6 +440,9 @@ select:focus~label {
 input:checked~label {
     font-weight: 700;
 }
+
+
+/* Inventory - Product Items */
 
 .inv-items {
     display: flex;
@@ -499,21 +477,6 @@ input:checked~label {
 .proddelete {
     width: calc(10%);
     display: flex;
-}
-
-.col1,
-.col2,
-.col3 {
-    display: flex;
-    flex-direction: column;
-}
-
-.even {
-    background-color: #e4f2ff;
-}
-
-.odd {
-    background-color: #c4ccf3;
 }
 
 
@@ -584,6 +547,72 @@ input:checked~label {
     line-height: 2.5em;
     margin: 0;
 }
+
+
+/* Product Reviews */
+
+.reviews {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.review-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.review {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.col1,
+.col2,
+.col3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.even {
+    background-color: #e4f2ff;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.odd {
+    background-color: #c4ccf3;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.review.col1 {
+    order: 1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+
+.review.col2 {
+    order: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: .75em;
+}
+
+.review.col3 {
+    order: 3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: .75em;
+}
+
+
+/*
+*
+*   Table sized screens
+*
+*/
 
 @media only screen and (min-width: 641px) and (max-width: 959px) {
     h1 {
@@ -821,7 +850,157 @@ input:checked~label {
         flex-direction: column;
         flex-wrap: wrap;
     }
+    /* Product Reviews */
+    .reviews {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .review-items {
+        display: flex;
+        flex-direction: column;
+    }
+    .review {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .col1,
+    .col2,
+    .col3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .even {
+        background-color: #e4f2ff;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .odd {
+        background-color: #c4ccf3;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .review.col1 {
+        order: 1;
+        width: calc(40%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1em;
+    }
+    .review.col2 {
+        order: 2;
+        width: calc(25%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1em;
+    }
+    .review.col3 {
+        order: 3;
+        width: calc(25%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1em;
+    }
+    /*  
+    *      These are for login and registration forms for all screen sites 
+    *      These are the required field formatting 
+    */
+    .inputinvalid,
+    .textareainvalid {
+        border: 1px solid #ff0000;
+        background-color: #ffcece;
+    }
+    .inputvalid,
+    .textareavalid {
+        background: #ddf8dd;
+        box-shadow: 0 0 5px #5cd053;
+        border-color: #28921f
+    }
+    /* Form Formatting */
+    #registrationform,
+    #passwordform,
+    #loginform {
+        width: calc(75%);
+        margin: 0 auto;
+    }
+    fieldset {
+        width: 25em;
+        margin: 10px 10px 30px 10px;
+        border: 0 none;
+    }
+    fieldset div {
+        margin: 4px 0;
+        padding: 10px 0;
+    }
+    input,
+    textarea,
+    select {
+        font-size: 1em;
+        padding: 2px 5px 4px;
+        border: 1px solid #cecece;
+        border-radius: 2px;
+    }
+    input[type="submit"] {
+        background-color: #ee3333;
+        color: #fff;
+        font-weight: 700;
+        padding: 15px 30px;
+        width: calc(55%);
+    }
+    .linkbutton {
+        background-color: #ee3333;
+        color: #fff;
+        font-weight: 700;
+        padding: 15px 30px;
+        width: calc(55%);
+        text-align: center;
+    }
+    input[type="button"] {
+        background-color: #fff;
+        color: #000;
+        font-weight: 700;
+        padding: 15px 30px;
+        width: calc(55%);
+    }
+    /* flexbox styles for forms */
+    fieldset div {
+        display: flex;
+        align-items: center;
+    }
+    label {
+        order: 1;
+        width: 12em;
+        text-align: right;
+        padding-right: 0.5em;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+    input,
+    textarea,
+    select {
+        order: 2;
+        flex-basis: 15em;
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+    /* label state styles */
+    input:focus~label,
+    textarea:focus~label,
+    select:focus~label {
+        color: #933;
+        font-weight: 700;
+    }
+    input:checked~label {
+        font-weight: 700;
+    }
 }
+
+
+/*
+*
+*   Desktop Screens
+*
+*/
 
 @media only screen and (min-width: 960px) {
     h1 {
@@ -1061,6 +1240,12 @@ input:checked~label {
         flex-wrap: wrap;
         width: calc(49%);
     }
+    .reviews {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
     .review-items {
         display: flex;
         flex-direction: column;
@@ -1068,5 +1253,133 @@ input:checked~label {
     .review {
         display: flex;
         flex-wrap: nowrap;
+    }
+    .col1,
+    .col2,
+    .col3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .even {
+        background-color: #e4f2ff;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .odd {
+        background-color: #c4ccf3;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .review.col1 {
+        order: 1;
+        width: calc(40%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.2em;
+    }
+    .review.col2 {
+        order: 2;
+        width: calc(25%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.2em;
+    }
+    .review.col3 {
+        order: 3;
+        width: calc(25%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.2em;
+    }
+    /*  
+ *      These are for login and registration forms for all screen sites 
+ *      These are the required field formatting 
+*/
+    .inputinvalid,
+    .textareainvalid {
+        border: 1px solid #ff0000;
+        background-color: #ffcece;
+    }
+    .inputvalid,
+    .textareavalid {
+        background: #ddf8dd;
+        box-shadow: 0 0 5px #5cd053;
+        border-color: #28921f
+    }
+    /* Form Formatting */
+    #registrationform,
+    #passwordform,
+    #loginform {
+        width: calc(75%);
+        margin: 0 auto;
+    }
+    fieldset {
+        width: 25em;
+        margin: 10px 10px 30px 10px;
+        border: 0 none;
+    }
+    fieldset div {
+        margin: 4px 0;
+        padding: 10px 0;
+    }
+    input,
+    textarea,
+    select {
+        font-size: 1em;
+        padding: 2px 5px 4px;
+        border: 1px solid #cecece;
+        border-radius: 2px;
+    }
+    input[type="submit"] {
+        background-color: #ee3333;
+        color: #fff;
+        font-weight: 700;
+        padding: 15px 30px;
+        width: calc(55%);
+    }
+    .linkbutton {
+        background-color: #ee3333;
+        color: #fff;
+        font-weight: 700;
+        padding: 15px 30px;
+        width: calc(55%);
+        text-align: center;
+    }
+    input[type="button"] {
+        background-color: #fff;
+        color: #000;
+        font-weight: 700;
+        padding: 15px 30px;
+        width: calc(55%);
+    }
+    /* flexbox styles for forms */
+    fieldset div {
+        display: flex;
+        align-items: center;
+    }
+    label {
+        order: 1;
+        width: 12em;
+        text-align: right;
+        padding-right: 0.5em;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+    input,
+    textarea,
+    select {
+        order: 2;
+        flex-basis: 15em;
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+    /* label state styles */
+    input:focus~label,
+    textarea:focus~label,
+    select:focus~label {
+        color: #933;
+        font-weight: 700;
+    }
+    input:checked~label {
+        font-weight: 700;
     }
 }

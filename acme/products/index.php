@@ -137,7 +137,7 @@ if (isset($_SESSION['loggedin'])) {
         // Check and report the result
         if($regOutcome === 1){
                 $message = "Thanks for adding $invName."; 
-                $sucess = '1'; 
+                $success = '1'; 
         } else {
             
             include '../view/prod-add.php';
