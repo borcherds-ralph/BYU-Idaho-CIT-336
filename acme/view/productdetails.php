@@ -1,10 +1,10 @@
 <?php 
  if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
  {
-      $basepath = '/cit336/acme/';
+      $basepath = '/cit336/acme';
       $imgpath = '/cit336';
  } else {
-     $basepath = '/acme';
+     $basepath = '/acme/';
      $imgpath = '';
  }
 //  $result = filter_input(INPUT_GET, 'result', FILTER_SANITIZE_NUMBER_INT);

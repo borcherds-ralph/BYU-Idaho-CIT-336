@@ -1,6 +1,6 @@
 
 
-<form method="post" action="<?php echo $basepath ?>reviews/index.php" id="newreview">
+<form method="post" action="<?php echo $basepath ?>/reviews/index.php" id="newreview">
     <fieldset> 
     <div>
             <input class="inputvalid" id="reviewClientName" name="reviewClientName" type="text" readonly title="Review Text" <?php echo "value='" . substr($_SESSION['clientData']['clientFirstname'],0, 1) . $_SESSION['clientData']['clientLastname'] . "'" ?> >
