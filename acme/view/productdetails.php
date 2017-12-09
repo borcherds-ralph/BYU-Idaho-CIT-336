@@ -1,15 +1,4 @@
-<?php 
- if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
- {
-      $basepath = '/cit336/acme';
-      $imgpath = '/cit336';
- } else {
-     $basepath = '/acme/';
-     $imgpath = '';
- }
-//  $result = filter_input(INPUT_GET, 'result', FILTER_SANITIZE_NUMBER_INT);
 
- ?>
 <!DOCTYPE html>
 <html lang = "en">
 <head>
@@ -77,7 +66,14 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- JavaScript files -->
     
-
+<script>
+    var maxLength = 45;
+    $('textarea').keyup(function() {
+        var length = $(this).val().length;
+        var length = maxLength-length;
+        $('#chars').text(length);
+    });
+</script>
 
 </body>
 </html>

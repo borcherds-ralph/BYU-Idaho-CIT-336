@@ -35,8 +35,9 @@ if ($_SESSION['clientData']['clientLevel'] < 2) {
                         <label for="reviewDate">Date of Review</label>
                     </div>
                     <div>
-                        <textarea class="textareainvalid" id="reviewText" name="reviewText" rows="5" cols="40" required placeholder="Item Description" tabindex="2" title="Enter the description of the item"><?php if(isset($review['reviewText'])){echo $review['reviewText'];} ?></textarea>
+                        <textarea class="textareainvalid" id="reviewText" name="reviewText" rows="5" cols="40" maxlength="45" required placeholder="Item Description" tabindex="2" title="Enter the description of the item"><?php if(isset($review['reviewText'])){echo $review['reviewText'];} ?></textarea>
                         <label for="reviewText">Text of Review</label>
+                        <div id="charcount"><span id="chars">45</span> &nbsp;characters remaining</div>
                     </div>
                     
                     
@@ -56,6 +57,13 @@ if ($_SESSION['clientData']['clientLevel'] < 2) {
     <!-- JavaScript files -->
     <!-- This script will fill in all the values that had items in them so the person can add only the missing items. -->
     
-
+<script>
+    var maxLength = 45;
+    $('textarea').keyup(function() {
+        var length = $(this).val().length;
+        var length = maxLength-length;
+        $('#chars').text(length);
+    });
+</script>
 </body>
 </html>

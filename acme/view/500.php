@@ -1,12 +1,8 @@
-<?php if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
-{
-     $basepath = '/cit336/acme';
-}
+<?php 
+// Set base path depending on localhost vs server
+$basepath = setBasePath();
+$imgpath = setImagePath();
 
-else
-{
-    $basepath = '/acme';
-}
 ?>
 <!DOCTYPE html>
 <html lang = "en">

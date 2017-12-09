@@ -83,3 +83,4 @@ function footerDate() {
     // write output the the currentdate ID in the HTML code
     document.getElementById("currentdate").innerHTML = day + ", " + currdate + " " + month + " " + year;
 }
+

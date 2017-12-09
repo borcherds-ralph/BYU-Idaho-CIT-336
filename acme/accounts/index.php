@@ -21,12 +21,9 @@ require_once '../model/reviews-model.php';
 
 
 // Set base path depending on localhost vs server
-if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
-{
-     $basepath = '/cit336/acme';
-} else {
-    $basepath = '/acme';
-}
+$basepath = setBasePath();
+$imgpath = setImagePath();
+
 
 
 $doc = $_SERVER['REQUEST_URI'];
@@ -116,6 +113,7 @@ $clientId = $_SESSION['clientData']['clientId'];
         break;
         
         case 'login':
+            setcookie('firstname', $_SESSION['clientData']['clientFirstname'], time() - 3600, $basepath);
             include '../view/login.php';
         break;
 

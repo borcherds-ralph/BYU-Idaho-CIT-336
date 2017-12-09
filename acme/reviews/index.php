@@ -23,12 +23,9 @@ require_once '../model/reviews-model.php';
 
 
 // Set base path depending on localhost vs server
-if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
-{
-     $basepath = '/cit336/acme';
-} else {
-    $basepath = '/acme';
-}
+$basepath = setBasePath();
+$imgpath = setImagePath();
+
 
 // Check if the firstname cookie exists, get its value
 if (isset($_SESSION['loggedin'])) {
@@ -57,7 +54,7 @@ $prodcat = urldecode(filter_input(INPUT_GET, 'prodcat', FILTER_SANITIZE_STRING))
 $categories = getCategories();
 $navList = navList($categories, $type, $prodcat);
 
-
+$clientId = $_SESSION['clientData']['clientId'];
 
 switch ($action) {
     case 'reviewadd':
@@ -65,6 +62,25 @@ switch ($action) {
         $invId = filter_input(INPUT_POST, 'invId', FILTER_SANITIZE_NUMBER_INT);
         $clientId = filter_input(INPUT_POST, 'clientId', FILTER_SANITIZE_NUMBER_INT);
         $reviewText = filter_input(INPUT_POST, 'reviewText', FILTER_SANITIZE_STRING);
+        
+       
+        $product = getProductInfo($invId);
+        
+        
+
+        if(empty($reviewText)) {
+            $reviewMessage = "<h2>You must fill all the fields.</h2>";
+            // Reviews display code
+            $reviewDisplay = reviewsGet($invId);
+            if(count($reviewDisplay) > 0){
+                $reviewList = buildProductReviews($reviewDisplay);
+            } else {
+                $message = "<p>There are no reviews for this product.</p>";
+            }
+            include '../view/productdetails.php';
+            break;
+        }
+
         $result = reviewCreate($reviewText, $invId, $clientId);
 
         if ($result > 0) {
@@ -72,9 +88,6 @@ switch ($action) {
         } else {
             $reviewMessage = "<h3 class='failure'>There was an issue submitting your review.  Please try again</h3>";
         }
-
-        $product = getProductInfo($invId);
-
         // Reviews display code
         $reviewDisplay = reviewsGet($invId);
         if(count($reviewDisplay) > 0){
@@ -82,6 +95,7 @@ switch ($action) {
         } else {
             $message = "<p>There are no reviews for this product.</p>";
         }
+       
         // call the product detail display when done.
         // header("Location: $referer&result=$result");
         include '../view/productdetails.php';
@@ -100,6 +114,16 @@ switch ($action) {
     case 'reviewupdate':
         $reviewText = filter_input(INPUT_POST, 'reviewText', FILTER_SANITIZE_STRING);
         $reviewId = filter_input(INPUT_POST, 'reviewId', FILTER_SANITIZE_NUMBER_INT);
+        
+        if(empty($reviewText)) {
+            $reviewMessage = "<h2>You must fill all the fields.</h2>";
+
+            $reviews = reviewGetAllClient($clientId);
+            $reviewList = buildClientReviews($reviews);
+            include '../view/admin.php';
+            break;
+        }
+        
         $result = reviewUpdate($reviewId, $reviewText);
 
         if ($result > 0 ) {
@@ -129,16 +153,15 @@ switch ($action) {
 
         $deleteResult = reviewDelete($reviewId);
         if ($deleteResult) {
-            $message = "<p class='notice'>Congratulations, $reviewId was successfully deleted.</p>";
-            $_SESSION['message'] = $message;
-            header("location: $basepath/accounts/");
-            exit;
-        } else {
+            $message = "<p class='notice'>Congratulations, the review was successfully deleted.</p>";
+         } else {
             $message = "<p class='notice'>Error: $reviewId was not deleted.</p>";
-            $_SESSION['message'] = $message;
-            header("location: $basepath/accounts/");
-            exit;
         }
+        
+        $_SESSION['message'] = $message;
+        $reviews = reviewGetAllClient($clientId);
+        $reviewList = buildClientReviews($reviews);
+        include '../view/admin.php';
         break;
 
     default:

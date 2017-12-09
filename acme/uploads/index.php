@@ -9,14 +9,9 @@ require_once '../model/uploads-model.php';
 require_once '../library/functions.php';
 
 // Set base path depending on localhost vs server
-if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
-{
-     $basepath = '/cit336/acme/';
-     $imgpath = '/cit336';
-} else {
-    $basepath = '/acme';
-    $imgpath = '';
-}
+$basepath = setBasePath();
+$imgpath = setImagePath();
+
 
 $action = filter_input(INPUT_POST, 'action', FILTER_SANITIZE_STRING);
 if ($action == NULL) {

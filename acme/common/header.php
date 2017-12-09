@@ -9,8 +9,10 @@
                         } ?>
                         <?php
                             if (isset($_SESSION['loggedin'])) {
-                                echo "<span><div id='logout'><a href='$basepath/accounts/index.php?action=Logout'>Logout</a></div>";
-                                echo "<div id='update'><a href='$basepath/accounts/index.php?action=user-mgt'>Update Account</a></div></span>";
+                                echo "<div id='loggedin'>";
+                                echo "<div id='logout'><a href='$basepath/accounts/index.php?action=Logout'>Logout</a></div>";
+                                echo "<div id='update'><a href='$basepath/accounts/index.php?action=user-mgt'>Update Account</a></div>";
+                                echo "</div>";
                             } else {
                                 echo "<a href='$basepath/accounts/index.php?action=login' class='link'>
                                 <img src='$basepath/images/site/account.gif' alt='Account Folder GIF' id='folder'>My Account</a>";

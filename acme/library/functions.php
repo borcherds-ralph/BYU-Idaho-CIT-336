@@ -1,5 +1,24 @@
 <?php
 
+function setBasePath() {
+    if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
+    {
+        $basepath = '/cit336/acme';
+   } else {
+       $basepath = '/acme';
+   }
+   return $basepath;
+}
+
+function setImagePath() {
+    if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
+    {
+        $imgPath = '/cit336';
+   } else {
+       $imgPath = '';
+   }
+   return $imgPath;
+}
 
 function checkEmail($clientEmail){
     $valEmail = filter_var($clientEmail, FILTER_VALIDATE_EMAIL);
@@ -33,12 +52,7 @@ function makeCategories($categories){
 
 // Create Navigation
 function navList($categories, $action, $prodcat) {
-    if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
-    {
-         $basepath = '/cit336/acme';
-    } else {
-        $basepath = '/acme';
-    }
+    $basepath = setBasePath();
     
     $active = '';
 
@@ -73,18 +87,13 @@ function categoryList($categories) {
 // Build the list of products to display.
 function buildProductsDisplay($products){
     if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
-    {
-         $basepath = '/cit336/acme';
-         $imgpath = '/cit336';
-    } else {
-        $basepath = '/acme';
-        $imgpath = '';
-    }
+    $basepath = setBasePath();
+    $imgpath = setImagePath();
 
     $pd = '<ul id="prod-display">';
     foreach ($products as $product) {
      $pd .= '<li>';
-     $pd .= "<a href=" . $basepath . "/products/?action=proddetail&invId=$product[invId]&prodcat=$product[categoryId]><img src='" . $imgpath . "$product[invThumbnail]' alt='Image of $product[invName] on Acme.com'>";
+     $pd .= "<a href='" . $basepath . "/products/?action=proddetail&invId=$product[invId]&prodcat=$product[categoryId]'><img src='" . $imgpath . "$product[invThumbnail]' alt='Image of $product[invName] on Acme.com'>";
      $pd .= '<hr>';
      $pd .= "<h2>$product[invName]</h2>";
      $pd .= "<span>$$product[invPrice]</span></a>";
@@ -95,14 +104,8 @@ function buildProductsDisplay($products){
 }
 
 function buildProduct($products){
-    if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
-    {
-         $basepath = '/cit336/acme';
-         $imgpath = '/cit336';
-    } else {
-        $basepath = '/acme';
-        $imgpath = '';
-    }
+    $basepath = setBasePath();
+
     $pd = "<h2>$products[invName]</h2>";
     $pd .= "";
     return $pd;
@@ -123,14 +126,7 @@ function makeThumbnailName($image) {
 
 // Build images display for image management view
 function buildImageDisplay($imageArray) {
-    if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
-    {
-         $basepath = '/cit336/acme';
-         $imgpath = '/cit336';
-    } else {
-        $basepath = '/acme';
-        $imgpath = '';
-    }
+    $basepath = setImagePath();
     $id = '<ul id="image-display">';
     foreach ($imageArray as $image) {
      $id .= '<li>';
@@ -302,14 +298,7 @@ function buildProductReviews($reviews) {
 
 // Build the list of reviews for a user to manage.
 function buildClientReviews($reviews) {
-    if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
-    {
-         $basepath = '/cit336/acme';
-         $imgpath = '/cit336';
-    } else {
-        $basepath = '/acme';
-        $imgpath = '';
-    }
+    $basepath = setBasePath();
     if(count($reviews) > 0) {
         $reviewList = "<div class='review-items'>";
         $reviewList .= "<div class='odd'>";
@@ -325,8 +314,8 @@ function buildClientReviews($reviews) {
             $reviewList .= "<div class=$rowoddeven>";
             $reviewList .= "<div class='review col1'>" . $review['invName'] . "</div>";
             $reviewList .= "<div class='review col2'>" . $review['reviewText'] . "</div>";
-            $reviewList .= "<div class='review col3'><a href=". $basepath . "/reviews?action=mod&id=" . $review['reviewId'] . " title='Click to modify'>Edit</a></div>";
-            $reviewList .= "<div class='review col4'><a href=". $basepath . "/reviews?action=reviewdeleteconfirm&id=" . $review['reviewId'] . " title='Click to delete'>Delete</a></div>";
+            $reviewList .= "<div class='review col3'><a href='". $basepath . "/reviews?action=mod&id=" . $review['reviewId'] . "' title='Click to modify'>Edit</a></div>";
+            $reviewList .= "<div class='review col4'><a href='". $basepath . "/reviews?action=reviewdeleteconfirm&id=" . $review['reviewId'] . "' title='Click to delete'>Delete</a></div>";
             $reviewList .= "</div>";
         }
             $reviewList .= '</div>';

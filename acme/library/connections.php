@@ -1,6 +1,12 @@
 <?php
 
     function acmeConnect(){
+        if ($_SERVER['HTTP_HOST'] == 'localhost')  {
+            $basepath = '/cit336/acme';
+        } else {
+           $basepath = '/acme';
+        }
+        
         $server = 'localhost';
         $dbname= 'acme';
         $username = 'cit336';
@@ -13,7 +19,7 @@
             $link = new PDO($dsn, $username, $password, $options);
         return $link;
         } catch(PDOException $e) {
-            header('Location: view/500.php');
+            header("Location: $basepath/view/500.php");
             exit;
         }
     }
