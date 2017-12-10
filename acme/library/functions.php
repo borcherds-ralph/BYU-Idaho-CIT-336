@@ -111,6 +111,28 @@ function buildProduct($products){
     return $pd;
 }
 
+function productEdit(){
+    $basepath = setBasePath();
+    $products = getProductBasics();
+
+
+    $pd = '';
+   
+    foreach ($products as $key => $product) {
+        if($key & 1) {
+            $rowoddeven = 'odd';
+        } else {$rowoddeven = 'even';}
+        $pd .= "<div class='$rowoddeven'>";
+        $pd .= "<div class='product col1'>" . $product['invName'] . "</div>";
+        $pd .= "<div class='product col2'><a href='". $basepath . "/products?action=mod&id=" . $product['invId'] . "' title='Click to modify'>Edit</a></div>";
+        $pd .= "<div class='product col3'><a href='". $basepath . "/products?action=del&id=" . $product['invId'] . "' title='Click to delete'>Delete</a></div>";
+        $pd .= "<div class='product col4'></div>";
+        $pd .= "</div>";
+    }
+    
+    return $pd;
+}
+
 
 /* * ********************************
 * Functions for working with images

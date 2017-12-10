@@ -1368,6 +1368,20 @@ input:checked~label {
         font-size: 1.5em;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     }
+    .product.col1 {
+        order: 1;
+        display: flex;
+        width: calc(35%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1em;
+    }
+    .product.col2,
+    .product.col3 {
+        order: 3;
+        width: calc(19%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1em;
+    }
     /*  
     *      These are for login and registration forms for all screen sites 
     *      These are the required field formatting 

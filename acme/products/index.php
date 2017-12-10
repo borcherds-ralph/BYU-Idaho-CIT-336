@@ -226,7 +226,7 @@ if (isset($_SESSION['loggedin'])) {
         }
     break;
     default:
-        
+        $prodList = productEdit();
         include '../view/prod-mgt.php';
     break;
   }
