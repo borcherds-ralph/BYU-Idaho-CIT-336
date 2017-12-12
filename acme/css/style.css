@@ -1222,7 +1222,7 @@ input:checked~label {
     .top {
         display: flex;
         flex-direction: row;
-        /* max-width: 100%; */
+        max-width: 100%;
         z-index: 1;
         flex-wrap: nowrap;
     }
