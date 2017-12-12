@@ -1,6 +1,6 @@
-@import 'normalize.css';
-@import url('https://fonts.googleapis.com/css?family=Handlee%7cIndie+Flower');
-@import 'fontawesome.min.css';
+@import "normalize.css";
+@import "fontawesome-all.css";
+@import url("https://fonts.googleapis.com/css?family=Handlee%7cIndie+Flower");
 html {
     color: #000;
     font-family: 'Indie Flower', cursive;
