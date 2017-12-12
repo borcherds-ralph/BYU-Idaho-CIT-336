@@ -21,7 +21,7 @@
             <?php if(isset($message)){ echo $message; } ?>
             <div  class="prodInfo">
                 <div class="prodImage">
-                    <img src='<?php echo $imgpath . $product['invImage']; ?>' id='prodImage' alt='Image of <?php echo $product['invName']; ?> on Acme.com'>
+                    <img src='<?php echo $imgpath . "/" . $product['invImage']; ?>' id='prodImage' alt='Image of <?php echo $product['invName']; ?> on Acme.com'>
                 </div>
                 
                 <div class="prodDetails">
@@ -40,6 +40,11 @@
                 </div>
             </div>
             <section class="reviews">
+            <section class="thumbnails">
+                <hr>
+                <?php echo $thumbnails; ?>
+                <hr>
+            </section>
             
             <h2>Customer Reviews</h2>
             <?php

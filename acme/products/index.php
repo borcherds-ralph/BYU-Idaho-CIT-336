@@ -86,6 +86,8 @@ if (isset($_SESSION['loggedin'])) {
         } else {
             $message = "<p>There are no reviews for this product.</p>";
         }
+        $thumbs = getOtherImages($product['invImage']);
+        $thumbnails = displayThumbs($thumbs);
             
         // End Reviews code
 

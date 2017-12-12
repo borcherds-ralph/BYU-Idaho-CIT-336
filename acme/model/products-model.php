@@ -149,3 +149,14 @@ function getProductsByCategory($type){
     $stmt->closeCursor();
     return $products;
 }
+
+function getOtherImages($invImg) {
+    $db = acmeConnect();
+    $sql = "SELECT * FROM inventory WHERE invThumbnail LIKE CONCAT(LEFT(:invImg, LOCATE('.', :invImg) -1), '-tn%')";
+    $stmt = $db->prepare($sql);
+    $stmt->bindValue(':invImg', $invImg, PDO::PARAM_STR);
+    $stmt->execute();
+    $images = $stmt->fetchAll();
+    $stmt->closeCursor();
+    return $images;
+}

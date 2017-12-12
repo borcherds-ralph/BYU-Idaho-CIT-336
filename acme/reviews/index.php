@@ -96,8 +96,13 @@ switch ($action) {
             $message = "<p>There are no reviews for this product.</p>";
         }
        
+        // build thumbnail image display
+        $thumbs = getOtherImages($invId);
+        $thumbnails = displayThumbs($thumbs);
+        
         // call the product detail display when done.
         // header("Location: $referer&result=$result");
+       
         include '../view/productdetails.php';
         break;
 

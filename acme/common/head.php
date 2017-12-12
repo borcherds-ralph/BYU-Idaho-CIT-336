@@ -1,7 +1,7 @@
 <!-- CSS files -->
-<link rel="stylesheet" href="<?php echo $basepath; ?>/css/normalize.css">
+    <!-- <link rel="stylesheet" href="<?php echo $basepath; ?>/css/normalize.css"> -->
     <link rel="stylesheet" href="<?php echo $basepath; ?>/css/style.css" media="screen">
-    <link rel="stylesheet" href="<?php echo $basepath; ?>/css/fontawesome-all.css">
+    <!--  <link rel="stylesheet" href="<?php echo $basepath; ?>/css/fontawesome-all.css">  -->
 
     <!-- JavaScript files that have to load first -->
     <script src="<?php echo $basepath; ?>/js/scripts.js"></script>

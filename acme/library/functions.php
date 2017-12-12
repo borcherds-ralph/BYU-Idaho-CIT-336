@@ -295,6 +295,15 @@ function resizeImage($old_image_path, $new_image_path, $max_width, $max_height) 
     imagedestroy($old_image);
 }  
 
+function displayThumbs($thumbs) {
+    $thumbnails = "<ul id='thumb-display'>";
+    foreach($thumbs as $thumb) {
+        $thumbnails .= "<li><img src='$thumb[invThumbnail]' alt='$thumb[invName]'></li>";
+    }
+    $thumbnails .= "</ul>";
+    return $thumbnails;
+}
+
 
 // Build the list of products reviews to display.
 function buildProductReviews($reviews) {

@@ -1,4 +1,6 @@
+@import 'normalize.css';
 @import url('https://fonts.googleapis.com/css?family=Handlee%7cIndie+Flower');
+@import 'fontawesome.min.css';
 html {
     color: #000;
     font-family: 'Indie Flower', cursive;
@@ -627,6 +629,22 @@ input:checked~label {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+.product.col1 {
+    order: 1;
+    display: flex;
+    width: calc(35%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+
+.product.col2,
+.product.col3 {
+    order: 3;
+    width: calc(19%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+
 
 /* This is for the remaining Characters in a text field */
 
@@ -654,6 +672,23 @@ input:checked~label {
 .input-group .input-group-addon .fa {
     background-color: #D9853B;
     padding: 5px;
+}
+
+#thumb-display {
+    list-style-type: none;
+}
+
+#thumb-display li {
+    display: inline-block;
+}
+
+#thumb-display li>img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 
@@ -1183,7 +1218,6 @@ input:checked~label {
         padding-bottom: 10px;
         background-color: #fff;
         flex-wrap: wrap;
-        padding-left: 10px;
     }
     .top {
         display: flex;
