@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang = "en">
 <head>
@@ -21,7 +20,7 @@
             <?php if(isset($message)){ echo $message; } ?>
             <div  class="prodInfo">
                 <div class="prodImage">
-                    <img src='<?php echo $imgpath . "/" . $product['invImage']; ?>' id='prodImage' alt='Image of <?php echo $product['invName']; ?> on Acme.com'>
+                    <img src='<?php echo $imgpath . $product['invImage']; ?>' id='prodImage' alt='Image of <?php echo $product['invName']; ?> on Acme.com'>
                 </div>
                 
                 <div class="prodDetails">

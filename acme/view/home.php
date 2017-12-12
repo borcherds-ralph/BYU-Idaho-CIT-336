@@ -15,14 +15,14 @@
             
         <main>
             <section class="top">
-                <div class="topimg"><img id="imgrocket" src="images/site/rocketfeature.jpg" alt="Wiley on Rocket"></div>
+                <div class="topimg"><img id="imgrocket" src="<?php echo $imgpath; ?>/acme/images/site/rocketfeature.jpg" alt="Wiley on Rocket"></div>
                     <div class="textright">
                         <ul>
                             <li><h2>Acme Rocket</h2></li>
                             <li>Quick lighting fuse</li>
                             <li>NHTSA approved seat belts</li>
                             <li>Mobile launch stand included</li>
-                            <li><a href="/acme/cart/"><img id="actionbtn" alt="Add to cart button" src="images/site/iwantit.gif"></a></li>
+                            <li><a href="/acme/cart/"><img id="actionbtn" alt="Add to cart button" src="<?php echo $imgpath; ?>/acme/images/site/iwantit.gif"></a></li>
                         </ul>
                     </div>
                 
@@ -34,26 +34,26 @@
 
                     <div class="bbq recipesrow2">
                         <figure class="bkggrey">
-                            <img src="images/recipes/bbqsand.jpg" alt="Pulled Roadrunner BBQ">
+                            <img src="<?php echo $imgpath; ?>/acme/images/recipes/bbqsand.jpg" alt="Pulled Roadrunner BBQ">
                             <figcaption>Pulled Roadrunner BBQ</figcaption>
                         </figure>
                         
                     </div>
                     <div class="potpie recipesrow2">
                     <figure class="bkggrey">
-                            <img src="images/recipes/potpie.jpg" alt="Roadrunner Pot Pie">
+                            <img src="<?php echo $imgpath; ?>/acme/images/recipes/potpie.jpg" alt="Roadrunner Pot Pie">
                             <figcaption>Roadrunner Pot Pie</figcaption>
                         </figure>                    
                     </div>
                     <div class="soup recipesrow3">
                     <figure class="bkggrey">
-                            <img src="images/recipes/soup.jpg" alt="Roadrunner Soup">
+                            <img src="<?php echo $imgpath; ?>/acme/images/recipes/soup.jpg" alt="Roadrunner Soup">
                             <figcaption>Roadrunner Soup</figcaption>
                         </figure>                    
                     </div>
                     <div class="tacos recipesrow3">
                     <figure class="bkggrey">
-                            <img src="images/recipes/taco.jpg" alt="Roadrunner Tacos">
+                            <img src="<?php echo $imgpath; ?>/acme/images/recipes/taco.jpg" alt="Roadrunner Tacos">
                             <figcaption>Roadrunner Tacos</figcaption>
                         </figure>                    
                     </div>

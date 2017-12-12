@@ -11,8 +11,7 @@ function setBasePath() {
 }
 
 function setImagePath() {
-    if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
-    {
+    if ($_SERVER['HTTP_HOST'] == 'localhost') {
         $imgPath = '/cit336';
    } else {
        $imgPath = '';
@@ -86,7 +85,6 @@ function categoryList($categories) {
 
 // Build the list of products to display.
 function buildProductsDisplay($products){
-    if ($_SERVER['HTTP_HOST'] == 'localhost') // or any other host
     $basepath = setBasePath();
     $imgpath = setImagePath();
 
