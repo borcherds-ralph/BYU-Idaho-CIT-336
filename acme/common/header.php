@@ -5,7 +5,8 @@
                 <div class="right">
                     <div class="account">
                         <?php if (isset($_SESSION['loggedin'])) {
-                            echo "<span id='welcome'><a href='$basepath/accounts'>Welcome $cookieFirstname</a></span>";
+                            echo "<span id='welcome'><a href='$basepath/accounts'>Welcome " . $clientData['clientFirstname'] . "</a></span>";
+                            
                         } ?>
                         <?php
                             if (isset($_SESSION['loggedin'])) {

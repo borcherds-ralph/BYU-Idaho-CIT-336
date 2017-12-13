@@ -47,13 +47,9 @@ $navList = navList($categories, $type, $prodcat);
 
 // Check if the firstname cookie exists, get its value
 if (isset($_SESSION['loggedin'])) {
-    if(isset($_COOKIE['firstname'])){
-    $cookieFirstname = filter_input(INPUT_COOKIE, 'firstname', FILTER_SANITIZE_STRING);
-    $clientId = $_SESSION['clientData']['clientId'];
-    }
- } else {
-     setcookie('firstname', $_SESSION['clientData']['clientFirstname'], time() - 3600, $basepath);
- }
+    $clientData = getClient($_SESSION['clientData']['clientEmail']);
+    array_pop($clientData);
+}
  
 // Switch statement to determine what to do.
  switch ($action) {
@@ -121,9 +117,8 @@ if (isset($_SESSION['loggedin'])) {
     case 'addprod':
         // This include is all the fields on the Add/Modify Inventory Form
         include '../library/product-add.php';
-        $navList = navList($categories, $action, $prodcat);
-        $message = "<p>Sorry $cookieFirstname, but the registration failed. Please try again.</p>";
         $catList = categoryList($categories);
+        
         if ((empty($invName) || empty($invDescription) || empty($invImage) || empty($invThumbnail) || empty($invPrice) || empty($invStock) || empty($invSize) || empty($invWeight)) || empty($invLocation) || empty($categoryId) || empty($invVendor) || empty($invStyle)) {
                 $message = 'Please provide information for all empty fields.';
             include '../view/prod-add.php';

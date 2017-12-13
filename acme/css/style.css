@@ -44,7 +44,7 @@ body {
     flex-flow: nowrap;
     flex: 1 1 auto;
     width: 100vw;
-    max-height: 100vw;
+    /* min-height: 100vw; */
     background-color: #f8f294;
 }
 
@@ -57,6 +57,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
+    min-height: fit-content;
 }
 
 .logoarea {
@@ -82,8 +83,8 @@ header {
     align-content: flex-end;
     flex-basis: 50%;
     justify-content: flex-end;
-    margin-right: 30px;
     font-size: 1.25em;
+    padding-right: 3.5rem;
 }
 
 #welcome {
@@ -137,7 +138,7 @@ header {
 .hamburger {
     display: block;
     position: absolute;
-    top: 3rem;
+    top: 1rem;
     right: 1rem;
 }
 
@@ -560,74 +561,56 @@ input:checked~label {
 
 /* Product Reviews */
 
-.reviews {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-.review-items {
-    display: flex;
-    flex-direction: column;
-}
-
-.review {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
 .col1,
-.col2,
-.col3 {
-    display: flex;
-    flex-direction: column;
-}
-
-.even {
-    background-color: #e4f2ff;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.odd {
-    background-color: #c4ccf3;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.review.col1 {
-    order: 1;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1em;
-}
-
-.review.col2 {
-    order: 2;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: .75em;
-}
-
-.review.col3 {
-    order: 3;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: .75em;
-}
-
-.review.col4 {
-    order: 4;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: .75em;
-}
-
-#reviewtext,
-#reviewproduct {
-    font-weight: 700;
-    font-size: 1.5em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
+    .col2,
+    .col3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .even {
+        background-color: #e4f2ff;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        max-width: calc(99%);
+    }
+    .odd {
+        background-color: #c4ccf3;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        max-width: calc(99%);
+    }
+    .review.col1 {
+        order: 1;
+        width: calc(25%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1em;
+    }
+    .review.col2 {
+        order: 2;
+        width: calc(35%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1em;
+    }
+    .review.col3 {
+        order: 3;
+        width: calc(19%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1em;
+    }
+    .review.col4 {
+        order: 4;
+        width: calc(19%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: .75em;
+    }
+    #reviewtext,
+    #reviewproduct {
+        font-weight: 700;
+        font-size: 1.5em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
 
 .product.col1 {
     order: 1;
@@ -1121,7 +1104,7 @@ input:checked~label {
         font-size: 14px;
     }
     .content {
-        margin: auto;
+        /* margin: auto; */
         display: flex;
         flex-direction: column;
         max-width: 100%;

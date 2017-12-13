@@ -36,8 +36,7 @@
                 <a href="<?php echo $basepath; ?>/products">Products Page</a>
             <?php  }   ?>
             <h3>You may edit your reviews below.</h3> 
-            <?php echo $reviewList; 
-            ?>
+            <?php echo $reviewList; ?>
             
           
         </main>

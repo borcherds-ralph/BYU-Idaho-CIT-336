@@ -1,8 +1,3 @@
-<?php
-if ($_SESSION['clientData']['clientLevel'] < 2) {
- header("location: " . $basepath);
- exit;
-}?>
 <!DOCTYPE html>
 <html lang = "en">
 <head>
@@ -30,13 +25,22 @@ if ($_SESSION['clientData']['clientLevel'] < 2) {
             ?>
             <form method="post" action="<?php echo $basepath ?>/reviews/" id="registrationform">
                 <fieldset> 
-                    <div>
-                        <input class="inputinvalid" id="reviewDate" name="reviewDate" type="text" readonly <?php if(isset($review['reviewDate'])){ echo "value='" . $review['reviewDate'] . "'"; } ?> >
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fas fa-user"></i></span>
+                        <input class="inputvalid" id="reviewClientName" name="reviewClientName" type="text" readonly title="Review Text" <?php echo "value='" . substr($_SESSION['clientData']['clientFirstname'],0, 1) . $_SESSION['clientData']['clientLastname'] . "'" ?> >
+                        
+                        <label for="reviewText">Your Screen Name:</label>
+                        
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                        <input class="inputvalid" id="reviewDate" name="reviewDate" type="text" readonly <?php if(isset($review['reviewDate'])){ echo "value='" . $review['reviewDate'] . "'"; } ?> >
                         <label for="reviewDate">Date of Review</label>
                     </div>
-                    <div>
-                        <textarea class="textareainvalid" id="reviewText" name="reviewText" rows="5" cols="40" maxlength="45" required placeholder="Item Description" tabindex="2" title="Enter the description of the item"><?php if(isset($review['reviewText'])){echo $review['reviewText'];} ?></textarea>
-                        <label for="reviewText">Text of Review</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fas fa-comment-alt"></i></span>
+                        <textarea class="textareavalid" id="reviewText" name="reviewText" rows="5" cols="60" maxlength="45" required placeholder="Please enter your review" tabindex="1" title="Review Text"  ><?php if(isset($review['reviewText'])){echo $review['reviewText'];} ?></textarea></textarea>
+                        <label for="reviewText">Your Review</label>
                         <div id="charcount"><span id="chars">45</span> &nbsp;characters remaining</div>
                     </div>
                     

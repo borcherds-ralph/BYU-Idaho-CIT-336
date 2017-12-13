@@ -343,7 +343,7 @@ function buildClientReviews($reviews) {
             $reviewList .= "<div class=$rowoddeven>";
             $reviewList .= "<div class='review col1'>" . $review['invName'] . "</div>";
             $reviewList .= "<div class='review col2'>" . $review['reviewText'] . "</div>";
-            $reviewList .= "<div class='review col3'><a href='". $basepath . "/reviews?action=mod&id=" . $review['reviewId'] . "' title='Click to modify'>Edit</a></div>";
+            $reviewList .= "<div class='review col3'><a href='". $basepath . "/reviews?action=modify&id=" . $review['reviewId'] . "' title='Click to modify'>Edit</a></div>";
             $reviewList .= "<div class='review col4'><a href='". $basepath . "/reviews?action=reviewdeleteconfirm&id=" . $review['reviewId'] . "' title='Click to delete'>Delete</a></div>";
             $reviewList .= "</div>";
         }

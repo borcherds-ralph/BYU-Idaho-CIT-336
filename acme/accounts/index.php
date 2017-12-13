@@ -18,13 +18,9 @@ require_once '../model/products-model.php';
 // Get the reviews model
 require_once '../model/reviews-model.php';
 
-
-
 // Set base path depending on localhost vs server
 $basepath = setBasePath();
 $imgpath = setImagePath();
-
-
 
 $doc = $_SERVER['REQUEST_URI'];
 if (strpos($doc, '500.php') == true || strpos($doc, 'accounts') == true) {
@@ -35,27 +31,20 @@ $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL){
  $action = filter_input(INPUT_GET, 'action');
 }
+
 // Build the navigation
 $categories = getCategories();
 $navList = navList($categories, $action, $prodcat);
 
 // Check if the firstname cookie exists, get its value
 if (isset($_SESSION['loggedin'])) {
-    if (isset($_COOKIE['firstname'])){
-    $cookieFirstname = filter_input(INPUT_COOKIE, 'firstname', FILTER_SANITIZE_STRING);
-    setcookie('firstname', $_SESSION['clientData']['clientFirstname'], strtotime("+1 year"), $basepath);
-    } elseif (!isset($_COOKIE['firstname'])){
-        setcookie('firstname', $_SESSION['clientData']['clientFirstname'], strtotime("+1 year"), $basepath);
-        $cookieFirstname = filter_input(INPUT_COOKIE, 'firstname', FILTER_SANITIZE_STRING);
-        
-    }
-}  else {
-    setcookie('firstname', $_SESSION['clientData']['clientFirstname'], time() - 3600, $basepath);
+    $clientData = getClient($_SESSION['clientData']['clientEmail']);
+    // Remove the password from the array
+    // the array_pop function removes the last element from an array
+    array_pop($clientData);
 }
 
-$clientData = getClient($_SESSION['clientData']['clientEmail']);
-array_pop($clientData);
-$clientId = $_SESSION['clientData']['clientId'];
+$clientId = $clientData['clientId'];
 
     switch ($action) {
 
@@ -100,7 +89,7 @@ $clientId = $_SESSION['clientData']['clientId'];
 
             // Check and report the result
             if($regOutcome === 1){
-                setcookie('firstname', $clientFirstname, strtotime('+1 year'), '/');
+                setcookie('firstname', $clientFirstname, strtotime('+1 year'), $basepath);
                 $message = "<p>Thanks for registering $clientFirstname. Please use your email and password to login.</p>";
                 include '../view/login.php';
                 exit;
@@ -134,9 +123,11 @@ $clientId = $_SESSION['clientData']['clientId'];
             // A valid password exists, proceed with the login process
             // Query the client data based on the email address
             $clientData = getClient($clientEmail);
+
             // Compare the password just submitted against
             // the hashed password for the matching client
             $hashCheck = password_verify($clientPassword, $clientData['clientPassword']);
+
             // If the hashes don't match create an error
             // and return to the login view
             if (!$hashCheck) {
@@ -144,16 +135,12 @@ $clientId = $_SESSION['clientData']['clientId'];
                 include '../view/login.php';
                 exit;
             }
+
             // A valid user exists, log them in
             $_SESSION['loggedin'] = TRUE;
-            // Remove the password from the array
-            // the array_pop function removes the last
-            // element from an array
-            array_pop($clientData);
-            // Store the array into the session
+
             $_SESSION['clientData'] = $clientData;
-            setcookie('firstname', $_SESSION['clientData']['clientFirstname'], strtotime('+1 year'), $basepath);
-            $cookieFirstname = $_SESSION['clientData']['clientFirstname'];
+            setcookie('firstname', $_SESSION['clientData']['clientFirstname'], time() - 3600, $basepath);
             
             // Send them to the admin view
             $reviews = reviewGetAllClient($clientData['clientId']);
@@ -170,7 +157,7 @@ $clientId = $_SESSION['clientData']['clientId'];
         break;
         
         case 'updateUSR':
-            $clientData = getClient($_SESSION['clientData']['clientEmail']);
+            // $clientData = getClient($clientData['clientEmail']);
             include '../view/user-mgt.php';
             exit;
         break;

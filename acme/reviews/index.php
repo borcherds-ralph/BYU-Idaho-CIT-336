@@ -27,12 +27,10 @@ $basepath = setBasePath();
 $imgpath = setImagePath();
 
 
-// Check if the firstname cookie exists, get its value
 if (isset($_SESSION['loggedin'])) {
-    if(isset($_COOKIE['firstname'])){
-    $cookieFirstname = filter_input(INPUT_COOKIE, 'firstname', FILTER_SANITIZE_STRING);
-    }
-} 
+    $clientData = getClient($_SESSION['clientData']['clientEmail']);
+    array_pop($clientData);
+}
 
 $doc = $_SERVER['REQUEST_URI'];
 if (strpos($doc, '500.php') == true || strpos($doc, 'accounts') == true) {
@@ -58,7 +56,6 @@ $clientId = $_SESSION['clientData']['clientId'];
 
 switch ($action) {
     case 'reviewadd':
-        $referer = $_SERVER['HTTP_REFERER'];
         $invId = filter_input(INPUT_POST, 'invId', FILTER_SANITIZE_NUMBER_INT);
         $clientId = filter_input(INPUT_POST, 'clientId', FILTER_SANITIZE_NUMBER_INT);
         $reviewText = filter_input(INPUT_POST, 'reviewText', FILTER_SANITIZE_STRING);
@@ -107,7 +104,7 @@ switch ($action) {
         break;
 
 
-    case 'mod':
+    case 'modify':
         $reviewId = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
         $review = reviewGetClient($reviewId);
         if(count($review)<1){
@@ -132,7 +129,7 @@ switch ($action) {
         $result = reviewUpdate($reviewId, $reviewText);
 
         if ($result > 0 ) {
-            $message = "<h3>Thank you for updating the review. It was succesfully updated<?h3>";
+            $message = "<h3>Thank you for updating the review. It was successfully updated<?h3>";
         } else {
             $message = "<h3>There was an error updating the review. Please try again later</h3>";
         }
