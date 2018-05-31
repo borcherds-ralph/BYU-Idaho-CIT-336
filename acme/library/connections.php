@@ -10,7 +10,7 @@
         $server = 'localhost';
         $dbname= 'acme';
         $username = 'cit336';
-        $password = 'mM7kEyL@mS2c';
+        $password = '*************';
         $dsn = "mysql:host=$server;dbname=$dbname";
         $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
        
